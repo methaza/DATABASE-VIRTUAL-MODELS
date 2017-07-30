@@ -1,0 +1,198 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	;	if COUNTROUND > 0
+	;	{
+	;		ControlSend,, {LControl Down}{+}, ahk_class MozillaWindowClass ahk_exe firefox.exe
+	;		Sleep 400
+	;		TrayTip, Count, `n%COUNTROUND%/5 `nDetected Alert : Miss
+	;		Sleep 4000
+	;		continue reCaptchaDeteced
+	;	}
+
+		;	PixelSearch, 0095DDX, 0095DDY, 0, 0, 800, 600, 0x0095DD, 0, Fast RGB
+		;	if ErrorLeve == 0
+		;	{
+		;		continue reCaptchaContinue
+		;	}
+
+;	reCaptchaAway:
+;	Loop
+;	{
+;		PixelSearch, 5B86A0X, 5B86A0Y, 0, 0, 800, 600, 0x5B86A0, 0, Fast RGB
+;		MOVECLICK5B86A0X := 5B86A0X
+;		MOVECLICK5B86A0Y := 5B86A0Y
+;		MouseClick, left, %MOVECLICK5B86A0X%, %MOVECLICK5B86A0Y%, 1, 10
+;		Sleep 2000
+;		PixelSearch, 006CF3X, 006CF3Y, 0, 0, 800, 600, 0x006CF3, 0, Fast RGB
+;		MOVECLICK006CF3X := 006CF3X+70
+;		MOVECLICK006CF3Y := 006CF3Y+40
+;		MouseClick, left, %MOVECLICK006CF3X%, %MOVECLICK006CF3Y%, 1, 10
+;		PixelSearch, 90FFAFX, 90FFAFY, 0, 0, 800, 600, 0x90FFAF, 0, Fast RGB
+;		MOVECLICK90FFAFX := 90FFAFX+140
+;		MOVECLICK90FFAFY := 90FFAFY-30
+;		MouseClick, left, %MOVECLICK90FFAFX%, %MOVECLICK90FFAFY%, 1, 10
+;		Sleep 4000
+;		COUNTROUND := 0	
+;		CHECKTITLE := 0
+;		TrayTip, Check Title, reCaptchaAway
+;		continue reCaptchaFind
+;	}
+
+
+	;
+	;	FIX WHEN CHECKED MARK IS SHOW BUT NOT FOUND
+	;
+	;	Else if COUNTROUND == 0
+	;	{
+	;		;
+	;		;	FIX WHEN ALERT DAILOG
+	;		;
+	;		PixelSearch, 212222X, 212222Y, 0, 0, 800, 600, 0x212222, 0, Fast RGB
+	;		if ErrorLeve == 0
+	;		{
+	;			0x212222 := 1
+	;		}
+	;		PixelSearch, 222222X, 222222Y, 0, 0, 800, 600, 0x222222, 0, Fast RGB
+	;		if ErrorLeve == 0
+	;		{
+	;			0x222222 := 1
+	;		}
+	;		PixelSearch, 1C1D1FX, 1C1D1FY, 0, 0, 800, 600, 0x1C1D1F, 0, Fast RGB
+	;		if ErrorLeve == 0
+	;		{
+	;			0x1C1D1F := 1
+	;		}
+	;		PixelSearch, 1D1E20X, 1D1E20Y, 0, 0, 800, 600, 0x1D1E20, 0, Fast RGB
+	;		if ErrorLeve == 0
+	;		{
+	;			0x1D1E20 := 1
+	;		}
+	;		if (0x212222 == "1" && 0x222222 == "1" && 0x1C1D1F == "1" && 0x1D1E20 == "1")
+	;		{
+	;			TrayTip, ReCaptcha Count, `n%COUNTROUND%/5 `n%0x212222%%0x222222%%0x1C1D1F%%0x1D1E20% `nTrue
+	;			ControlSend,, {F5}, ahk_class MozillaWindowClass ahk_exe firefox.exe
+	;			Sleep 2000
+	;			ControlSend,, {ENTER}, ahk_class MozillaWindowClass ahk_exe firefox.exe
+	;			0x212222 := 0
+	;			0x222222 := 0
+	;			0x1C1D1F := 0
+	;			0x1D1E20 := 0
+	;			Sleep 4000
+	;		}
+	;		Else
+	;		{
+	;			;	ControlSend,, {LControl Down}{+}{LControl Up}, ahk_class MozillaWindowClass ahk_exe firefox.exe
+	;			;	Sleep 2000
+	;			TrayTip, ReCaptcha Count, `n%COUNTROUND%/5 `n%0x212222%%0x222222%%0x1C1D1F%%0x1D1E20% `nFalse
+	;			0x212222 := 0
+	;			0x222222 := 0
+	;			0x1C1D1F := 0
+	;			0x1D1E20 := 0
+	;			Sleep 4000
+	;		}
+	;		;
+	;		;	FIX WHEN ALERT DAILOG
+	;		;
+	;		continue reCaptchaDeteced
+	;	}
+	;	Else if COUNTROUND > 0
+	;	{
+	;		PixelSearch, 212222X, 212222Y, 0, 0, 800, 600, 0x212222, 0, Fast RGB
+	;		if ErrorLeve == 0
+	;		{
+	;			0x212222 := 1
+	;		}
+	;		PixelSearch, 222222X, 222222Y, 0, 0, 800, 600, 0x222222, 0, Fast RGB
+	;		if ErrorLeve == 0
+	;		{
+	;			0x222222 := 1
+	;		}
+	;		PixelSearch, 1C1D1FX, 1C1D1FY, 0, 0, 800, 600, 0x1C1D1F, 0, Fast RGB
+	;		if ErrorLeve == 0
+	;		{
+	;			0x1C1D1F := 1
+	;		}
+	;		PixelSearch, 1D1E20X, 1D1E20Y, 0, 0, 800, 600, 0x1D1E20, 0, Fast RGB
+	;		if ErrorLeve == 0
+	;		{
+	;			0x1D1E20 := 1
+	;		}
+	;		if (0x212222 == "1" && 0x222222 == "1" && 0x1C1D1F == "1" && 0x1D1E20 == "1")
+	;		{
+	;			TrayTip, ReCaptcha Count, `n%COUNTROUND%/5 `n%0x212222%%0x222222%%0x1C1D1F%%0x1D1E20% `nTrue
+	;			ControlSend,, {F5}, ahk_class MozillaWindowClass ahk_exe firefox.exe
+	;			Sleep 2000
+	;			ControlSend,, {ENTER}, ahk_class MozillaWindowClass ahk_exe firefox.exe
+	;			0x212222 := 0
+	;			0x222222 := 0
+	;			0x1C1D1F := 0
+	;			0x1D1E20 := 0
+	;			Sleep 4000
+	;		}
+	;		Else
+	;		{
+	;			ControlSend,, {LControl Down}{+}{LControl Up}, ahk_class MozillaWindowClass ahk_exe firefox.exe
+	;			Sleep 2000
+	;			TrayTip, ReCaptcha Count, `n%COUNTROUND%/5 `n%0x212222%%0x222222%%0x1C1D1F%%0x1D1E20% `nFalse
+	;			0x212222 := 0
+	;			0x222222 := 0
+	;			0x1C1D1F := 0
+	;			0x1D1E20 := 0
+	;		}
+	;		continue reCaptchaDeteced
+	;		;
+	;		;	FIX WHEN ALERT DAILOG
+	;		;
+	;	}
+
+
+;	reCaptchaDetect:
+;	Loop
+;	{
+;		WinGetTitle, WinState, Detected Recaptcha - Mozilla Firefox ahk_class MozillaWindowClass ahk_exe firefox.exe
+;		if instr(WinState, "Detected Recaptcha - Mozilla Firefox")
+;		{
+;	WinActivate, ahk_class MozillaWindowClass ahk_exe firefox.exe
+;	Sleep 200
+;	CoordMode, Pixel, Relative
+;	PixelSearch, CALLX, CALLY, 0, 0, 800, 600, 0xFFFF12, 0, Fast RGB
+;	random, circle, 50, 100
+;	MouseMove_Ellipse( -circle , +circle , "S8 I1 R" )
+;	random, circle, 50, 100
+;	MouseMove_Ellipse( +circle , +circle , "S8 I1 R" )
+;	random, circle, 50, 100
+;	MouseMove_Ellipse( +circle , -circle , "S8 I1 R" )
+;	random, circle, 50, 100
+;	MouseMove_Ellipse( -circle , -circle , "S8 I1 R" )
+;	Sleep 200
+;	MouseMove, %RECALLTRX%, %RECALLTRY%, 10
+;	MouseMove, %RECALLTLX%, %RECALLTLY%, 10
+;	MouseMove, %RECALLBLX%, %RECALLBLY%, 10
+;	MouseMove, %RECALLBRX%, %RECALLBRY%, 10
+;	continue reCaptchaDetect
+;		}
+;		Else
+;		{
+;			continue reCaptchaDetect
+;		}
+;		continue reCaptchaDetect
+;	}

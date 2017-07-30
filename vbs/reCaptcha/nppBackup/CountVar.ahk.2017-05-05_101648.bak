@@ -1,0 +1,5 @@
+x = 123
+
+F8::
+GrantedCapacity := VarSetCapacity(x, -1)
+ToolTip, Check Title : %x% %GrantedCapacity%, 0, 0

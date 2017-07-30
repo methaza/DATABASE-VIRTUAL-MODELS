@@ -1,0 +1,7 @@
+x = %CLIPBOARD%
+
+F8::
+if (GrantedCapacity := VarSetCapacity(x, -1)) > 15
+	ToolTip, Check Title : %x% %GrantedCapacity%, 0, 0
+else	
+	ToolTip, Check Title : Hello %x% %GrantedCapacity%, 0, 0

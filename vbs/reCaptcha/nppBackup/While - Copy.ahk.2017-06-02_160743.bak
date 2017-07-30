@@ -1,0 +1,5 @@
+
+CheckTitleChk := "[RC] DETECTED [1]"
+F8::
+	StringReplace, CheckTitleChk, CheckTitleChk, [,, ],, R,, D,, %A_SPACE%,, All
+	MsgBox, The text is : %CheckTitleChk%
