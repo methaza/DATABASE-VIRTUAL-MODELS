@@ -1,0 +1,1034 @@
+﻿SET !REPLAYSPEED FAST 
+SET !TIMEOUT_STEP 1
+SET !TIMEOUT_TAG 1
+SET !TIMEOUT 1
+SET !TIMEOUT_PAGE 1
+SET !ERRORIGNORE YES
+SET !ERRORCONTINUE YES
+SET !WAITPAGECOMPLETE NO
+SET !EXTRACT_TEST_POPUP NO
+
+ADD !EXTRACT 0
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=OPENED.LOG
+ADD !EXTRACT 0
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+SET !CLIPBOARD "[RC] UNTECTED"
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'/////////////////////  *http://houndify.com , *http://fakeemail.com , http://europeup.com , http://up-4ever.com , http://fistfast.net , http://sonifiles.com , http://userscdn.com , http://uploadify.net \\\\\\\\\\\\\\\\\\\\\\\'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+ADD !EXTRACT 1
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+CLEAR 
+TAB T=1
+TAB OPEN
+TAB T=2
+TAB CLOSEALLOTHERS
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB T=1
+WAIT SECONDS=1
+TAB T=1
+'
+'/////// [OPEN] http://fakeemail.com , http://getnada.com , http://hotmail.com
+'
+TAB T=1
+SET !VAR1 EVAL("var letters = ['Diane','Lucky','Harry','Wright','Gregory','Lopez','Madonna','Carter','Michael','Cummingham','Shirley','Parker','Daniel','Kimberly','Carver','Timothy','Ciotti','Howard','Boone','Brian','Johns','Holly','Mitchell','Jodi','Shelton','diane','lucky','harry','wright','gregory','lopez','madonna','carter','michael','cummingham','shirley','parker','daniel','kimberly','carver','timothy','ciotti','howard','boone','brian','johns','holly','mitchell','jodi','shelton']; var string = ''; for(var i = 0; i < 1; i++){string += letters[parseInt(Math.random() * 50)]}; string")
+SET !VAR2 EVAL("var letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','W','X','Y','Z','0','1','2','3','4','5','6','7','8','9']; var string = ''; for(var i = 0; i < 4; i++){string += letters[parseInt(Math.random() * 60)]}; string")
+SET !VAR1 "{{!VAR1}}{{!VAR2}}"
+'	LESS	SET !DATASOURCE "List - fakeemail.com - Main.csv"
+'	LESS	SET !DATASOURCE_COLUMNS 1
+'	LESS	SET !DATASOURCE_LINE {{!VAR1}}
+TAB T=1
+WAIT SECONDS=1
+TAB T=1
+URL GOTO=http://fakenamegenerator.com/
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+TAB T=1
+'
+'/////// [OPEN] http://houndify.com
+'
+TAB T=2
+SET !VAR2 EVAL("var letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','W','X','Y','Z','0','1','2','3','4','5','6','7','8','9']; var string = ''; for(var i = 0; i < 11; i++){string += letters[parseInt(Math.random() * 60)]}; string")
+'	LESS	SET !DATASOURCE "List - houndify.com - Main.csv"
+'	LESS	SET !DATASOURCE_COLUMNS 1
+'	LESS	SET !DATASOURCE_LINE {{!VAR2}}
+TAB T=2
+WAIT SECONDS=1
+TAB T=2
+URL GOTO=http://houndify.com/signup?ref=menubar
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+TAB T=2
+'
+'/////// [OPEN] http://europeup.com
+'
+TAB T=3
+SET !VAR3 EVAL("var randomNumber=Math.floor(Math.random()*100 + 1); randomNumber;")
+SET !DATASOURCE "List - europeup.com - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR3}}
+TAB T=3
+WAIT SECONDS=1
+TAB T=3
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=3
+'
+'/////// [OPEN] http://up-4ever.com
+'
+TAB T=4
+SET !VAR4 EVAL("var randomNumber=Math.floor(Math.random()*100 + 1); randomNumber;")
+SET !DATASOURCE "List - up-4ever.com - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR4}}
+TAB T=4
+WAIT SECONDS=1
+TAB T=4
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=4
+'
+'/////// [OPEN] http://fistfast.net
+'
+TAB T=5
+SET !VAR5 EVAL("var randomNumber=Math.floor(Math.random()*100 + 1); randomNumber;")
+SET !DATASOURCE "List - fistfast.net - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR5}}
+TAB T=5
+WAIT SECONDS=1
+TAB T=5
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=5
+'
+'/////// [OPEN] http://sonifiles.com
+'
+TAB T=6
+SET !VAR6 EVAL("var randomNumber=Math.floor(Math.random()*100 + 1); randomNumber;")
+SET !DATASOURCE "List - sonifiles.com - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR6}}
+TAB T=6
+WAIT SECONDS=1
+TAB T=6
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=6
+'
+'/////// [OPEN] http://userscdn.com
+'
+TAB T=7
+SET !VAR7 EVAL("var randomNumber=Math.floor(Math.random()*100 + 1); randomNumber;")
+SET !DATASOURCE "List - userscdn.com - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR7}}
+TAB T=7
+WAIT SECONDS=1
+TAB T=7
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=7
+'
+'/////// [OPEN] http://uploadify.net
+'
+TAB T=8
+SET !VAR8 EVAL("var randomNumber=Math.floor(Math.random()*100 + 1); randomNumber;")
+SET !DATASOURCE "List - uploadify.net - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR8}}
+TAB T=8
+WAIT SECONDS=1
+TAB T=8
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=8
+'
+'/////// STAGE 1 REDIRECT
+'
+TAB T=9
+WAIT SECONDS=10
+TAB T=9
+'
+'/////// STAGE 1 REDIRECT BC.VC [1 OF 3] http://fakeemail.com
+'
+TAB T=1
+TAG POS=1 TYPE=H3 ATTR=TXT:* EXTRACT=TXT
+TAB T=1
+SET !VAR3 EVAL("var letters = ['Dream Home Real Estate Service','Metro','Home','Monsource','Checker Auto Parts','Trak Auto','Netcom Business Services','GEX','Listen Up','Multi Tech Development','Intelacard','Budget Tapes Records','Adaptaz','First Choice Yard Help','Bay Furniture','Total Network Development','Acuserv','Life Map','Starship Tapes Records','Schaak Electronics']; var string = ''; for(var i = 0; i < 1; i++){string += letters[parseInt(Math.random() * 20)]}; string")
+SET !VAR4 EVAL("var s=\"{{!EXTRACT}}\"; s.split(' ')[0];")
+SET !VAR5 EVAL("var s=\"{{!EXTRACT}}\"; s.split(' ')[1];")
+SET !VAR4 "{{!VAR4}} {{!VAR5}}"
+SET !VAR5 EVAL("var s=\"{{!EXTRACT}}\"; s.split(' ')[2];")
+SET !EXTRACT NULL 
+'	LESS	TAB T=1
+'	LESS	URL GOTO=http://account.live.com/names/Manage?mkt=en-US&refd=account.microsoft.com&refp=profile
+'	LESS	TAB T=9
+'	LESS	URL GOTO=http://emailfake.com/fbma.tk/houndifyapi
+'
+'/////// STAGE 1 REDIRECT BC.VC [1 OF 3] 
+'
+'	LESS	TAB T=2
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'
+'/////// STAGE 1 REDIRECT BC.VC [1 OF 3]
+'
+'	LESS	TAB T=3
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'
+'/////// STAGE 1 REDIRECT BC.VC [1 OF 3] 
+'
+'	LESS	TAB T=4
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'
+'/////// STAGE 1 REDIRECT BC.VC [1 OF 3] 
+'
+'	LESS	TAB T=5
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'
+'/////// STAGE 1 REDIRECT BC.VC [1 OF 3] 
+'
+'	LESS	TAB T=6
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'
+'/////// STAGE 1 REDIRECT BC.VC [1 OF 3] 
+'
+'	LESS	TAB T=7
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'
+'/////// STAGE 1 REDIRECT BC.VC [1 OF 3] 
+'
+'	LESS	TAB T=8
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'
+'/////// STAGE 1 CLOSE
+'
+TAB T=9
+URL GOTO=about:about
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] 
+'
+TAB T=9
+WAIT SECONDS=20
+TAB T=9
+'
+'/////// STAGE 2 [1 OF 3] http://fakeemail.com
+'
+TAB T=1
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+
+'	LESS	TAB T=1
+'	LESS	URL GOTO=javascript:window.scrollBy(0,0) 
+'	LESS	TAB T=1
+'	LESS	URL GOTO=javascript:window.scrollBy(0,0) 
+'	LESS	TAB T=1
+'	LESS	EVENT TYPE=KEYPRESS CHAR="+" MODIFIERS="ctrl"
+TAB T=1
+WAIT SECONDS=2
+TAB T=1
+TAG POS=1 TYPE=DIV ATTR=CLASS:rc-anchor-logo-img<SP>rc-anchor-logo-img-portrait&&TXT:
+'	LESS	TAB T=2
+'	LESS	REFRESH
+TAB T=1
+SET !CLIPBOARD "[RC] DETECTED [1]"
+TAB T=1
+PAUSE
+TAB T=1
+SET !CLIPBOARD "[RC] UNTECTED"
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=INPUT:EMAIL FORM=ID:i0281 ATTR=ID:i0116 CONTENT=houndifyapi@outlook.com
+'	LESS	TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:i0281 ATTR=ID:idSIButton9
+'	LESS	TAB T=1
+'	LESS	WAIT SECONDS=10
+'	LESS	TAB T=1
+'	LESS	SET !ENCRYPTION STOREDKEY
+'	LESS	TAG POS=1 TYPE=INPUT:PASSWORD FORM=ID:i0281 ATTR=ID:i0118 CONTENT=WHETLGfKjNicw3SBLx8hUsHMSPclLp5pEUcWG9sv2b+hMORRbP9i14mB7+PfPhcOw5pznaSvRsXE9MVeaL2gBQ==
+'	LESS	TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:i0281 ATTR=ID:idChkBx_PWD_KMSI0Pwd CONTENT=YES
+'	LESS	TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:i0281 ATTR=ID:idSIButton9
+'	LESS	TAB T=1
+'	LESS	WAIT SECONDS=20
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=CLICK SELECTOR="#idDd_SAOTCS_Proofs>OPTION:nth-of-type(2)" BUTTON=0
+'	LESS	TAG POS=1 TYPE=INPUT:EMAIL FORM=NAME:form ATTR=ID:idTxtBx_SAOTCS_ProofConfirmation CONTENT=houndifyapi@fbma.tk
+'	LESS	TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:form ATTR=ID:idSubmit_SAOTCS_SendCode
+'	LESS	TAB T=9
+'	LESS	WAIT SECONDS=20
+'	LESS	TAB T=9
+'	LESS	TAG POS=1 TYPE=DIV ATTR=CLASS:*<SP>list-group-item<SP>list-group-item-info
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:*<SP>list-group-item<SP>list-group-item-success
+'	LESS	TAB T=1
+'	LESS	WAIT SECONDS=2
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=INPUT:TEL FORM=NAME:form ATTR=NAME:otc CONTENT={{!EXTRACT}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAG POS=1 TYPE=INPUT:CHECKBOX FORM=NAME:form ATTR=ID:idChkBx_SAOTCC_TD CONTENT=YES
+'	LESS	TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:form ATTR=*
+'	LESS	TAB T=1
+'	LESS	WAIT SECONDS=20
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=A ATTR=ID:idAddAliasLink
+'	LESS	TAB T=1
+'	LESS	WAIT SECONDS=10
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=INPUT:TEXT FORM=ID:AddAssocIdForm ATTR=ID:AssociatedIdLive CONTENT={{!VAR1}}
+'	LESS	SET !VAR6 EVAL("var randomNumber=Math.floor(Math.random()*2 + 1); randomNumber;")
+'	LESS	EVENT TYPE=CLICK SELECTOR="#idDomainList>OPTION:nth-of-type({{!VAR6}})" BUTTON=0
+'	LESS	WAIT SECONDS=2
+'	LESS	TAG POS=1 TYPE=SELECT FORM=ID:AddAssocIdForm ATTR=ID:idDomainList EXTRACT=TXT
+SET !VAR6 EVAL("var letters = ['gmail.com','gmail.com','gmail.com','hotmail.com','hotmail.co.th','outlook.com','outlook.co.th']; var string = ''; for(var i = 0; i < 1; i++){string += letters[parseInt(Math.random() * 8)]}; string")
+SET !VAR6 EVAL("var s='{{!EXTRACT}}'.replace('#EANF#', ''); var x; if(s == \"\"){x=\"{{!VAR6}}\";} else {x = s;} x;")
+SET !EXTRACT NULL 
+'	LESS	TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:AddAssocIdForm ATTR=ID:SubmitYes
+'	LESS	TAB T=1
+'	LESS	URL GOTO=http://outlook.live.com/owa/
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://houndify.com
+'
+TAB T=2
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=2
+'	LESS	TAG POS=1 TYPE=A ATTR=TXT:download<SP>now
+'	LESS	TAB T=2
+'	LESS	TAG POS=1 TYPE=A ATTR=TXT:download<SP>now
+'	LESS	TAB T=2
+'	LESS	URL GOTO=javascript:window.scrollBy(0,0) 
+'	LESS	TAB T=2
+'	LESS	URL GOTO=javascript:window.scrollBy(0,0) 
+'	LESS	TAB T=2
+'	LESS	EVENTS TYPE=KEYPRESS CHARS="+++" MODIFIERS="ctrl"
+TAB T=2
+WAIT SECONDS=2
+TAB T=2
+TAG POS=1 TYPE=DIV ATTR=CLASS:rc-anchor-logo-img<SP>rc-anchor-logo-img-portrait&&TXT:
+'	LESS	TAB T=3
+'	LESS	REFRESH
+TAB T=2
+SET !CLIPBOARD "[RC] DETECTED [2]"
+TAB T=2
+PAUSE
+TAB T=2
+SET !CLIPBOARD "[RC] UNTECTED"
+TAB T=2
+TAG POS=1 TYPE=INPUT:TEXT FORM=ACTION:/auth/local/register ATTR=NAME:firstName CONTENT={{!VAR4}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ACTION:/auth/local/register ATTR=NAME:lastName CONTENT={{!VAR5}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ACTION:/auth/local/register ATTR=NAME:company CONTENT={{!VAR3}}
+SET !ENCRYPTION NO
+TAG POS=1 TYPE=INPUT:PASSWORD FORM=ACTION:/auth/local/register ATTR=NAME:password CONTENT={{!VAR2}}
+TAG POS=1 TYPE=INPUT:PASSWORD FORM=ACTION:/auth/local/register ATTR=NAME:confirmPassword CONTENT={{!VAR2}}
+TAG POS=1 TYPE=INPUT:EMAIL FORM=ACTION:/auth/local/register ATTR=NAME:email CONTENT={{!VAR1}}@{{!VAR6}}
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:/auth/local/register ATTR=NAME:terms CONTENT=YES
+TAG POS=1 TYPE=BUTTON FORM=ACTION:/auth/local/register ATTR=TXT:Get<SP>Started
+TAB T=2
+WAIT SECONDS=22
+TAB T=2
+SET !VAR9 EVAL("'{{!URLCURRENT}}'.replace('https://', '').replace('http://', '').replace('www', '').replace('houndify', '').replace('com', '').replace('walkthrough', '').replace('start', '').replace('ref', '').replace('signup', '').replace('signup', '').replace(/[/.?=]/g, '');")
+URL GOTO=http://houndify.com/dashboard/detail/{{!VAR9}}
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://europeup.com
+'
+TAB T=3
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=3
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=3
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://up-4ever.com
+'
+TAB T=4
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=4
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:freeDownload
+TAB T=4
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:freeDownload
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://fistfast.net
+'
+TAB T=5
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=5
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=5
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=5
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=5
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://sonifiles.com
+'
+TAB T=6
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=6
+TAG POS=1 TYPE=BUTTON FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=6
+TAG POS=1 TYPE=BUTTON FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=6
+WAIT SECONDS=5
+TAB T=6
+TAG POS=1 TYPE=BUTTON FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=6
+TAG POS=1 TYPE=BUTTON FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://userscdn.com
+'
+TAB T=7
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=7
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=7
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://uploadify.net
+'
+TAB T=8
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=8
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>A>DIV:nth-of-type(2)>DIV>DIV>DIV" BUTTON=0
+TAB T=8
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>A>DIV:nth-of-type(2)>DIV>DIV>DIV" BUTTON=0
+TAB T=9
+WAIT SECONDS=10
+TAB T=8
+TAG POS=1 TYPE=DIV ATTR=CLASS:modal-close<SP>modal-close-cross&&TXT:
+TAB T=8
+TAG POS=1 TYPE=DIV ATTR=CLASS:modal-close<SP>modal-close-cross&&TXT:
+TAB T=8
+TAG POS=1 TYPE=A ATTR=TXT:download<SP>now
+TAB T=8
+TAG POS=1 TYPE=A ATTR=TXT:download<SP>now
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3]
+'
+TAB T=9
+WAIT SECONDS=20
+TAB T=9
+'
+'/////// STAGE 2 [2 OF 3] http://fakeemail.com
+'
+TAB T=1
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=DIV ATTR=TXT:Welcome<SP>to<SP>Houndify
+'	LESS	TAB T=1
+'	LESS	WAIT SECONDS=5
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=A ATTR=TXT:Activate<SP>Account
+'	LESS	TAG POS=49 TYPE=BUTTON ATTR=TXT:
+'	LESS	TAG POS=48 TYPE=BUTTON ATTR=TXT:
+'	LESS	TAG POS=1 TYPE=BUTTON ATTR=TXT:Delete
+'	LESS	TAB T=1
+'	LESS	WAIT SECONDS=2
+'	LESS	TAB T=1
+'	LESS	URL GOTO=http://account.live.com/names/Manage?mkt=en-US&refd=account.microsoft.com&refp=profile
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://houndify.com
+'
+TAB T=2
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=2
+TAG POS=1 TYPE=TEXTAREA ATTR=CLASS:copy-textarea&&READONLY:&&ROWS:1 EXTRACT=TXT
+SET !VAR7 {{!EXTRACT}}
+SET !EXTRACT NULL 
+TAG POS=1 TYPE=TEXTAREA ATTR=CLASS:copy-textarea&&READONLY:&&ROWS:3 EXTRACT=TXT
+SET !VAR8 {{!EXTRACT}}
+SET !EXTRACT NULL 
+TAB T=2
+URL GOTO=http://127.0.0.2:5000/apikey?ho=houndify&do=add&id={{!VAR7}}&pw={{!VAR8}}&ma=http://{{!VAR1}}@{{!VAR6}}&ps={{!VAR2}}
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://europeup.com
+'
+TAB T=3
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=3
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=3
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+'	LESS	TAB T=3
+'	LESS	URL GOTO=javascript:window.scrollBy(0,3500) 
+'	LESS	TAB T=3
+'	LESS	URL GOTO=javascript:window.scrollBy(0,-700) 
+'	LESS	TAB T=3
+'	LESS	EVENT TYPE=KEYPRESS CHAR="+" MODIFIERS="ctrl"
+TAB T=3
+WAIT SECONDS=2
+TAB T=3
+TAG POS=1 TYPE=DIV ATTR=CLASS:rc-anchor-logo-img<SP>rc-anchor-logo-img-portrait&&TXT:
+TAB T=4
+REFRESH
+TAB T=3
+SET !CLIPBOARD "[RC] DETECTED [3]"
+TAB T=3
+PAUSE
+TAB T=3
+SET !CLIPBOARD "[RC] UNTECTED"
+TAB T=3
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=3
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://up-4ever.com
+'
+TAB T=4
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=4
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:freeDownload
+TAB T=4
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:freeDownload
+'	LESS	TAB T=4
+'	LESS	URL GOTO=javascript:window.scrollBy(0,3500) 
+'	LESS	TAB T=4
+'	LESS	URL GOTO=javascript:window.scrollBy(0,-700) 
+'	LESS	TAB T=4
+'	LESS	EVENTS TYPE=KEYPRESS CHARS="+++" MODIFIERS="ctrl"
+TAB T=4
+WAIT SECONDS=2
+TAB T=4
+TAG POS=1 TYPE=DIV ATTR=CLASS:rc-anchor-logo-img<SP>rc-anchor-logo-img-portrait&&TXT:
+TAB T=5
+REFRESH
+TAB T=4
+SET !CLIPBOARD "[RC] DETECTED [4]"
+TAB T=4
+PAUSE
+TAB T=4
+SET !CLIPBOARD "[RC] UNTECTED"
+TAB T=4
+TAG POS=1 TYPE=CENTER ATTR=TXT:Download<SP>Time:<SP>~5<SP>Minutes
+TAB T=4
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://fistfast.net
+'
+TAB T=5
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=5
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=5
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+'	LESS	TAB T=5
+'	LESS	URL GOTO=javascript:window.scrollBy(0,3500) 
+'	LESS	TAB T=5
+'	LESS	URL GOTO=javascript:window.scrollBy(0,-700) 
+'	LESS	TAB T=5
+'	LESS	EVENTS TYPE=KEYPRESS CHARS="+++" MODIFIERS="ctrl"
+TAB T=5
+WAIT SECONDS=2
+TAB T=5
+TAG POS=1 TYPE=DIV ATTR=CLASS:rc-anchor-logo-img<SP>rc-anchor-logo-img-portrait&&TXT:
+TAB T=6
+REFRESH
+TAB T=5
+SET !CLIPBOARD "[RC] DETECTED [5]"
+TAB T=5
+PAUSE
+TAB T=5
+SET !CLIPBOARD "[RC] UNTECTED"
+TAB T=5
+TAG POS=1 TYPE=DIV FORM=NAME:F1 ATTR=ID:content
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV>DIV:nth-of-type(4)>DIV" BUTTON=0
+TAB T=5
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=5
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://sonifiles.com
+'
+TAB T=6
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=6
+TAG POS=1 TYPE=BUTTON FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=6
+TAG POS=1 TYPE=BUTTON FORM=NAME:NoFormName ATTR=ID:method_free
+'	LESS	TAB T=6
+'	LESS	URL GOTO=javascript:window.scrollBy(0,3500) 
+'	LESS	TAB T=6
+'	LESS	URL GOTO=javascript:window.scrollBy(0,-700) 
+'	LESS	TAB T=6
+'	LESS	EVENT TYPE=KEYPRESS CHAR="+" MODIFIERS="ctrl"
+TAB T=6
+WAIT SECONDS=2
+TAB T=6
+TAG POS=1 TYPE=DIV ATTR=CLASS:rc-anchor-logo-img<SP>rc-anchor-logo-img-portrait&&TXT:
+TAB T=7
+REFRESH
+TAB T=6
+SET !CLIPBOARD "[RC] DETECTED [6]"
+TAB T=6
+PAUSE
+TAB T=6
+SET !CLIPBOARD "[RC] UNTECTED"
+TAB T=6
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=TXT:Download
+TAB T=6
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=TXT:Download
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://userscdn.com
+'
+TAB T=7
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=7
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=7
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+'	LESS	TAB T=7
+'	LESS	URL GOTO=javascript:window.scrollBy(0,280) 
+'	LESS	TAB T=7
+'	LESS	URL GOTO=javascript:window.scrollBy(0,0) 
+'	LESS	TAB T=7
+'	LESS	EVENT TYPE=KEYPRESS CHAR="+" MODIFIERS="ctrl"
+TAB T=7
+WAIT SECONDS=2
+TAB T=7
+TAG POS=1 TYPE=DIV ATTR=CLASS:rc-anchor-logo-img<SP>rc-anchor-logo-img-portrait&&TXT:
+TAB T=8
+REFRESH
+TAB T=7
+SET !CLIPBOARD "[RC] DETECTED [7]"
+TAB T=7
+PAUSE
+TAB T=7
+SET !CLIPBOARD "[RC] UNTECTED"
+TAB T=7
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=7
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://uploadify.net
+'
+TAB T=8
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=8
+TAG POS=1 TYPE=A ATTR=TXT:download<SP>now
+TAB T=8
+TAG POS=1 TYPE=A ATTR=TXT:download<SP>now
+'	LESS	TAB T=8
+'	LESS	URL GOTO=javascript:window.scrollBy(0,0) 
+'	LESS	TAB T=8
+'	LESS	URL GOTO=javascript:window.scrollBy(0,0) 
+'	LESS	TAB T=8
+'	LESS	EVENT TYPE=KEYPRESS CHAR="+" MODIFIERS="ctrl"
+TAB T=8
+WAIT SECONDS=2
+TAB T=8
+TAG POS=1 TYPE=DIV ATTR=CLASS:rc-anchor-logo-img<SP>rc-anchor-logo-img-portrait&&TXT:
+TAB T=9
+REFRESH
+TAB T=8
+SET !CLIPBOARD "[RC] DETECTED [8]"
+TAB T=8
+PAUSE
+TAB T=8
+SET !CLIPBOARD "[RC] UNTECTED"
+TAB T=8
+TAG POS=1 TYPE=BUTTON FORM=ID:form-join ATTR=ID:submit
+'	LESS	TAB T=6
+'	LESS	TAG POS=1 TYPE=BUTTON FORM=ID:form-join ATTR=ID:submit
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3]
+'
+TAB T=9
+WAIT SECONDS=20
+TAB T=9
+'
+'/////// STAGE 2 [3 OF 3] http://fakeemail.com
+'
+TAB T=1
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=A ATTR=ID:idAssocRemoveUrl0
+'	LESS	WAIT SECONDS=2
+'	LESS	TAG POS=1 TYPE=BUTTON ATTR=ID:iBtn_action
+'	LESS	TAG POS=1 TYPE=A ATTR=ID:idAssocRemoveUrl1
+'	LESS	WAIT SECONDS=2
+'	LESS	TAG POS=1 TYPE=BUTTON ATTR=ID:iBtn_action
+'	LESS	WAIT SECONDS=8
+'	LESS	TAG POS=1 TYPE=A ATTR=ID:idAssocRemoveUrl0
+'	LESS	WAIT SECONDS=2
+'	LESS	TAG POS=1 TYPE=BUTTON ATTR=ID:iBtn_action
+'	LESS	TAG POS=1 TYPE=A ATTR=ID:idAssocRemoveUrl1
+'	LESS	WAIT SECONDS=2
+'	LESS	TAG POS=1 TYPE=BUTTON ATTR=ID:iBtn_action
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://houndify.com
+'
+TAB T=2
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=2
+'	LESS	URL GOTO=http://127.0.0.2:5000/apikey?ho=houndify&do=add&id=&pw=&ma=http://@&ps=
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://europeup.com
+'
+TAB T=3
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="#direct_link>A" BUTTON=0
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://up-4ever.com
+'
+TAB T=4
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=4
+EVENT TYPE=CLICK SELECTOR="#allcontent>DIV>DIV>TABLE>TBODY>TR>TD>CENTER" BUTTON=0
+TAB T=4
+EVENT TYPE=CLICK SELECTOR="#allcontent>DIV>DIV>TABLE>TBODY>TR>TD>CENTER" BUTTON=0
+TAB T=4
+EVENT TYPE=CLICK SELECTOR="#btn_downloadLink" BUTTON=0
+TAB T=4
+TAG POS=1 TYPE=A ATTR=ID:btn_downloadLink
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://fistfast.net
+'
+TAB T=5
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=5
+'	LESS	TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://sonifiles.com
+'
+TAB T=6
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=6
+TAG POS=1 TYPE=A ATTR=TXT:Slow<SP>Download
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://userscdn.com
+'
+TAB T=7
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=7
+TAG POS=1 TYPE=A ATTR=ID:download-btn
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://uploadify.net
+'
+TAB T=8
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=8
+'	LESS	TAG POS=1 TYPE=BUTTON FORM=ID:form-join ATTR=ID:submit
+'	LESS	TAB T=9
+'	LESS	URL GOTO=about:about
+'	LESS	WAIT SECONDS=4
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	ONDIALOG POS=1 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=2 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 3
+'
+ADD !EXTRACT "1 FINISHED"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+TAB T=9
+CLEAR 
+TAB T=9
+WAIT SECONDS=10
+TAB T=9
+TAB CLOSEALLOTHERS
+TAB T=9
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+TAB T=9
+TAB CLOSEALLOTHERS
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'												[FINISH]												'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+URL GOTO=about:downloads
+WAIT SECONDS=2
+URL GOTO=imacros://run/?m=VPNGATE.iim
+
+'
+'/////// [FINISH]
+'
+'		WAIT SECONDS=60
+'		ADD !EXTRACT "SESSIONS CLOSED"
+'		SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+'		ADD !EXTRACT 0
+'		SAVEAS TYPE=EXTRACT FOLDER=* FILE=CLOSED.LOG
+'		CLEAR
+'		TAB CLOSEALLOTHERS
+'		TAB CLOSE

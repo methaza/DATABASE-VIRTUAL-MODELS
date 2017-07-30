@@ -1,0 +1,2144 @@
+﻿SET !REPLAYSPEED FAST 
+SET !TIMEOUT_STEP 1
+SET !TIMEOUT_TAG 1
+SET !TIMEOUT 1
+SET !TIMEOUT_PAGE 1
+SET !ERRORIGNORE YES
+SET !ERRORCONTINUE YES
+SET !WAITPAGECOMPLETE NO
+SET !EXTRACT_TEST_POPUP NO
+
+ADD !EXTRACT 0
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=OPENED.LOG
+ADD !EXTRACT 0
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'          http://imagetwist.com , http://hulkimge.com , http://imgchili.net , http://imageteam.org , http://imgrock.co , http://imgant.com , http://imggold.org , http://imgdiamond.com          '
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+ADD !EXTRACT 1
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+CLEAR 
+TAB T=1
+TAB OPEN
+TAB T=2
+TAB CLOSEALLOTHERS
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB T=1
+WAIT SECONDS=1
+TAB T=1
+'
+'/////// [OPEN] http://imagetwist.com
+'
+TAB T=1
+SET !VAR1 EVAL("var randomNumber=Math.floor(Math.random()*3 + 1); randomNumber;")
+SET !DATASOURCE "List - imagetwist.com - Load.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR1}}
+TAB T=1
+WAIT SECONDS=1
+TAB T=1
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=1
+'
+'/////// [OPEN] http://hulkimge.com
+'
+TAB T=2
+SET !VAR2 EVAL("var randomNumber=Math.floor(Math.random()*3 + 1); randomNumber;")
+SET !DATASOURCE "List - hulkimge.com - Load.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR2}}
+TAB T=2
+WAIT SECONDS=1
+TAB T=2
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=2
+'
+'/////// [OPEN] http://imgchili.net
+'
+TAB T=3
+SET !VAR3 EVAL("var randomNumber=Math.floor(Math.random()*3 + 1); randomNumber;")
+SET !DATASOURCE "List - imgchili.net - Load.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR3}}
+TAB T=3
+WAIT SECONDS=1
+TAB T=3
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=3
+'
+'/////// [OPEN] http://imageteam.org
+'
+TAB T=4
+SET !VAR4 EVAL("var randomNumber=Math.floor(Math.random()*3 + 1); randomNumber;")
+SET !DATASOURCE "List - imageteam.org - Load.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR4}}
+TAB T=4
+WAIT SECONDS=1
+TAB T=4
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=4
+'
+'/////// [OPEN] http://imgrock.co
+'
+TAB T=5
+SET !VAR5 EVAL("var randomNumber=Math.floor(Math.random()*3 + 1); randomNumber;")
+SET !DATASOURCE "List - imgrock.co - Load.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR5}}
+TAB T=5
+WAIT SECONDS=1
+TAB T=5
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=5
+'
+'/////// [OPEN] http://imgant.com
+'
+TAB T=6
+SET !VAR6 EVAL("var randomNumber=Math.floor(Math.random()*3 + 1); randomNumber;")
+SET !DATASOURCE "List - imgant.com - Load.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR6}}
+TAB T=6
+WAIT SECONDS=1
+TAB T=6
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=6
+'
+'/////// [OPEN] http://imggold.org
+'
+TAB T=7
+SET !VAR7 EVAL("var randomNumber=Math.floor(Math.random()*3 + 1); randomNumber;")
+SET !DATASOURCE "List - imggold.org - Load.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR7}}
+TAB T=7
+WAIT SECONDS=1
+TAB T=7
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=7
+'
+'/////// [OPEN] http://imgdiamond.com
+'
+TAB T=8
+SET !VAR8 EVAL("var randomNumber=Math.floor(Math.random()*3 + 1); randomNumber;")
+SET !DATASOURCE "List - imgdiamond.com - Load.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR8}}
+TAB T=8
+WAIT SECONDS=1
+TAB T=8
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=8
+'
+'/////// [OPEN] http://blogspot.com Archive
+'
+TAB T=9
+SET !VAR9 EVAL("var randomNumber=Math.floor(Math.random()*14 + 2); randomNumber;")
+SET !DATASOURCE "List - BLOGWEB - Load.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR9}}
+TAB T=9
+WAIT SECONDS=1
+TAB T=9
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=9
+'
+'/////// STAGE 1 REDIRECT
+'
+TAB T=9
+WAIT SECONDS=10
+'
+'/////// [OPEN] http://imagetwist.com
+'
+TAB T=1
+SET !VAR1 EVAL("var randomNumber=Math.floor(Math.random()*27 + 1); randomNumber;")
+SET !DATASOURCE "List - imagetwist.com - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR1}}
+TAB T=1
+WAIT SECONDS=1
+TAB T=1
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=1
+'
+'/////// [OPEN] http://hulkimge.com
+'
+TAB T=2
+SET !VAR2 EVAL("var randomNumber=Math.floor(Math.random()*92 + 1); randomNumber;")
+SET !DATASOURCE "List - hulkimge.com - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR2}}
+TAB T=2
+WAIT SECONDS=1
+TAB T=2
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=2
+'
+'/////// [OPEN] http://imgchili.net
+'
+TAB T=3
+SET !VAR3 EVAL("var randomNumber=Math.floor(Math.random()*42 + 1); randomNumber;")
+SET !DATASOURCE "List - imgchili.net - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR3}}
+TAB T=3
+WAIT SECONDS=1
+TAB T=3
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=3
+'
+'/////// [OPEN] http://imageteam.org
+'
+TAB T=4
+SET !VAR4 EVAL("var randomNumber=Math.floor(Math.random()*26 + 1); randomNumber;")
+SET !DATASOURCE "List - imageteam.org - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR4}}
+TAB T=4
+WAIT SECONDS=1
+TAB T=4
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=4
+'
+'/////// [OPEN] http://imgrock.co
+'
+TAB T=5
+SET !VAR5 EVAL("var randomNumber=Math.floor(Math.random()*38 + 1); randomNumber;")
+SET !DATASOURCE "List - imgrock.co - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR5}}
+TAB T=5
+WAIT SECONDS=1
+TAB T=5
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=5
+'
+'/////// [OPEN] http://imgant.com
+'
+TAB T=6
+SET !VAR6 EVAL("var randomNumber=Math.floor(Math.random()*92 + 1); randomNumber;")
+SET !DATASOURCE "List - imgant.com - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR6}}
+TAB T=6
+WAIT SECONDS=1
+TAB T=6
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=6
+'
+'/////// [OPEN] http://imggold.org
+'
+TAB T=7
+SET !VAR7 EVAL("var randomNumber=Math.floor(Math.random()*26 + 1); randomNumber;")
+SET !DATASOURCE "List - imggold.org - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR7}}
+TAB T=7
+WAIT SECONDS=1
+TAB T=7
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=7
+'
+'/////// [OPEN] http://imgdiamond.com
+'
+TAB T=8
+SET !VAR8 EVAL("var randomNumber=Math.floor(Math.random()*21 + 1); randomNumber;")
+SET !DATASOURCE "List - imgdiamond.com - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR8}}
+TAB T=8
+WAIT SECONDS=1
+TAB T=8
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=8
+'
+'/////// [OPEN] http://blogspot.com Post
+'
+TAB T=9
+SET !VAR9 EVAL("var randomNumber=Math.floor(Math.random()*14 + 2); randomNumber;")
+SET !DATASOURCE "List - BLOGWEB - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR9}}
+TAB T=9
+WAIT SECONDS=1
+TAB T=9
+SET ADSE EVAL("var adSense = '255'; var randomNumber=Math.floor(Math.random()*100 + 1); if (randomNumber == 100){adSense = 0}; if (randomNumber == 80){adSense = 0}; if (randomNumber == 50){adSense = 0}; if (randomNumber == 20){adSense = 0}; if (randomNumber == 1){adSense = 0}; adSense;")
+SET ADSE EVAL("var main=\"{{ADSE}}\"; var adsr = ''; var lett = ['0:255','255:0']; if (main == 0){for(var i = 0; i < 1; i++){adsr += lett[parseInt(Math.random() * 2)]};} else {adsr = '255:255'}; adsr;")
+SET ADSO EVAL("var main=\"{{ADSE}}\"; string=main.split(':')[0] ; string;")
+SET ADSL EVAL("var main=\"{{ADSE}}\"; string=main.split(':')[1] ; string;")
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=9
+'
+'/////// STAGE 1 CLOSE
+'
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] 
+'
+TAB T=9
+WAIT SECONDS=50
+TAB T=9
+'
+'/////// STAGE 2 [1 OF 3] http://imagetwist.com
+'
+TAB T=1
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="#rang2>DIV" BUTTON=0
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="#rang2>DIV" BUTTON=0
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="#rang2>DIV>A" BUTTON=0
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="#rang2>DIV>A" BUTTON=0
+TAB T=1
+TAG POS=1 TYPE=DIV ATTR=TXT:Continue<SP>to<SP>your<SP>image
+TAB T=1
+TAG POS=1 TYPE=DIV ATTR=TXT:Continue<SP>to<SP>your<SP>image
+TAB T=1
+TAG POS=1 TYPE=A ATTR=TXT:Continue<SP>to<SP>your<SP>image
+TAB T=1
+TAG POS=1 TYPE=A ATTR=TXT:Continue<SP>to<SP>your<SP>image
+TAB T=9
+WAIT SECONDS=6
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://hulkimge.com
+'
+TAB T=2
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV>DIV:nth-of-type(4)>DIV>DIV:nth-of-type(2)>FORM" BUTTON=0
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV>DIV:nth-of-type(4)>DIV>DIV:nth-of-type(2)>FORM" BUTTON=0
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV>DIV:nth-of-type(4)>DIV>DIV:nth-of-type(2)>FORM>INPUT:nth-of-type(4)" BUTTON=0
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV>DIV:nth-of-type(4)>DIV>DIV:nth-of-type(2)>FORM>INPUT:nth-of-type(4)" BUTTON=0
+TAB T=2
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=2
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=2
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=2
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=9
+WAIT SECONDS=6
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://imgchili.net
+'
+TAB T=3
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="#ad>DIV" BUTTON=0
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="#ad>DIV" BUTTON=0
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="#ad>DIV>A" BUTTON=0
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="#ad>DIV>A" BUTTON=0
+TAB T=9
+WAIT SECONDS=6
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://imageteam.org
+'
+TAB T=4
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=4
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV>A" BUTTON=0
+TAB T=4
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV>A" BUTTON=0
+TAB T=4
+TAG POS=1 TYPE=A ATTR=TXT:Continue<SP>to<SP>Image
+TAB T=4
+TAG POS=2 TYPE=A ATTR=TXT:Continue<SP>to<SP>Image
+TAB T=4
+TAG POS=1 TYPE=A ATTR=TXT:Continue<SP>to<SP>Image
+TAB T=4
+TAG POS=2 TYPE=A ATTR=TXT:Continue<SP>to<SP>Image
+TAB T=10
+WAIT SECONDS=15
+TAB T=10
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV>A" BUTTON=0
+TAB T=10
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV>A" BUTTON=0
+TAB T=10
+TAG POS=1 TYPE=A ATTR=TXT:Continue<SP>to<SP>Image
+TAB T=10
+TAG POS=2 TYPE=A ATTR=TXT:Continue<SP>to<SP>Image
+TAB T=10
+TAG POS=1 TYPE=A ATTR=TXT:Continue<SP>to<SP>Image
+TAB T=10
+TAG POS=2 TYPE=A ATTR=TXT:Continue<SP>to<SP>Image
+TAB T=9
+WAIT SECONDS=10
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://imgrock.co
+'
+TAB T=5
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD:nth-of-type(2)>CENTER>DIV>FORM:nth-of-type(7)" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD:nth-of-type(2)>CENTER>DIV>FORM:nth-of-type(7)" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD:nth-of-type(2)>CENTER>DIV>FORM:nth-of-type(7)>INPUT:nth-of-type(5)" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD:nth-of-type(2)>CENTER>DIV>FORM:nth-of-type(7)>INPUT:nth-of-type(5)" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#imacros-highlight-div" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#imacros-highlight-div" BUTTON=0
+TAB T=5
+TAG POS=4 TYPE=INPUT:BUTTON FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=5
+TAG POS=4 TYPE=INPUT:BUTTON FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=5
+TAG POS=3 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=5
+TAG POS=3 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=10
+WAIT SECONDS=15
+TAB T=10
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD:nth-of-type(2)>CENTER>DIV>FORM:nth-of-type(7)" BUTTON=0
+TAB T=10
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD:nth-of-type(2)>CENTER>DIV>FORM:nth-of-type(7)" BUTTON=0
+TAB T=10
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD:nth-of-type(2)>CENTER>DIV>FORM:nth-of-type(7)>INPUT:nth-of-type(5)" BUTTON=0
+TAB T=10
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD:nth-of-type(2)>CENTER>DIV>FORM:nth-of-type(7)>INPUT:nth-of-type(5)" BUTTON=0
+TAB T=10
+EVENT TYPE=CLICK SELECTOR="#imacros-highlight-div" BUTTON=0
+TAB T=10
+EVENT TYPE=CLICK SELECTOR="#imacros-highlight-div" BUTTON=0
+TAB T=10
+TAG POS=4 TYPE=INPUT:BUTTON FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=10
+TAG POS=4 TYPE=INPUT:BUTTON FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=10
+TAG POS=3 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=10
+TAG POS=3 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=9
+WAIT SECONDS=6
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://imgant.com
+'
+TAB T=6
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=6
+EVENT TYPE=CLICK SELECTOR="#advertisementModal>DIV>DIV>DIV" BUTTON=0
+TAB T=6
+EVENT TYPE=CLICK SELECTOR="#advertisementModal>DIV>DIV>DIV" BUTTON=0
+TAB T=6
+EVENT TYPE=CLICK SELECTOR="#advertisementModal>DIV>DIV>DIV" BUTTON=0
+TAB T=6
+EVENT TYPE=CLICK SELECTOR="#advertisementModal>DIV>DIV>DIV" BUTTON=0
+TAB T=6
+TAG POS=2 TYPE=SPAN ATTR=TXT:×
+TAB T=6
+TAG POS=2 TYPE=SPAN ATTR=TXT:×
+TAB T=6
+TAG POS=1 TYPE=IMG ATTR=ID:picView
+TAB T=6
+TAG POS=1 TYPE=IMG ATTR=ID:picView
+TAB T=9
+WAIT SECONDS=6
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://imggold.org
+'
+TAB T=7
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=7
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>FORM" BUTTON=0
+TAB T=7
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>FORM>INPUT:nth-of-type(4)" BUTTON=0
+TAB T=7
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>FORM>INPUT:nth-of-type(4)" BUTTON=0
+TAB T=7
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=7
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=9
+WAIT SECONDS=6
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://imgdiamond.com
+'
+TAB T=8
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=8
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>FORM" BUTTON=0
+TAB T=8
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>FORM" BUTTON=0
+TAB T=8
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>FORM" BUTTON=0
+TAB T=8
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>FORM" BUTTON=0
+TAB T=8
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=8
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=9
+WAIT SECONDS=6
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://blogspot.com
+'
+TAB T=9
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=9
+TAG POS=1 TYPE=H2 ATTR=TXT:SEARCH<SP>*
+TAB T=9
+TAG POS=1 TYPE=H2 ATTR=TXT:SEARCH<SP>*
+TAB T=9
+URL GOTO=javascript:window.scrollBy(0,250) 
+TAB T=9
+TAG POS=1 TYPE=DIV ATTR=ID:BlogSearch1
+TAB T=9
+TAG POS=1 TYPE=DIV ATTR=ID:BlogSearch1
+TAB T=9
+URL GOTO=javascript:window.scrollBy(0,500) 
+TAB T=9
+EVENT TYPE=CLICK SELECTOR="#BlogSearch1_form>FORM>TABLE>TBODY>TR>TD>INPUT" BUTTON=0
+TAB T=9
+EVENT TYPE=CLICK SELECTOR="#BlogSearch1_form>FORM>TABLE>TBODY>TR>TD>INPUT" BUTTON=0
+TAB T=9
+URL GOTO=javascript:window.scrollBy(0,750) 
+TAB T=9
+TAG POS=9 TYPE=TD ATTR=TXT:
+TAB T=9
+TAG POS=9 TYPE=TD ATTR=TXT:
+TAB T=9
+URL GOTO=javascript:window.scrollBy(0,200) 
+TAB T=9
+EVENT TYPE=CLICK SELECTOR="#cookieChoiceDismiss" BUTTON=0
+TAB T=9
+EVENT TYPE=CLICK SELECTOR="#cookieChoiceDismiss" BUTTON=0
+TAB T=9
+URL GOTO=javascript:window.scrollBy(0,1000) 
+TAB T=9
+EVENT TYPE=CLICK SELECTOR="#main" BUTTON=0
+TAB T=9
+EVENT TYPE=CLICK SELECTOR="#main" BUTTON=0
+TAB T=9
+URL GOTO=javascript:window.scrollBy(0,1250) 
+TAB T=9
+'	SWITCH	WAIT SECONDS=6
+TAB T=9
+'	SWITCH	EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+'	SWITCH	EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3]
+'
+TAB T=9
+WAIT SECONDS=30
+TAB T=9
+
+'
+'/////// STAGE 2 [2 OF 3]  http://blogspot.com
+'
+TAB T=9
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=10
+TAG POS=1 TYPE=A ATTR=TXT:Nee
+TAB T=10
+TAG POS=2 TYPE=A ATTR=TXT:Nee
+TAB T=10
+TAG POS=3 TYPE=A ATTR=TXT:Nee
+TAB T=10
+TAG POS=1 TYPE=A ATTR=TXT:VERDER<SP>GAAN
+TAB T=10
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=10
+TAG POS=2 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=10
+TAG POS=3 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=11
+TAG POS=1 TYPE=A ATTR=TXT:Nee
+TAB T=11
+TAG POS=2 TYPE=A ATTR=TXT:Nee
+TAB T=11
+TAG POS=3 TYPE=A ATTR=TXT:Nee
+TAB T=11
+TAG POS=1 TYPE=A ATTR=TXT:VERDER<SP>GAAN
+TAB T=11
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=11
+TAG POS=2 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=11
+TAG POS=3 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=12
+TAG POS=1 TYPE=A ATTR=TXT:Nee
+TAB T=12
+TAG POS=2 TYPE=A ATTR=TXT:Nee
+TAB T=12
+TAG POS=3 TYPE=A ATTR=TXT:Nee
+TAB T=12
+TAG POS=1 TYPE=A ATTR=TXT:VERDER<SP>GAAN
+TAB T=12
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=12
+TAG POS=2 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=12
+TAG POS=3 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=13
+TAG POS=1 TYPE=A ATTR=TXT:Nee
+TAB T=13
+TAG POS=2 TYPE=A ATTR=TXT:Nee
+TAB T=13
+TAG POS=3 TYPE=A ATTR=TXT:Nee
+TAB T=13
+TAG POS=1 TYPE=A ATTR=TXT:VERDER<SP>GAAN
+TAB T=13
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=13
+TAG POS=2 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=13
+TAG POS=3 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=14
+TAG POS=1 TYPE=A ATTR=TXT:Nee
+TAB T=14
+TAG POS=2 TYPE=A ATTR=TXT:Nee
+TAB T=14
+TAG POS=3 TYPE=A ATTR=TXT:Nee
+TAB T=14
+TAG POS=1 TYPE=A ATTR=TXT:VERDER<SP>GAAN
+TAB T=14
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=14
+TAG POS=2 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=14
+TAG POS=3 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+FRAME NAME="ad_iframe"
+EVENT TYPE=CLICK SELECTOR="#aw0>IMG" BUTTON={{ADSL}}
+TAB T=9
+FRAME NAME="ad_iframe"
+EVENT TYPE=CLICK SELECTOR="#aw0>IMG" BUTTON={{ADSL}}
+TAB T=9
+FRAME NAME="ad_iframe"
+EVENT TYPE=CLICK SELECTOR="#aw0>DIV>IMG" BUTTON={{ADSL}}
+TAB T=9
+FRAME NAME="ad_iframe"
+EVENT TYPE=CLICK SELECTOR="#aw0>DIV>IMG" BUTTON={{ADSL}}
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+FRAME NAME="google_ads_frame1"
+EVENT TYPE=CLICK SELECTOR="#adContent-clickOverlay" BUTTON={{ADSL}}
+TAB T=9
+FRAME NAME="google_ads_frame2"
+EVENT TYPE=CLICK SELECTOR="#adContent-clickOverlay" BUTTON={{ADSL}}
+TAB T=9
+FRAME NAME="google_ads_frame3"
+EVENT TYPE=CLICK SELECTOR="#adContent-clickOverlay" BUTTON={{ADSL}}
+TAB T=9
+FRAME NAME="google_ads_frame4"
+EVENT TYPE=CLICK SELECTOR="#adContent-clickOverlay" BUTTON={{ADSL}}
+TAB T=9
+EVENT TYPE=CLICK SELECTOR="#canvas" BUTTON={{ADSL}}
+TAB T=9
+EVENT TYPE=CLICK SELECTOR="#canvas" BUTTON={{ADSL}}
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+URL GOTO=javascript:window.scrollBy(0,1500) 
+FRAME F=1
+EVENT TYPE=CLICK SELECTOR="#left_content" BUTTON={{ADSL}}
+TAB T=9
+FRAME F=2
+EVENT TYPE=CLICK SELECTOR="#left_content" BUTTON={{ADSL}}
+TAB T=9
+FRAME F=3
+EVENT TYPE=CLICK SELECTOR="#left_content" BUTTON={{ADSL}}
+TAB T=9
+FRAME F=4
+EVENT TYPE=CLICK SELECTOR="#left_content" BUTTON={{ADSL}}
+TAB T=9
+FRAME F=5
+EVENT TYPE=CLICK SELECTOR="#left_content" BUTTON={{ADSL}}
+TAB T=9
+FRAME F=6
+EVENT TYPE=CLICK SELECTOR="#left_content" BUTTON={{ADSL}}
+TAB T=9
+FRAME F=7
+EVENT TYPE=CLICK SELECTOR="#left_content" BUTTON={{ADSL}}
+TAB T=9
+FRAME F=8
+EVENT TYPE=CLICK SELECTOR="#left_content" BUTTON={{ADSL}}
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+URL GOTO=javascript:window.scrollBy(0,1750) 
+TAB T=9
+FRAME NAME="google_ads_frame1"
+EVENT TYPE=CLICK SELECTOR="#aw0>IMG" BUTTON={{ADSO}}
+TAB T=9
+FRAME NAME="google_ads_frame2"
+EVENT TYPE=CLICK SELECTOR="#aw0>IMG" BUTTON={{ADSO}}
+TAB T=9
+FRAME NAME="google_ads_frame3"
+EVENT TYPE=CLICK SELECTOR="#aw0>IMG" BUTTON={{ADSO}}
+TAB T=9
+FRAME NAME="google_ads_frame4"
+EVENT TYPE=CLICK SELECTOR="#aw0>IMG" BUTTON={{ADSO}}
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+FRAME NAME="google_ads_frame1"
+EVENT TYPE=CLICK SELECTOR="#aw0>DIV>IMG" BUTTON={{ADSO}}
+TAB T=9
+FRAME NAME="google_ads_frame2"
+EVENT TYPE=CLICK SELECTOR="#aw0>DIV>IMG" BUTTON={{ADSO}}
+TAB T=9
+FRAME NAME="google_ads_frame3"
+EVENT TYPE=CLICK SELECTOR="#aw0>DIV>IMG" BUTTON={{ADSO}}
+TAB T=9
+FRAME NAME="google_ads_frame4"
+EVENT TYPE=CLICK SELECTOR="#aw0>DIV>IMG" BUTTON={{ADSO}}
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+URL GOTO=javascript:window.scrollBy(0,2000)
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://imagetwist.com
+'
+TAB T=1
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=1
+TAG POS=1 TYPE=IMG ATTR=SRC:http://*.imagetwist.com/*/*/*.jpg/*.jpg
+TAB T=1
+TAG POS=1 TYPE=A ATTR=TXT:Download<SP>Image
+TAB T=1
+WAIT SECONDS=2
+TAB T=1
+REFRESH
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://hulkimge.com
+'
+TAB T=2
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=2
+TAG POS=1 TYPE=IMG ATTR=SRC:http://files1.hulkimge.com/*/*/*.jpg
+TAB T=2
+TAG POS=1 TYPE=A ATTR=TXT:Full<SP>Size
+TAB T=2
+WAIT SECONDS=2
+TAB T=2
+REFRESH
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://imgchili.net
+'
+TAB T=3
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=3
+TAG POS=1 TYPE=IMG ATTR=SRC:http://imgchili.net/*/*/*/*/*/*.jpg
+TAB T=3
+TAG POS=1 TYPE=IMG ATTR=SRC:http://imgchili.net/*/*/*/*/*/*.jpg
+TAB T=3
+WAIT SECONDS=2
+REFRESH
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://imageteam.org
+'
+TAB T=4
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=4
+TAG POS=1 TYPE=IMG ATTR=SRC:http://imageteam.org/*/*/*/*/*/*.jpg
+TAB T=4
+TAG POS=1 TYPE=IMG ATTR=SRC:http://imageteam.org/*/*/*/*/*/*.jpg
+TAB T=4
+WAIT SECONDS=2
+REFRESH
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://imgrock.co
+'
+TAB T=5
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#imacros-highlight-div" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#imacros-highlight-div" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(4)" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(4)" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV:nth-of-type(3)>DIV" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV:nth-of-type(3)>DIV" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV:nth-of-type(3)>DIV>P>BUTTON" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV:nth-of-type(3)>DIV>P>BUTTON" BUTTON=0
+TAB T=5
+TAG POS=2 TYPE=DIV ATTR=TXT:18+<SP>OnlyContinueExit
+TAB T=5
+TAG POS=2 TYPE=DIV ATTR=TXT:18+<SP>OnlyContinueExit
+TAB T=5
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Continue
+TAB T=5
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Continue
+TAB T=5
+TAG POS=1 TYPE=A ATTR=TXT:↓<SP>DOWNLOAD<SP>IMAGE<SP>*
+TAB T=5
+TAG POS=1 TYPE=IMG ATTR=SRC:http://*.imgrock.co/img/*/*.jpg
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://imgant.com
+'
+TAB T=6
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=6
+EVENT TYPE=CLICK SELECTOR="#advertisementModal>DIV>DIV>DIV" BUTTON=0
+TAB T=6
+EVENT TYPE=CLICK SELECTOR="#advertisementModal>DIV>DIV>DIV" BUTTON=0
+TAB T=6
+EVENT TYPE=CLICK SELECTOR="#advertisementModal>DIV>DIV>DIV" BUTTON=0
+TAB T=6
+EVENT TYPE=CLICK SELECTOR="#advertisementModal>DIV>DIV>DIV" BUTTON=0
+TAB T=6
+TAG POS=2 TYPE=SPAN ATTR=TXT:×
+TAB T=6
+TAG POS=2 TYPE=SPAN ATTR=TXT:×
+TAB T=6
+TAG POS=1 TYPE=IMG ATTR=ID:picView
+TAB T=6
+TAG POS=1 TYPE=IMG ATTR=ID:picView
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://imggold.org
+'
+TAB T=7
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=7
+TAG POS=1 TYPE=IMG ATTR=SRC:http://imggold.org/*/*/*.jpg
+TAB T=7
+TAG POS=1 TYPE=IMG ATTR=SRC:http://imggold.org/*/*/*.jpg
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://imgdiamond.com
+'
+TAB T=8
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=8
+EVENT TYPE=CLICK SELECTOR="#popupBox" BUTTON=0
+TAB T=8
+EVENT TYPE=CLICK SELECTOR="#popupBox" BUTTON=0
+TAB T=8
+TAG POS=1 TYPE=A ATTR=TXT:ENTER
+TAB T=8
+TAG POS=1 TYPE=A ATTR=TXT:ENTER
+TAB T=8
+TAG POS=1 TYPE=IMG ATTR=SRC:http://imgdiamond.com/img/*/*.jpg
+TAB T=8
+TAG POS=1 TYPE=IMG ATTR=SRC:http://imgdiamond.com/img/*/*.jpg
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 3
+'
+ADD !EXTRACT "1 FINISHED"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+TAB T=9
+CLEAR 
+TAB T=9
+WAIT SECONDS=10
+TAB T=9
+TAB CLOSEALLOTHERS
+TAB T=9
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'          http://imgoutlet.co , http://imgdew.com , http://acidimg.cc , http://xeimg.yt , http://imgbabes.com , http://affimg.org , http://damimage.com , http://gogoimage.org          '
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+ADD !EXTRACT 2
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+CLEAR 
+TAB T=1
+TAB OPEN
+TAB T=2
+TAB CLOSEALLOTHERS
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB T=1
+WAIT SECONDS=1
+TAB T=1
+'
+'/////// [OPEN] http://imgoutlet.co
+'
+TAB T=1
+SET !VAR1 EVAL("var randomNumber=Math.floor(Math.random()*3 + 1); randomNumber;")
+SET !DATASOURCE "List - imgoutlet.co - Load.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR1}}
+TAB T=1
+WAIT SECONDS=1
+TAB T=1
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=1
+'
+'/////// [OPEN] http://imgdew.com
+'
+TAB T=2
+SET !VAR2 EVAL("var randomNumber=Math.floor(Math.random()*3 + 1); randomNumber;")
+SET !DATASOURCE "List - imgdew.com - Load.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR2}}
+TAB T=2
+WAIT SECONDS=1
+TAB T=2
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=2
+'
+'/////// [OPEN] http://acidimg.cc
+'
+TAB T=3
+SET !VAR3 EVAL("var randomNumber=Math.floor(Math.random()*3 + 1); randomNumber;")
+SET !DATASOURCE "List - acidimg.cc - Load.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR3}}
+TAB T=3
+WAIT SECONDS=1
+TAB T=3
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=3
+'
+'/////// [OPEN] http://xeimg.yt
+'
+TAB T=4
+SET !VAR4 EVAL("var randomNumber=Math.floor(Math.random()*3 + 1); randomNumber;")
+SET !DATASOURCE "List - xeimg.yt - Load.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR4}}
+TAB T=4
+WAIT SECONDS=1
+TAB T=4
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=4
+'
+'/////// [OPEN] http://imgbabes.com
+'
+TAB T=5
+SET !VAR5 EVAL("var randomNumber=Math.floor(Math.random()*3 + 1); randomNumber;")
+SET !DATASOURCE "List - imgbabes.com - Load.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR5}}
+TAB T=5
+WAIT SECONDS=1
+TAB T=5
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=5
+'
+'/////// [OPEN] http://affimg.org
+'
+TAB T=6
+SET !VAR6 EVAL("var randomNumber=Math.floor(Math.random()*3 + 1); randomNumber;")
+SET !DATASOURCE "List - affimg.org - Load.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR6}}
+TAB T=6
+WAIT SECONDS=1
+TAB T=6
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=6
+'
+'/////// [OPEN] http://damimage.com
+'
+TAB T=7
+SET !VAR7 EVAL("var randomNumber=Math.floor(Math.random()*3 + 1); randomNumber;")
+SET !DATASOURCE "List - damimage.com - Load.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR7}}
+TAB T=7
+WAIT SECONDS=1
+TAB T=7
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=7
+'
+'/////// [OPEN] http://gogoimage.org
+'
+TAB T=8
+SET !VAR8 EVAL("var randomNumber=Math.floor(Math.random()*3 + 1); randomNumber;")
+SET !DATASOURCE "List - gogoimage.org - Load.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR8}}
+TAB T=8
+WAIT SECONDS=1
+TAB T=8
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=8
+'
+'/////// [OPEN] http://blogspot.com
+'
+TAB T=9
+SET !VAR9 EVAL("var randomNumber=Math.floor(Math.random()*14 + 2); randomNumber;")
+SET !DATASOURCE "List - BLOGWEB - Load.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR9}}
+TAB T=9
+WAIT SECONDS=1
+TAB T=9
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=9
+'
+'/////// STAGE 1 REDIRECT
+'
+TAB T=9
+WAIT SECONDS=10
+'
+'/////// [OPEN] http://imgoutlet.co
+'
+TAB T=1
+SET !VAR1 EVAL("var randomNumber=Math.floor(Math.random()*28 + 1); randomNumber;")
+SET !DATASOURCE "List - imgoutlet.co - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR1}}
+TAB T=1
+WAIT SECONDS=1
+TAB T=1
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=1
+'
+'/////// [OPEN] http://imgdew.com
+'
+TAB T=2
+SET !VAR2 EVAL("var randomNumber=Math.floor(Math.random()*33 + 1); randomNumber;")
+SET !DATASOURCE "List - imgdew.com - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR2}}
+TAB T=2
+WAIT SECONDS=1
+TAB T=2
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=2
+'
+'/////// [OPEN] http://acidimg.cc
+'
+TAB T=3
+SET !VAR3 EVAL("var randomNumber=Math.floor(Math.random()*21 + 1); randomNumber;")
+SET !DATASOURCE "List - acidimg.cc - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR3}}
+TAB T=3
+WAIT SECONDS=1
+TAB T=3
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=3
+'
+'/////// [OPEN] http://xeimg.yt
+'
+TAB T=4
+SET !VAR4 EVAL("var randomNumber=Math.floor(Math.random()*17 + 1); randomNumber;")
+SET !DATASOURCE "List - xeimg.yt - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR4}}
+TAB T=4
+WAIT SECONDS=1
+TAB T=4
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=4
+'
+'/////// [OPEN] http://imgbabes.com
+'
+TAB T=5
+SET !VAR5 EVAL("var randomNumber=Math.floor(Math.random()*21 + 1); randomNumber;")
+SET !DATASOURCE "List - imgbabes.com - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR5}}
+TAB T=5
+WAIT SECONDS=1
+TAB T=5
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=5
+'
+'/////// [OPEN] http://affimg.org
+'
+TAB T=6
+SET !VAR6 EVAL("var randomNumber=Math.floor(Math.random()*21 + 1); randomNumber;")
+SET !DATASOURCE "List - affimg.org - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR6}}
+TAB T=6
+WAIT SECONDS=1
+TAB T=6
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=6
+'
+'/////// [OPEN] http://damimage.com
+'
+TAB T=7
+SET !VAR7 EVAL("var randomNumber=Math.floor(Math.random()*27 + 1); randomNumber;")
+SET !DATASOURCE "List - damimage.com - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR7}}
+TAB T=7
+WAIT SECONDS=1
+TAB T=7
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=7
+'
+'/////// [OPEN] http://gogoimage.org
+'
+TAB T=8
+SET !VAR8 EVAL("var randomNumber=Math.floor(Math.random()*15 + 1); randomNumber;")
+SET !DATASOURCE "List - gogoimage.org - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{!VAR8}}
+TAB T=8
+WAIT SECONDS=1
+TAB T=8
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=8
+'
+'/////// [OPEN] http://blogspot.com
+'
+TAB T=9
+SET !VAR9 EVAL("var letters = ['2017_03_27_archive.html','2017_03_27_archive.html','2017_03_30_archive.html','2017_03_31_archive.html','2017_04_26_archive.html','2017_04_28_archive.html','2017_04_29_archive.html','2017_05_16_archive.html','2017_05_17_archive.html','2017_05_18_archive.html','2017_06_25_archive.html','2017_06_26_archive.html','2017_06_27_archive.html','2017_06_28_archive.html','2017_07_06_archive.html','2017_07_08_archive.html','2017/07/lets-see-worlds-smallest-game-boy.html','2017/06/good-news-super-famicom-mini-will.html','2017/06/get-ready-to-meet-with-many-game.html','2017/06/nintendo-game-boy-1up.html','2017/06/launched-special-version-of-gameboy.html','2017/03/roms0001-0050.html','2017/03/roms0101-0150.html','2017/05/roms0201-0300.html','2017/05/roms0301-0400.html','2017/04/roms0401-0450.html','2017/04/roms0501-0550.html','2017/04/roms0601-0650.html','2017/04/roms0701-0750.html','2017/05/roms0801-0900.html','2017/05/roms1001-1100.html','2017/05/roms1201-1300.html','2017/05/roms1401-1500.html','2017/05/roms1601-1700.html','2017/05/roms1801-1900.html','2017/05/roms1901-2000.html']; var string = ''; for(var i = 0; i < 1; i++){string += letters[parseInt(Math.random() * 36)]}; string")
+'	SWITCH	SET !DATASOURCE "List - BLOGWEB - Load.csv"
+'	SWITCH	SET !DATASOURCE_COLUMNS 1
+'	SWITCH	SET !DATASOURCE_LINE {{!VAR9}}
+TAB T=9
+WAIT SECONDS=1
+TAB T=9
+SET ADSE EVAL("var adSense = '255'; var randomNumber=Math.floor(Math.random()*100 + 1); if (randomNumber == 100){adSense = 0}; if (randomNumber == 80){adSense = 0}; if (randomNumber == 50){adSense = 0}; if (randomNumber == 20){adSense = 0}; if (randomNumber == 1){adSense = 0}; adSense;")
+SET ADSE EVAL("var main=\"{{ADSE}}\"; var adsr = ''; var lett = ['0:255','255:0']; if (main == 0){for(var i = 0; i < 1; i++){adsr += lett[parseInt(Math.random() * 2)]};} else {adsr = '255:255'}; adsr;")
+SET ADSO EVAL("var main=\"{{ADSE}}\"; string=main.split(':')[0] ; string;")
+SET ADSL EVAL("var main=\"{{ADSE}}\"; string=main.split(':')[1] ; string;")
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO=http://gbaromsworld.blogspot.com/{{!VAR9}}
+TAB T=9
+'
+'/////// STAGE 1 CLOSE
+'
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] 
+'
+TAB T=9
+WAIT SECONDS=50
+TAB T=9
+'
+'/////// STAGE 2 [1 OF 3] http://imgoutlet.co
+'
+TAB T=1
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD" BUTTON=0
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD" BUTTON=0
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD:nth-of-type(3)" BUTTON=0
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD:nth-of-type(3)" BUTTON=0
+TAB T=1
+TAG POS=5 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=1
+TAG POS=5 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=9
+WAIT SECONDS=6
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://imgdew.com
+'
+TAB T=2
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV:nth-of-type(3)>DIV" BUTTON=0
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV:nth-of-type(3)>DIV" BUTTON=0
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV:nth-of-type(3)>DIV>P:nth-of-type(2)" BUTTON=0
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV:nth-of-type(3)>DIV>P:nth-of-type(2)" BUTTON=0
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="#adltcheckbtns" BUTTON=0
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="#adltcheckbtns" BUTTON=0
+TAB T=2
+TAG POS=5 TYPE=BUTTON ATTR=TXT:Yes<SP>I<SP>am<SP>over<SP>18
+TAB T=2
+TAG POS=5 TYPE=BUTTON ATTR=TXT:Yes<SP>I<SP>am<SP>over<SP>18
+TAB T=9
+WAIT SECONDS=6
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://acidimg.cc
+'
+TAB T=3
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="#menu" BUTTON=0
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="#menu" BUTTON=0
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="#menu" BUTTON=0
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="#menu" BUTTON=0
+TAB T=3
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:imgContinue
+TAB T=3
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:imgContinue
+TAB T=9
+WAIT SECONDS=6
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://xeimg.yt
+'
+TAB T=4
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=4
+EVENT TYPE=CLICK SELECTOR="#continuetoimage>FORM>P" BUTTON=0
+TAB T=4
+EVENT TYPE=CLICK SELECTOR="#continuetoimage>FORM>P" BUTTON=0
+TAB T=4
+EVENT TYPE=CLICK SELECTOR="#continuetoimage>FORM>P" BUTTON=0
+TAB T=4
+EVENT TYPE=CLICK SELECTOR="#continuetoimage>FORM>P" BUTTON=0
+TAB T=4
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:countdown
+TAB T=4
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:countdown
+TAB T=10
+WAIT SECONDS=15
+TAB T=10
+EVENT TYPE=CLICK SELECTOR="#continuetoimage>FORM>P" BUTTON=0
+TAB T=10
+EVENT TYPE=CLICK SELECTOR="#continuetoimage>FORM>P" BUTTON=0
+TAB T=10
+EVENT TYPE=CLICK SELECTOR="#continuetoimage>FORM>P" BUTTON=0
+TAB T=10
+EVENT TYPE=CLICK SELECTOR="#continuetoimage>FORM>P" BUTTON=0
+TAB T=10
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:countdown
+TAB T=10
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:countdown
+TAB T=9
+WAIT SECONDS=10
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://imgbabes.com
+'
+TAB T=5
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>CENTER>DIV" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>CENTER>DIV" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>CENTER>DIV" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>CENTER>DIV" BUTTON=0
+TAB T=5
+TAG POS=1 TYPE=INPUT:SUBMIT ATTR=*
+TAB T=5
+TAG POS=1 TYPE=INPUT:SUBMIT ATTR=*
+TAB T=10
+WAIT SECONDS=15
+TAB T=10
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>CENTER>DIV" BUTTON=0
+TAB T=10
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>CENTER>DIV" BUTTON=0
+TAB T=10
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>CENTER>DIV" BUTTON=0
+TAB T=10
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>CENTER>DIV" BUTTON=0
+TAB T=10
+TAG POS=1 TYPE=INPUT:SUBMIT ATTR=*
+TAB T=10
+TAG POS=1 TYPE=INPUT:SUBMIT ATTR=*
+TAB T=9
+WAIT SECONDS=10
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://affimg.org
+'
+TAB T=6
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=6
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD" BUTTON=0
+TAB T=6
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD" BUTTON=0
+TAB T=6
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD:nth-of-type(3)" BUTTON=0
+TAB T=6
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD:nth-of-type(3)" BUTTON=
+TAB T=6
+TAG POS=6 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=6
+TAG POS=6 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:next
+TAB T=9
+WAIT SECONDS=6
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://damimage.com
+'
+TAB T=7
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=7
+EVENT TYPE=CLICK SELECTOR="#container>DIV" BUTTON=0
+TAB T=7
+EVENT TYPE=CLICK SELECTOR="#container>DIV" BUTTON=0
+TAB T=7
+EVENT TYPE=CLICK SELECTOR="#container>DIV>A" BUTTON=0
+TAB T=7
+EVENT TYPE=CLICK SELECTOR="#container>DIV>A" BUTTON=0
+TAB T=7
+TAG POS=1 TYPE=A ATTR=TXT:Continue<SP>to<SP>image
+TAB T=7
+TAG POS=1 TYPE=A ATTR=TXT:Continue<SP>to<SP>image
+TAB T=9
+WAIT SECONDS=6
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://gogoimage.org
+'
+TAB T=8
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=8
+EVENT TYPE=CLICK SELECTOR="#container>DIV" BUTTON=0
+TAB T=8
+EVENT TYPE=CLICK SELECTOR="#container>DIV" BUTTON=0
+TAB T=8
+EVENT TYPE=CLICK SELECTOR="#container>DIV>A" BUTTON=0
+TAB T=8
+EVENT TYPE=CLICK SELECTOR="#container>DIV>A" BUTTON=0
+TAB T=8
+TAG POS=1 TYPE=A ATTR=TXT:Continue<SP>to<SP>image
+TAB T=8
+TAG POS=1 TYPE=A ATTR=TXT:Continue<SP>to<SP>image
+TAB T=9
+WAIT SECONDS=6
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://blogspot.com
+'
+TAB T=9
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=9
+TAG POS=1 TYPE=H2 ATTR=TXT:SEARCH<SP>*
+TAB T=9
+TAG POS=1 TYPE=H2 ATTR=TXT:SEARCH<SP>*
+TAB T=9
+URL GOTO=javascript:window.scrollBy(0,250) 
+TAB T=9
+TAG POS=1 TYPE=DIV ATTR=ID:BlogSearch1
+TAB T=9
+TAG POS=1 TYPE=DIV ATTR=ID:BlogSearch1
+TAB T=9
+URL GOTO=javascript:window.scrollBy(0,500) 
+TAB T=9
+EVENT TYPE=CLICK SELECTOR="#BlogSearch1_form>FORM>TABLE>TBODY>TR>TD>INPUT" BUTTON=0
+TAB T=9
+EVENT TYPE=CLICK SELECTOR="#BlogSearch1_form>FORM>TABLE>TBODY>TR>TD>INPUT" BUTTON=0
+TAB T=9
+URL GOTO=javascript:window.scrollBy(0,750) 
+TAB T=9
+TAG POS=9 TYPE=TD ATTR=TXT:
+TAB T=9
+TAG POS=9 TYPE=TD ATTR=TXT:
+TAB T=9
+URL GOTO=javascript:window.scrollBy(0,1000) 
+TAB T=9
+EVENT TYPE=CLICK SELECTOR="#cookieChoiceDismiss" BUTTON=0
+TAB T=9
+EVENT TYPE=CLICK SELECTOR="#cookieChoiceDismiss" BUTTON=0
+TAB T=9
+URL GOTO=javascript:window.scrollBy(0,1250) 
+TAB T=9
+EVENT TYPE=CLICK SELECTOR="#main" BUTTON=0
+TAB T=9
+EVENT TYPE=CLICK SELECTOR="#main" BUTTON=0
+TAB T=9
+URL GOTO=javascript:window.scrollBy(0,200) 
+TAB T=9
+'	SWITCH	WAIT SECONDS=6
+TAB T=9
+'	SWITCH	EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+'	SWITCH	EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3]
+'
+TAB T=9
+WAIT SECONDS=30
+TAB T=9
+
+'
+'/////// STAGE 2 [2 OF 3]  http://blogspot.com
+'
+TAB T=9
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=10
+TAG POS=1 TYPE=A ATTR=TXT:Nee
+TAB T=10
+TAG POS=2 TYPE=A ATTR=TXT:Nee
+TAB T=10
+TAG POS=3 TYPE=A ATTR=TXT:Nee
+TAB T=10
+TAG POS=1 TYPE=A ATTR=TXT:VERDER<SP>GAAN
+TAB T=10
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=10
+TAG POS=2 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=10
+TAG POS=3 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=11
+TAG POS=1 TYPE=A ATTR=TXT:Nee
+TAB T=11
+TAG POS=2 TYPE=A ATTR=TXT:Nee
+TAB T=11
+TAG POS=3 TYPE=A ATTR=TXT:Nee
+TAB T=11
+TAG POS=1 TYPE=A ATTR=TXT:VERDER<SP>GAAN
+TAB T=11
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=11
+TAG POS=2 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=11
+TAG POS=3 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=12
+TAG POS=1 TYPE=A ATTR=TXT:Nee
+TAB T=12
+TAG POS=2 TYPE=A ATTR=TXT:Nee
+TAB T=12
+TAG POS=3 TYPE=A ATTR=TXT:Nee
+TAB T=12
+TAG POS=1 TYPE=A ATTR=TXT:VERDER<SP>GAAN
+TAB T=12
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=12
+TAG POS=2 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=12
+TAG POS=3 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=13
+TAG POS=1 TYPE=A ATTR=TXT:Nee
+TAB T=13
+TAG POS=2 TYPE=A ATTR=TXT:Nee
+TAB T=13
+TAG POS=3 TYPE=A ATTR=TXT:Nee
+TAB T=13
+TAG POS=1 TYPE=A ATTR=TXT:VERDER<SP>GAAN
+TAB T=13
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=13
+TAG POS=2 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=13
+TAG POS=3 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=14
+TAG POS=1 TYPE=A ATTR=TXT:Nee
+TAB T=14
+TAG POS=2 TYPE=A ATTR=TXT:Nee
+TAB T=14
+TAG POS=3 TYPE=A ATTR=TXT:Nee
+TAB T=14
+TAG POS=1 TYPE=A ATTR=TXT:VERDER<SP>GAAN
+TAB T=14
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=14
+TAG POS=2 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=14
+TAG POS=3 TYPE=BUTTON ATTR=TXT:Download<SP>now*
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+FRAME NAME="ad_iframe"
+EVENT TYPE=CLICK SELECTOR="#aw0>IMG" BUTTON={{ADSL}}
+TAB T=9
+FRAME NAME="ad_iframe"
+EVENT TYPE=CLICK SELECTOR="#aw0>IMG" BUTTON={{ADSL}}
+TAB T=9
+FRAME NAME="ad_iframe"
+EVENT TYPE=CLICK SELECTOR="#aw0>DIV>IMG" BUTTON={{ADSL}}
+TAB T=9
+FRAME NAME="ad_iframe"
+EVENT TYPE=CLICK SELECTOR="#aw0>DIV>IMG" BUTTON={{ADSL}}
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+FRAME NAME="google_ads_frame1"
+EVENT TYPE=CLICK SELECTOR="#adContent-clickOverlay" BUTTON={{ADSL}}
+TAB T=9
+FRAME NAME="google_ads_frame2"
+EVENT TYPE=CLICK SELECTOR="#adContent-clickOverlay" BUTTON={{ADSL}}
+TAB T=9
+FRAME NAME="google_ads_frame3"
+EVENT TYPE=CLICK SELECTOR="#adContent-clickOverlay" BUTTON={{ADSL}}
+TAB T=9
+FRAME NAME="google_ads_frame4"
+EVENT TYPE=CLICK SELECTOR="#adContent-clickOverlay" BUTTON={{ADSL}}
+TAB T=9
+EVENT TYPE=CLICK SELECTOR="#canvas" BUTTON={{ADSL}}
+TAB T=9
+EVENT TYPE=CLICK SELECTOR="#canvas" BUTTON={{ADSL}}
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+URL GOTO=javascript:window.scrollBy(0,1500) 
+FRAME F=1
+EVENT TYPE=CLICK SELECTOR="#left_content" BUTTON={{ADSL}}
+TAB T=9
+FRAME F=2
+EVENT TYPE=CLICK SELECTOR="#left_content" BUTTON={{ADSL}}
+TAB T=9
+FRAME F=3
+EVENT TYPE=CLICK SELECTOR="#left_content" BUTTON={{ADSL}}
+TAB T=9
+FRAME F=4
+EVENT TYPE=CLICK SELECTOR="#left_content" BUTTON={{ADSL}}
+TAB T=9
+FRAME F=5
+EVENT TYPE=CLICK SELECTOR="#left_content" BUTTON={{ADSL}}
+TAB T=9
+FRAME F=6
+EVENT TYPE=CLICK SELECTOR="#left_content" BUTTON={{ADSL}}
+TAB T=9
+FRAME F=7
+EVENT TYPE=CLICK SELECTOR="#left_content" BUTTON={{ADSL}}
+TAB T=9
+FRAME F=8
+EVENT TYPE=CLICK SELECTOR="#left_content" BUTTON={{ADSL}}
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+URL GOTO=javascript:window.scrollBy(0,1750) 
+TAB T=9
+FRAME NAME="google_ads_frame1"
+EVENT TYPE=CLICK SELECTOR="#aw0>IMG" BUTTON={{ADSO}}
+TAB T=9
+FRAME NAME="google_ads_frame2"
+EVENT TYPE=CLICK SELECTOR="#aw0>IMG" BUTTON={{ADSO}}
+TAB T=9
+FRAME NAME="google_ads_frame3"
+EVENT TYPE=CLICK SELECTOR="#aw0>IMG" BUTTON={{ADSO}}
+TAB T=9
+FRAME NAME="google_ads_frame4"
+EVENT TYPE=CLICK SELECTOR="#aw0>IMG" BUTTON={{ADSO}}
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+FRAME NAME="google_ads_frame1"
+EVENT TYPE=CLICK SELECTOR="#aw0>DIV>IMG" BUTTON={{ADSO}}
+TAB T=9
+FRAME NAME="google_ads_frame2"
+EVENT TYPE=CLICK SELECTOR="#aw0>DIV>IMG" BUTTON={{ADSO}}
+TAB T=9
+FRAME NAME="google_ads_frame3"
+EVENT TYPE=CLICK SELECTOR="#aw0>DIV>IMG" BUTTON={{ADSO}}
+TAB T=9
+FRAME NAME="google_ads_frame4"
+EVENT TYPE=CLICK SELECTOR="#aw0>DIV>IMG" BUTTON={{ADSO}}
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+URL GOTO=javascript:window.scrollBy(0,2000)
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://imgoutlet.co
+'
+TAB T=1
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV>DIV" BUTTON=0
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV>DIV" BUTTON=
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV>DIV>P" BUTTON=0
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV>DIV>P" BUTTON=0
+TAB T=1
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Yes<SP>i'am<SP>over<SP>18
+TAB T=1
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Yes<SP>i'am<SP>over<SP>18
+TAB T=1
+TAG POS=1 TYPE=IMG ATTR=SRC:http://*.imgoutlet.co/img/*/*.jpg
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=A ATTR=TXT:Download<SP>Image
+TAB T=1
+WAIT SECONDS=2
+TAB T=1
+REFRESH
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://imgdew.com
+'
+TAB T=2
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=2
+TAG POS=1 TYPE=IMG ATTR=SRC:http://*.imgdew.com/img/*/*.jpg
+'	LESS	TAB T=2
+'	LESS	TAG POS=1 TYPE=A ATTR=TXT:Full<SP>Size
+TAB T=2
+WAIT SECONDS=2
+TAB T=2
+REFRESH
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://acidimg.cc
+'
+TAB T=3
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=3
+TAG POS=1 TYPE=IMG ATTR=SRC:https://acidimg.cc/upload/*/*/*/*/*.jpg
+'	LESS	TAB T=3
+'	LESS	TAG POS=1 TYPE=IMG ATTR=SRC:https://acidimg.cc/upload/*/*/*/*/*.jpg
+TAB T=3
+WAIT SECONDS=2
+REFRESH
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://xeimg.yt
+'
+TAB T=4
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=4
+TAG POS=1 TYPE=IMG ATTR=SRC:https://xeimg.yt/upload/*/*/*/*/*.jpeg
+TAB T=4
+TAG POS=1 TYPE=IMG ATTR=SRC:https://xeimg.yt/upload/*/*/*/*/*.jpeg
+TAB T=4
+WAIT SECONDS=2
+REFRESH
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://imgbabes.com
+'
+TAB T=5
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#slashpage>DIV" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#slashpage>DIV" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#slashpage>DIV" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#slashpage>DIV" BUTTON=0
+TAB T=5
+TAG POS=1 TYPE=DIV ATTR=ID:continue
+TAB T=5
+TAG POS=1 TYPE=DIV ATTR=ID:continue
+TAB T=5
+TAG POS=1 TYPE=IMG ATTR=ID:this_image
+'	LESS	TAB T=5
+'	LESS	TAG POS=1 TYPE=IMG ATTR=ID:this_image
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://affimg.org
+'
+TAB T=6
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=6
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV:nth-of-type(3)>DIV" BUTTON=0
+TAB T=6
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV:nth-of-type(3)>DIV" BUTTON=0
+TAB T=6
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Continue
+TAB T=6
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Continue
+TAB T=6
+TAG POS=1 TYPE=IMG ATTR=SRC:http://*.affimg.org/img/*/*.jpg
+TAB T=6
+TAG POS=1 TYPE=IMG ATTR=SRC:http://*.affimg.org/img/*/*.jpg
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://damimage.com
+'
+TAB T=7
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=7
+TAG POS=1 TYPE=IMG ATTR=SRC:http://damimage.com/upload/*/*/*/*/*.jpg
+TAB T=7
+TAG POS=1 TYPE=IMG ATTR=SRC:http://damimage.com/upload/*/*/*/*/*.jpg
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://gogoimage.org
+'
+TAB T=8
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=8
+TAG POS=1 TYPE=IMG ATTR=SRC:http://gogoimage.org/upload/*/*/*/*/*.jpg
+TAB T=8
+TAG POS=1 TYPE=IMG ATTR=SRC:http://gogoimage.org/upload/*/*/*/*/*.jpg
+TAB T=9
+WAIT SECONDS=5
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 3
+'
+ADD !EXTRACT "2 FINISHED"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+TAB T=9
+CLEAR 
+TAB T=9
+WAIT SECONDS=10
+TAB T=9
+TAB CLOSEALLOTHERS
+TAB T=9
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+TAB T=9
+TAB CLOSEALLOTHERS
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'												[FINISH]												'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+URL GOTO=about:downloads
+WAIT SECONDS=2
+URL GOTO=imacros://run/?m=NoReCapViewIIM.iim
+
+'
+'/////// [FINISH]
+'
+'		WAIT SECONDS=60
+'		ADD !EXTRACT "SESSIONS CLOSED"
+'		SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+'		ADD !EXTRACT 0
+'		SAVEAS TYPE=EXTRACT FOLDER=* FILE=CLOSED.LOG
+'		CLEAR
+'		TAB CLOSEALLOTHERS
+'		TAB CLOSE
+
+
+
+'		TAG POS=1 TYPE=SELECT FORM=ID:commentForm ATTR=ID:identityMenu CONTENT=%NAMEURL
+'		TAG POS=1 TYPE=SELECT FORM=ID:commentForm ATTR=ID:identityMenu CONTENT=%ANON
+'		TAG POS=1 TYPE=INPUT:TEXT FORM=ID:commentForm ATTR=ID:anonNameField CONTENT=DarKZonEDZ
+'		TAG POS=1 TYPE=INPUT:TEXT FORM=ID:commentForm ATTR=ID:anonUrlField CONTENT=google.com
+'		TAG POS=3 TYPE=INPUT:BUTTON FORM=ID:commentForm ATTR=*
+'		TAG POS=1 TYPE=TEXTAREA FORM=ID:commentForm ATTR=ID:commentBodyField CONTENT=Update
+'		TAG POS=1 TYPE=INPUT:BUTTON FORM=ID:commentForm ATTR=ID:postCommentSubmit
+'		'RECAPTCHA
+'		TAG POS=1 TYPE=INPUT:BUTTON FORM=ID:commentForm ATTR=ID:postCommentSubmit
+'		SWITCH	SET !VAR9 EVAL("var letters = ['2017/03/roms0001-0050.html','2017/03/roms0101-0150.html','2017/03/roms0151-0200.html','2017/05/roms0201-0300.html','2017/05/roms0301-0400.html','2017/04/roms0401-0450.html','2017/04/roms0451-0500.html','2017/04/roms0501-0550.html','2017/04/roms0551-0600.html','2017/04/roms0601-0650.html','2017/04/roms0651-0700.html','2017/04/roms0701-0750.html','2017/05/roms0801-0900.html','2017/05/roms0901-1000.html','2017/05/roms1001-1100.html','2017/05/roms0101-1200.html','2017/05/roms1201-1300.html','2017/05/roms1301-1400.html','2017/05/roms1401-1500.html','2017/05/roms1501-1600.html','2017/05/roms1601-1700.html','2017/05/roms1701-1800.html','2017/05/roms1801-1900.html','2017/05/roms1901-2000.html']; var string = ''; for(var i = 0; i < 1; i++){string += letters[parseInt(Math.random() * 24)]}; string")
+	
+'		Click popcache / Properler
+'		http://app3.letmacwork.world/landings/123.14/?affid=mzb_477.16659284.1499679250.32.mzb&utm_source=mbbrs&utm_medium=cpi&utm_campaign=mk_mbbrs_cpi_t3_12314&utm_term=&utm_content=&userDefiner=mzb_3398&alert=44&trt=29_3139513456&tid_ext=28;N1afGHo_TJUWJhvoqcuDb5S7rKShReBBN8EuYLnh8jQksR-5pgWYaG4f-I4YhNsODx0z_smt1AB7W6kqXQ-4Js98Vai4gCtveV2OJni00WbpUtPuj5I4Ca_t2M4coR13oOjocK_I5bovcqrz8jqsuHKDfdVAA7lraVzupzyqgti5jNbwfSbpCzr9UOPELNSQkhoCt-W_nBL1ovkBGZqnfP4xQyrrF9tSw7QjDjjaCES59SggGed-tYmhAn8H6wENxcNQq6_-0okXG4Z6A5HMDg;
+'		TAG POS=1 TYPE=A ATTR=TXT:Download<SP>now
+'		TAG POS=1 TYPE=A ATTR=TXT:Click<SP>here<SP>to<SP>start<SP>download
+'		
+'		http://promacz.s3.amazonaws.com/z12n/eng/4/index.html?osversion=OS%20X%2010.10%20Yosemite&clickid=&voluumdata=BASE64dmlkLi4wMDAwMDAwNS01Mzk0LTQ3YjEtODAwMC0wMDAwMDAwMDAwMDBfX3ZwaWQuLjI3NTdhODAwLTY1NGUtMTFlNy04MDFlLWUzZWJlZDhkMmNjMV9fY2FpZC4uZTM1ZDkyNjYtOGYxOC00M2NlLWJiNzYtYzdhYzQ1OTg0YWViX19ydC4uSEpfX2xpZC4uNTU3OTE1ZjktNjAzNC00MDEwLWE3Y2UtOGJkM2M2NzY3MmUxX19vaWQxLi5iZDYzNjA1MS1hMTY0LTRkMGUtYTIyMS04Mzg4NDdjNmJjMTJfX3ZhcjEuLnJvbWVvLXVucy11YkdSZXNTVV9fdmFyMi4uYWR1bHRfX3ZhcjQuLkFEVUxUX192YXI1Li5QT1BVUF9fdmFyNi4uc21hbHQtdGlnZXJfX3JkLi53d3dcLlw3Y2ZtbmZcLlx0b3BfX2FpZC4uX19hYi4uX19zaWQuLl9fY3JpLi5fX3B1Yi4uX19kaWQuLl9fZGl0Li5fX3BpZC4uX19pdC4uX192dC4uMTQ5OTY3OTA5MDI5Mw
+'		TAG POS=1 TYPE=A ATTR=TXT:REMOVE<SP>VIRUSES<SP>>>
+'		SET ADSE EVAL("var adSense = ''; var randomNumber=Math.floor(Math.random()*2100 + 1); if ((randomNumber => 2001) && (randomNumber <= 2100)){adSense = 0}; if ((randomNumber => 1901) && (randomNumber <= 2000)){adSense = 255}; if ((randomNumber => 1801) && (randomNumber <= 1900)){adSense = 255}; if ((randomNumber => 1701) && (randomNumber <= 1800)){adSense = 255}; if ((randomNumber => 1601) && (randomNumber <= 1700)){adSense = 255}; if ((randomNumber => 1501) && (randomNumber <= 1600)){adSense = 255}; if ((randomNumber => 1401) && (randomNumber <= 1500)){adSense = 255}; if ((randomNumber => 1301) && (randomNumber <= 1400)){adSense = 255}; if ((randomNumber => 1201) && (randomNumber <= 1300)){adSense = 255}; if ((randomNumber => 1101) && (randomNumber <= 1200)){adSense = 0}; if ((randomNumber => 1001) && (randomNumber <= 1100)){adSense = 255}; if ((randomNumber => 901) && (randomNumber <= 1000)){adSense = 255}; if ((randomNumber => 801) && (randomNumber <= 900)){adSense = 255}; if ((randomNumber => 701) && (randomNumber <= 800)){adSense = 255}; if ((randomNumber => 601) && (randomNumber <= 700)){adSense = 255}; if ((randomNumber => 501) && (randomNumber <= 600)){adSense = 255}; if ((randomNumber => 401) && (randomNumber <= 500)){adSense = 255}; if ((randomNumber => 301) && (randomNumber <= 400)){adSense = 255}; if ((randomNumber => 201) && (randomNumber <= 300)){adSense = 255}; if ((randomNumber => 101) && (randomNumber <= 200)){adSense = 255}; if ((randomNumber => 0) && (randomNumber <= 100)){adSense = 0}; adSense;")
+
+
+'		https://www.bet365.com TAG POS=1 TYPE=DIV ATTR=TITLE:New<SP>Customer<SP>Bonus&&ALT:New<SP>Customer<SP>Bonus&&TXT:
+'		
+'		
+'		https://crossout.net
+'		URL GOTO=https://crossout.net/play4free?r=adspreecpp_1216_1301617-2298305416-0&transaction_id=102a6c19bc5756f286c6b41dd9c6a5#/
+'		TAG POS=1 TYPE=A ATTR=TXT:Play<SP>for<SP>free
+'		TAG POS=1 TYPE=A ATTR=TXT:Last<SP>Step:<SP>Download<SP>and<SP>Install<SP>Game<SP>Clien*

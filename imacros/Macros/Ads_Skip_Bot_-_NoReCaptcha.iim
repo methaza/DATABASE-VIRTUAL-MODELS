@@ -1,0 +1,3521 @@
+﻿SET !REPLAYSPEED FAST 
+SET !TIMEOUT_STEP 1
+SET !TIMEOUT_TAG 1
+SET !TIMEOUT 1
+SET !TIMEOUT_PAGE 1
+SET !ERRORIGNORE YES
+SET !ERRORCONTINUE YES
+SET !WAITPAGECOMPLETE NO
+SET !EXTRACT_TEST_POPUP NO
+
+ADD !EXTRACT 0
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=OPENED.LOG
+ADD !EXTRACT 0
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'          http://megafiles.us , http://uploadkadeh.com , http://media4up.com , http://4downfiles.org , http://filedot.xyz , http://upera.co , http://uploadocean.com , http://uplod.ws          '
+'''''''''''''''''/'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+ADD !EXTRACT 1
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+CLEAR 
+TAB T=1
+TAB OPEN
+TAB T=2
+TAB CLOSEALLOTHERS
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB T=1
+WAIT SECONDS=1
+TAB T=1
+'
+'/////// [OPEN] http://megafiles.us
+'
+TAB T=1
+SET !DATASOURCE "List - megafiles.us - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE URLLISTVAULETRAP1
+TAB T=1
+WAIT SECONDS=1
+TAB T=1
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=1
+'
+'/////// [OPEN] http://uploadkadeh.com
+'
+TAB T=2
+SET !DATASOURCE "List - uploadkadeh.com - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE URLLISTVAULETRAP2
+TAB T=2
+WAIT SECONDS=1
+TAB T=2
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=2
+'
+'/////// [OPEN] http://media4up.com
+'
+TAB T=3
+SET !DATASOURCE "List - media4up.com - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE URLLISTVAULETRAP3
+TAB T=3
+WAIT SECONDS=1
+TAB T=3
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=3
+'
+'/////// [OPEN] http://4downfiles.org
+'
+TAB T=4
+SET !DATASOURCE "List - 4downfiles.org - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE URLLISTVAULETRAP4
+TAB T=4
+WAIT SECONDS=1
+TAB T=4
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=4
+'
+'/////// [OPEN] http://filedot.xyz
+'
+TAB T=5
+SET !DATASOURCE "List - filedot.xyz - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE URLLISTVAULETRAP5
+TAB T=5
+WAIT SECONDS=1
+TAB T=5
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=5
+'
+'/////// [OPEN] http://upera.co
+'
+TAB T=6
+SET !DATASOURCE "List - upera.co - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE URLLISTVAULETRAP6
+TAB T=6
+WAIT SECONDS=1
+TAB T=6
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=6
+'
+'/////// [OPEN] http://uploadocean.com
+'
+TAB T=7
+SET !DATASOURCE "List - uploadocean.com - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE URLLISTVAULETRAP7
+TAB T=7
+WAIT SECONDS=1
+TAB T=7
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=7
+'
+'/////// [OPEN] http://uplod.ws
+'
+TAB T=8
+SET !DATASOURCE "List - uplod.ws - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE URLLISTVAULETRAP8
+TAB T=8
+WAIT SECONDS=1
+TAB T=8
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=8
+'
+'/////// STAGE 1 REDIRECT
+'
+'	LESS	TAB T=9
+'	LESS	WAIT SECONDS=10
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=2
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=3
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=4
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=5
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=6
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=7
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=8
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'
+'/////// STAGE 1 CLOSE
+'
+TAB T=9
+URL GOTO=about:about
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3]
+'
+TAB T=9
+WAIT SECONDS=80
+TAB T=9
+'
+'/////// STAGE 2 [1 OF 3] http://megafiles.us
+'
+TAB T=1
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="#container>FORM" BUTTON=0
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="#container>FORM" BUTTON=0
+TAB T=1
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=1
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://uploadkadeh.com
+'
+TAB T=2
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=2
+TAG POS=DIV TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=2
+TAG POS=DIV TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=2
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=2
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://media4up.com
+'
+TAB T=3
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="#show_this_af_count>FORM>CENTER" BUTTON=0
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="#show_this_af_count>FORM>CENTER" BUTTON=0
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="#show_this_af_count>FORM>CENTER" BUTTON=0
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="#show_this_af_count>FORM>CENTER" BUTTON=0
+TAB T=3
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=3
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://4downfiles.org
+'
+TAB T=4
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=4
+EVENT TYPE=CLICK SELECTOR="#page>DIV>FORM" BUTTON=0
+TAB T=4
+EVENT TYPE=CLICK SELECTOR="#page>DIV>FORM" BUTTON=0
+TAB T=4
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=4
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://filedot.xyz
+'
+TAB T=5
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#container>FORM" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#container>FORM" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#container>FORM" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#container>FORM" BUTTON=0
+TAB T=5
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=5
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://upera.co
+'
+TAB T=6
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=6
+TAG POS=1 TYPE=BUTTON FORM=NAME:NoFormName ATTR=TXT:Regular<SP>Download
+TAB T=6
+TAG POS=1 TYPE=BUTTON FORM=NAME:NoFormName ATTR=TXT:Regular<SP>Download
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://uploadocean.com
+'
+TAB T=7
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=7
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=NAME:F1 ATTR=ID:tick-dwn CONTENT=NO
+TAB T=7
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=NAME:F1 ATTR=ID:tick-dwn CONTENT=NO
+TAB T=7
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=NAME:F1 ATTR=ID:tick-dwn CONTENT=NO
+TAB T=7
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=7
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=7
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://uplod.ws
+'
+TAB T=8
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=8
+TAG POS=1 TYPE=DIV ATTR=TXT:Download<SP>Now<SP>AD
+TAB T=8
+TAG POS=1 TYPE=DIV ATTR=TXT:Download<SP>Now<SP>AD
+TAB T=8
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV>DIV>DIV>DIV>A" BUTTON=0 MODIFIERS="ctrl"
+TAB T=8
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV>DIV>DIV>DIV>A" BUTTON=0 MODIFIERS="ctrl"
+TAB T=8
+TAG POS=1 TYPE=DIV ATTR=TXT:Download<SP>Download<SP>Download<SP>our<SP>offers
+TAB T=8
+TAG POS=1 TYPE=DIV ATTR=TXT:Download<SP>Download<SP>Download<SP>our<SP>offers
+TAB T=8
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:myDownloadForm ATTR=ID:chkIsAdd CONTENT=NO
+TAB T=8
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:myDownloadForm ATTR=ID:chkIsAdd CONTENT=NO
+TAB T=8
+TAG POS=1 TYPE=BUTTON FORM=ID:myDownloadForm ATTR=ID:downloadbtn
+TAB T=8
+TAG POS=1 TYPE=BUTTON FORM=ID:myDownloadForm ATTR=ID:downloadbtn
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3]
+'
+TAB T=9
+WAIT SECONDS=60
+TAB T=9
+'
+'/////// STAGE 2 [2 OF 3] http://megafiles.us
+'
+TAB T=1
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:F1 ATTR=NAME:code CONTENT=
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:F1 ATTR=NAME:code CONTENT=
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="#container>FORM>DIV:nth-of-type(2)" BUTTON=0
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="#container>FORM>DIV:nth-of-type(2)" BUTTON=0
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="#container>FORM>DIV:nth-of-type(2)" BUTTON=0
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="#container>FORM>DIV:nth-of-type(2)" BUTTON=0
+TAB T=1
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=1
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://uploadkadeh.com
+'
+TAB T=2
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=2
+TAG POS=DIV TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=2
+TAG POS=DIV TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=2
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=2
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://media4up.com
+'
+TAB T=3
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=3
+EVENT TYPE=MOUSEDOWN SELECTOR="HTML" BUTTON=0
+TAB T=3
+EVENT TYPE=MOUSEDOWN SELECTOR="HTML" BUTTON=0
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(2)>DIV:nth-of-type(2)>DIV>DIV>FORM>DIV>DIV:nth-of-type(3)" BUTTON=0
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(2)>DIV:nth-of-type(2)>DIV>DIV>FORM>DIV>DIV:nth-of-type(3)" BUTTON=0
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(2)>DIV:nth-of-type(2)>DIV>DIV>FORM>DIV>DIV:nth-of-type(3)>P" BUTTON=0
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(2)>DIV:nth-of-type(2)>DIV>DIV>FORM>DIV>DIV:nth-of-type(3)>P" BUTTON=
+TAB T=3
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=3
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://4downfiles.org
+'
+TAB T=4
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=4
+TAG POS=1 TYPE=TD ATTR=TXT:(adsbygoogle<SP>=<SP>window.adsbygoogle<SP>||<SP>[]).push({}*
+TAB T=4
+TAG POS=2 TYPE=TD ATTR=TXT:(adsbygoogle<SP>=<SP>window.adsbygoogle<SP>||<SP>[]).push({}*
+TAB T=4
+TAG POS=3 TYPE=TD ATTR=TXT:(adsbygoogle<SP>=<SP>window.adsbygoogle<SP>||<SP>[]).push({}*
+TAB T=4
+TAG POS=1 TYPE=TD ATTR=VALIGN:middle&&ALIGN:left&&TXT:
+TAB T=4
+TAG POS=1 TYPE=TD ATTR=VALIGN:middle&&ALIGN:left&&TXT:
+TAB T=4
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=4
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://filedot.xyz
+'
+TAB T=5
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#container>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>FORM" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#container>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>FORM" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#container>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>FORM" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#container>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>FORM" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#container>TABLE>TBODY>TR:nth-of-type(2)>TD" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#container>TABLE>TBODY>TR:nth-of-type(2)>TD" BUTTON=
+TAB T=5
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=5
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://upera.co
+'
+TAB T=6
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=6
+TAG POS=1 TYPE=BUTTON FORM=NAME:NoFormName ATTR=TXT:Create<SP>Download<SP>Link
+TAB T=6
+TAG POS=1 TYPE=BUTTON FORM=NAME:NoFormName ATTR=TXT:Create<SP>Download<SP>Link
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://uploadocean.com
+'
+TAB T=7
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=7
+'	LESS	TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://uplod.ws
+'
+TAB T=8
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=8
+'	LESS	TAG POS=1 TYPE=DIV ATTR=TXT:Download
+'	LESS	TAB T=8
+'	LESS	TAG POS=1 TYPE=DIV ATTR=TXT:Download
+'	LESS	TAB T=8
+'	LESS	TAG POS=1 TYPE=A ATTR=TXT:Download
+'	LESS	TAB T=8
+'	LESS	TAG POS=1 TYPE=A ATTR=TXT:Download
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3]
+'
+TAB T=9
+WAIT SECONDS=60
+TAB T=9
+'
+'/////// STAGE 2 [3 OF 3] http://megafiles.us
+'
+TAB T=1
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="#direct_link" BUTTON=0
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="#direct_link" BUTTON=0
+TAB T=1
+EVENT TYPE=CLICK SELECTOR="#direct_link>A" BUTTON=0
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://uploadkadeh.com
+'
+TAB T=2
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="#direct_link" BUTTON=0
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="#direct_link" BUTTON=0
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="#direct_link" BUTTON=0
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="#direct_link>A" BUTTON=0
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://media4up.com
+'
+TAB T=3
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(2)>DIV:nth-of-type(2)>DIV>DIV:nth-of-type(2)" BUTTON=0
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(2)>DIV:nth-of-type(2)>DIV>DIV:nth-of-type(2)" BUTTON=0
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(2)>DIV:nth-of-type(2)>DIV>DIV:nth-of-type(2)>DIV:nth-of-type(3)" BUTTON=0
+TAB T=3
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(2)>DIV:nth-of-type(2)>DIV>DIV:nth-of-type(2)>DIV:nth-of-type(3)" BUTTON=0
+TAB T=3
+TAG POS=1 TYPE=A ATTR=TXT:Download<SP>it<SP>Now<SP>!
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://4downfiles.org
+'
+TAB T=4
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=4
+TAG POS=1 TYPE=TD ATTR=TXT:File<SP>Download<SP>Link<SP>Generated<SP>This<SP>direct<SP>l*
+TAB T=4
+TAG POS=1 TYPE=TD ATTR=TXT:File<SP>Download<SP>Link<SP>Generated<SP>This<SP>direct<SP>l*
+TAB T=4
+TAG POS=1 TYPE=A ATTR=TXT:download
+TAB T=4
+TAG POS=1 TYPE=A ATTR=TXT:download
+TAB T=4
+TAG POS=1 TYPE=DIV ATTR=ID:btn_download
+TAB T=4
+TAG POS=1 TYPE=DIV ATTR=ID:btn_download
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://filedot.xyz
+'
+TAB T=5
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#container>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#container>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#container" BUTTON=0
+TAB T=5
+EVENT TYPE=CLICK SELECTOR="#container" BUTTON=0
+TAB T=5
+TAG POS=1 TYPE=IMG ATTR=SRC:https://filedot.xyz/images_mega/down_final.png
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://upera.co
+'
+TAB T=6
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=6
+TAG POS=1 TYPE=A ATTR=TXT:Download<SP>Link
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://uploadocean.com
+'
+TAB T=7
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=7
+TAG POS=1 TYPE=A ATTR=TXT:Download<SP>Now
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://uplod.ws
+'
+TAB T=8
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=8
+TAG POS=1 TYPE=DIV ATTR=TXT:Download
+TAB T=8
+TAG POS=1 TYPE=DIV ATTR=TXT:Download
+TAB T=8
+TAG POS=1 TYPE=A ATTR=TXT:Download
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 3
+'
+ADD !EXTRACT "1 FINISHED"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+TAB T=9
+CLEAR 
+TAB T=9
+WAIT SECONDS=10
+TAB T=9
+TAB CLOSEALLOTHERS
+TAB T=9
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+TAB T=9
+TAB CLOSEALLOTHERS
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'          http://userscloud.com , http://uploadfiles.eu          '
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+ADD !EXTRACT 2
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+CLEAR 
+TAB T=1
+TAB OPEN
+TAB T=2
+TAB CLOSEALLOTHERS
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB T=1
+WAIT SECONDS=1
+TAB T=1
+'
+'/////// [OPEN] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=1
+SET !DATASOURCE "List - userscloud.com - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE URLLISTVAULEMULT1
+TAB T=1
+WAIT SECONDS=1
+TAB T=1
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=1
+'
+'/////// [OPEN] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=2
+SET !DATASOURCE "List - uploadfiles.eu - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE URLLISTVAULEMULT2
+TAB T=2
+WAIT SECONDS=1
+TAB T=2
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=2
+'
+'/////// [OPEN] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=3
+SET MULT EVAL("var string = ''; var randomNumber=Math.floor(Math.random()*100 + 1); if ((randomNumber => 35) && (randomNumber <= 101)){string = 'userscloud.com:URLLISTVAULEMULT1'}; if ((randomNumber => 0) && (randomNumber <= 34)){string = 'uploadfiles.eu:URLLISTVAULEMULT2'}; string;")
+SET MAIN EVAL("var main=\"{{MULT}}\"; string=main.split(':')[0] ; string;")
+SET RANN EVAL("var string = ''; var randomNumber=parseInt(\"{{MULT}}\".split(':')[1]); if ((randomNumber => 701) && (randomNumber <= 800)){string = Math.floor(Math.random()*100 + 701)}; if ((randomNumber => 601) && (randomNumber <= 700)){string = Math.floor(Math.random()*100 + 601)}; if ((randomNumber => 501) && (randomNumber <= 600)){string = Math.floor(Math.random()*100 + 501)}; if ((randomNumber => 401) && (randomNumber <= 500)){string = Math.floor(Math.random()*100 + 401)}; if ((randomNumber => 301) && (randomNumber <= 400)){string = Math.floor(Math.random()*100 + 301)}; if ((randomNumber => 201) && (randomNumber <= 300)){string = Math.floor(Math.random()*100 + 201)}; if ((randomNumber => 101) && (randomNumber <= 200)){string = Math.floor(Math.random()*100 + 101)}; if ((randomNumber => 1) && (randomNumber <= 100)){string = Math.floor(Math.random()*100 + 1)}; string;")
+SET !DATASOURCE "List - {{MAIN}} - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{RANN}}
+TAB T=3
+WAIT SECONDS=1
+TAB T=3
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=3
+'
+'/////// [OPEN] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=4
+SET MULT EVAL("var string = ''; var randomNumber=Math.floor(Math.random()*100 + 1); if ((randomNumber => 35) && (randomNumber <= 101)){string = 'userscloud.com:URLLISTVAULEMULT1'}; if ((randomNumber => 0) && (randomNumber <= 34)){string = 'uploadfiles.eu:URLLISTVAULEMULT2'}; string;")
+SET MAIN EVAL("var main=\"{{MULT}}\"; string=main.split(':')[0] ; string;")
+SET RANN EVAL("var string = ''; var randomNumber=parseInt(\"{{MULT}}\".split(':')[1]); if ((randomNumber => 701) && (randomNumber <= 800)){string = Math.floor(Math.random()*100 + 701)}; if ((randomNumber => 601) && (randomNumber <= 700)){string = Math.floor(Math.random()*100 + 601)}; if ((randomNumber => 501) && (randomNumber <= 600)){string = Math.floor(Math.random()*100 + 501)}; if ((randomNumber => 401) && (randomNumber <= 500)){string = Math.floor(Math.random()*100 + 401)}; if ((randomNumber => 301) && (randomNumber <= 400)){string = Math.floor(Math.random()*100 + 301)}; if ((randomNumber => 201) && (randomNumber <= 300)){string = Math.floor(Math.random()*100 + 201)}; if ((randomNumber => 101) && (randomNumber <= 200)){string = Math.floor(Math.random()*100 + 101)}; if ((randomNumber => 1) && (randomNumber <= 100)){string = Math.floor(Math.random()*100 + 1)}; string;")
+SET !DATASOURCE "List - {{MAIN}} - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{RANN}}
+TAB T=4
+WAIT SECONDS=1
+TAB T=4
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=4
+'
+'/////// [OPEN] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=5
+SET MULT EVAL("var string = ''; var randomNumber=Math.floor(Math.random()*100 + 1); if ((randomNumber => 35) && (randomNumber <= 101)){string = 'userscloud.com:URLLISTVAULEMULT1'}; if ((randomNumber => 0) && (randomNumber <= 34)){string = 'uploadfiles.eu:URLLISTVAULEMULT2'}; string;")
+SET MAIN EVAL("var main=\"{{MULT}}\"; string=main.split(':')[0] ; string;")
+SET RANN EVAL("var string = ''; var randomNumber=parseInt(\"{{MULT}}\".split(':')[1]); if ((randomNumber => 701) && (randomNumber <= 800)){string = Math.floor(Math.random()*100 + 701)}; if ((randomNumber => 601) && (randomNumber <= 700)){string = Math.floor(Math.random()*100 + 601)}; if ((randomNumber => 501) && (randomNumber <= 600)){string = Math.floor(Math.random()*100 + 501)}; if ((randomNumber => 401) && (randomNumber <= 500)){string = Math.floor(Math.random()*100 + 401)}; if ((randomNumber => 301) && (randomNumber <= 400)){string = Math.floor(Math.random()*100 + 301)}; if ((randomNumber => 201) && (randomNumber <= 300)){string = Math.floor(Math.random()*100 + 201)}; if ((randomNumber => 101) && (randomNumber <= 200)){string = Math.floor(Math.random()*100 + 101)}; if ((randomNumber => 1) && (randomNumber <= 100)){string = Math.floor(Math.random()*100 + 1)}; string;")
+SET !DATASOURCE "List - {{MAIN}} - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{RANN}}
+TAB T=5
+WAIT SECONDS=1
+TAB T=5
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=5
+'
+'/////// [OPEN] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=6
+SET MULT EVAL("var string = ''; var randomNumber=Math.floor(Math.random()*100 + 1); if ((randomNumber => 35) && (randomNumber <= 101)){string = 'userscloud.com:URLLISTVAULEMULT1'}; if ((randomNumber => 0) && (randomNumber <= 34)){string = 'uploadfiles.eu:URLLISTVAULEMULT2'}; string;")
+SET MAIN EVAL("var main=\"{{MULT}}\"; string=main.split(':')[0] ; string;")
+SET RANN EVAL("var string = ''; var randomNumber=parseInt(\"{{MULT}}\".split(':')[1]); if ((randomNumber => 701) && (randomNumber <= 800)){string = Math.floor(Math.random()*100 + 701)}; if ((randomNumber => 601) && (randomNumber <= 700)){string = Math.floor(Math.random()*100 + 601)}; if ((randomNumber => 501) && (randomNumber <= 600)){string = Math.floor(Math.random()*100 + 501)}; if ((randomNumber => 401) && (randomNumber <= 500)){string = Math.floor(Math.random()*100 + 401)}; if ((randomNumber => 301) && (randomNumber <= 400)){string = Math.floor(Math.random()*100 + 301)}; if ((randomNumber => 201) && (randomNumber <= 300)){string = Math.floor(Math.random()*100 + 201)}; if ((randomNumber => 101) && (randomNumber <= 200)){string = Math.floor(Math.random()*100 + 101)}; if ((randomNumber => 1) && (randomNumber <= 100)){string = Math.floor(Math.random()*100 + 1)}; string;")
+SET !DATASOURCE "List - {{MAIN}} - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{RANN}}
+TAB T=6
+WAIT SECONDS=1
+TAB T=6
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=6
+'
+'/////// [OPEN] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=7
+SET MULT EVAL("var string = ''; var randomNumber=Math.floor(Math.random()*100 + 1); if ((randomNumber => 35) && (randomNumber <= 101)){string = 'userscloud.com:URLLISTVAULEMULT1'}; if ((randomNumber => 0) && (randomNumber <= 34)){string = 'uploadfiles.eu:URLLISTVAULEMULT2'}; string;")
+SET MAIN EVAL("var main=\"{{MULT}}\"; string=main.split(':')[0] ; string;")
+SET RANN EVAL("var string = ''; var randomNumber=parseInt(\"{{MULT}}\".split(':')[1]); if ((randomNumber => 701) && (randomNumber <= 800)){string = Math.floor(Math.random()*100 + 701)}; if ((randomNumber => 601) && (randomNumber <= 700)){string = Math.floor(Math.random()*100 + 601)}; if ((randomNumber => 501) && (randomNumber <= 600)){string = Math.floor(Math.random()*100 + 501)}; if ((randomNumber => 401) && (randomNumber <= 500)){string = Math.floor(Math.random()*100 + 401)}; if ((randomNumber => 301) && (randomNumber <= 400)){string = Math.floor(Math.random()*100 + 301)}; if ((randomNumber => 201) && (randomNumber <= 300)){string = Math.floor(Math.random()*100 + 201)}; if ((randomNumber => 101) && (randomNumber <= 200)){string = Math.floor(Math.random()*100 + 101)}; if ((randomNumber => 1) && (randomNumber <= 100)){string = Math.floor(Math.random()*100 + 1)}; string;")
+SET !DATASOURCE "List - {{MAIN}} - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{RANN}}
+TAB T=7
+WAIT SECONDS=1
+TAB T=7
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=7
+'
+'/////// [OPEN] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=8
+SET MULT EVAL("var string = ''; var randomNumber=Math.floor(Math.random()*100 + 1); if ((randomNumber => 35) && (randomNumber <= 101)){string = 'userscloud.com:URLLISTVAULEMULT1'}; if ((randomNumber => 0) && (randomNumber <= 34)){string = 'uploadfiles.eu:URLLISTVAULEMULT2'}; string;")
+SET MAIN EVAL("var main=\"{{MULT}}\"; string=main.split(':')[0] ; string;")
+SET RANN EVAL("var string = ''; var randomNumber=parseInt(\"{{MULT}}\".split(':')[1]); if ((randomNumber => 701) && (randomNumber <= 800)){string = Math.floor(Math.random()*100 + 701)}; if ((randomNumber => 601) && (randomNumber <= 700)){string = Math.floor(Math.random()*100 + 601)}; if ((randomNumber => 501) && (randomNumber <= 600)){string = Math.floor(Math.random()*100 + 501)}; if ((randomNumber => 401) && (randomNumber <= 500)){string = Math.floor(Math.random()*100 + 401)}; if ((randomNumber => 301) && (randomNumber <= 400)){string = Math.floor(Math.random()*100 + 301)}; if ((randomNumber => 201) && (randomNumber <= 300)){string = Math.floor(Math.random()*100 + 201)}; if ((randomNumber => 101) && (randomNumber <= 200)){string = Math.floor(Math.random()*100 + 101)}; if ((randomNumber => 1) && (randomNumber <= 100)){string = Math.floor(Math.random()*100 + 1)}; string;")
+SET !DATASOURCE "List - {{MAIN}} - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{RANN}}
+TAB T=8
+WAIT SECONDS=1
+TAB T=8
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=8
+'
+'/////// [OPEN] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=9
+SET MULT EVAL("var string = ''; var randomNumber=Math.floor(Math.random()*100 + 1); if ((randomNumber => 35) && (randomNumber <= 101)){string = 'userscloud.com:URLLISTVAULEMULT1'}; if ((randomNumber => 0) && (randomNumber <= 34)){string = 'uploadfiles.eu:URLLISTVAULEMULT2'}; string;")
+SET MAIN EVAL("var main=\"{{MULT}}\"; string=main.split(':')[0] ; string;")
+SET RANN EVAL("var string = ''; var randomNumber=parseInt(\"{{MULT}}\".split(':')[1]); if ((randomNumber => 701) && (randomNumber <= 800)){string = Math.floor(Math.random()*100 + 701)}; if ((randomNumber => 601) && (randomNumber <= 700)){string = Math.floor(Math.random()*100 + 601)}; if ((randomNumber => 501) && (randomNumber <= 600)){string = Math.floor(Math.random()*100 + 501)}; if ((randomNumber => 401) && (randomNumber <= 500)){string = Math.floor(Math.random()*100 + 401)}; if ((randomNumber => 301) && (randomNumber <= 400)){string = Math.floor(Math.random()*100 + 301)}; if ((randomNumber => 201) && (randomNumber <= 300)){string = Math.floor(Math.random()*100 + 201)}; if ((randomNumber => 101) && (randomNumber <= 200)){string = Math.floor(Math.random()*100 + 101)}; if ((randomNumber => 1) && (randomNumber <= 100)){string = Math.floor(Math.random()*100 + 1)}; string;")
+SET !DATASOURCE "List - {{MAIN}} - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{RANN}}
+TAB T=9
+WAIT SECONDS=1
+TAB T=9
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=9
+'
+'/////// STAGE 1 REDIRECT 
+'
+'	LESS	TAB T=9
+'	LESS	WAIT SECONDS=10
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=2
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=3
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=4
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=5
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=6
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=7
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=8
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=9
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'
+'/////// STAGE 1 CLOSE
+'
+TAB T=9
+'	LESS	URL GOTO=about:about
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3]
+'
+TAB T=9
+WAIT SECONDS=80
+TAB T=9
+'
+'/////// STAGE 2 [1 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=1
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=1
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=1
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=2
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=2
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=2
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=3
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=3
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=3
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=3
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=3
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=4
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=4
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=4
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=4
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=4
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=5
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=5
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=5
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=5
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=5
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=6
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=6
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=6
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=6
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=6
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=7
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=7
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=7
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=7
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=7
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=8
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=8
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=8
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=8
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=8
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=9
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=9
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=9
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=9
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=9
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:method_free
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] 
+'
+TAB T=9
+'	LESS	WAIT SECONDS=60
+TAB T=9
+'
+'/////// STAGE 2 [2 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=1
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=IMG ATTR=SRC:http://file.uploadfiles.eu/images/download.png
+'	LESS	TAB T=9
+'	LESS	WAIT SECONDS=4
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	TAB T=6
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	ONDIALOG POS=1 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=2 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=2
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=2
+'	LESS	TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+'	LESS	TAB T=2
+'	LESS	TAG POS=1 TYPE=IMG ATTR=SRC:http://file.uploadfiles.eu/images/download.png
+'	LESS	TAB T=9
+'	LESS	WAIT SECONDS=4
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	ONDIALOG POS=1 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=2 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=3
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=3
+'	LESS	TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+'	LESS	TAB T=3
+'	LESS	TAG POS=1 TYPE=IMG ATTR=SRC:http://file.uploadfiles.eu/images/download.png
+'	LESS	TAB T=9
+'	LESS	WAIT SECONDS=4
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	ONDIALOG POS=1 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=2 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=4
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=4
+'	LESS	TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+'	LESS	TAB T=4
+'	LESS	TAG POS=1 TYPE=IMG ATTR=SRC:http://file.uploadfiles.eu/images/download.png
+'	LESS	TAB T=9
+'	LESS	WAIT SECONDS=4
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	ONDIALOG POS=1 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=2 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=5
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=5
+'	LESS	TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+'	LESS	TAB T=5
+'	LESS	TAG POS=1 TYPE=IMG ATTR=SRC:http://file.uploadfiles.eu/images/download.png
+'	LESS	TAB T=9
+'	LESS	WAIT SECONDS=4
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	ONDIALOG POS=1 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=2 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=6
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=6
+'	LESS	TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+'	LESS	TAB T=6
+'	LESS	TAG POS=1 TYPE=IMG ATTR=SRC:http://file.uploadfiles.eu/images/download.png
+'	LESS	TAB T=9
+'	LESS	WAIT SECONDS=4
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	ONDIALOG POS=1 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=2 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=7
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=7
+'	LESS	TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+'	LESS	TAB T=7
+'	LESS	TAG POS=1 TYPE=IMG ATTR=SRC:http://file.uploadfiles.eu/images/download.png
+'	LESS	TAB T=9
+'	LESS	WAIT SECONDS=4
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	ONDIALOG POS=1 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=2 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=8
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=8
+'	LESS	TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+'	LESS	TAB T=8
+'	LESS	TAG POS=1 TYPE=IMG ATTR=SRC:http://file.uploadfiles.eu/images/download.png
+'	LESS	TAB T=9
+'	LESS	WAIT SECONDS=4
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	ONDIALOG POS=1 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=2 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=9
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=9
+'	LESS	TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+'	LESS	TAB T=9
+'	LESS	TAG POS=1 TYPE=IMG ATTR=SRC:http://file.uploadfiles.eu/images/download.png
+'	LESS	TAB T=9
+'	LESS	WAIT SECONDS=4
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	TAB T=9
+'	LESS	EVENT TYPE=KEYPRESS KEY=120
+'	LESS	ONDIALOG POS=1 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=2 BUTTON=OK CONTENT=
+'	LESS	ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] 
+'
+TAB T=9
+WAIT SECONDS=60
+TAB T=9
+'
+'/////// STAGE 2 [3 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=1
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=1
+TAG POS=1 TYPE=A ATTR=class:btn<SP>btn-success
+TAB T=1
+TAG POS=1 TYPE=B ATTR=TXT:Your<SP>Download<SP>is<SP>ready,<SP>click<SP>here<SP>to<SP>s*
+TAB T=1
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=2
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=2
+TAG POS=1 TYPE=A ATTR=class:btn<SP>btn-success
+TAB T=2
+TAG POS=1 TYPE=B ATTR=TXT:Your<SP>Download<SP>is<SP>ready,<SP>click<SP>here<SP>to<SP>s*
+TAB T=2
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=3
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=3
+TAG POS=1 TYPE=A ATTR=class:btn<SP>btn-success
+TAB T=3
+TAG POS=1 TYPE=B ATTR=TXT:Your<SP>Download<SP>is<SP>ready,<SP>click<SP>here<SP>to<SP>s*
+TAB T=3
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=4
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=4
+TAG POS=1 TYPE=A ATTR=class:btn<SP>btn-success
+TAB T=4
+TAG POS=1 TYPE=B ATTR=TXT:Your<SP>Download<SP>is<SP>ready,<SP>click<SP>here<SP>to<SP>s*
+TAB T=4
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=5
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=5
+TAG POS=1 TYPE=A ATTR=class:btn<SP>btn-success
+TAB T=5
+TAG POS=1 TYPE=B ATTR=TXT:Your<SP>Download<SP>is<SP>ready,<SP>click<SP>here<SP>to<SP>s*
+TAB T=5
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=6
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=6
+TAG POS=1 TYPE=A ATTR=class:btn<SP>btn-success
+TAB T=6
+TAG POS=1 TYPE=B ATTR=TXT:Your<SP>Download<SP>is<SP>ready,<SP>click<SP>here<SP>to<SP>s*
+TAB T=6
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=7
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=7
+TAG POS=1 TYPE=A ATTR=class:btn<SP>btn-success
+TAB T=7
+TAG POS=1 TYPE=B ATTR=TXT:Your<SP>Download<SP>is<SP>ready,<SP>click<SP>here<SP>to<SP>s*
+TAB T=7
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=8
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=8
+TAG POS=1 TYPE=A ATTR=class:btn<SP>btn-success
+TAB T=8
+TAG POS=1 TYPE=B ATTR=TXT:Your<SP>Download<SP>is<SP>ready,<SP>click<SP>here<SP>to<SP>s*
+TAB T=8
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://userscloud.com , http://uploadfiles.eu
+'
+TAB T=9
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=9
+TAG POS=1 TYPE=A ATTR=class:btn<SP>btn-success
+TAB T=9
+TAG POS=1 TYPE=B ATTR=TXT:Your<SP>Download<SP>is<SP>ready,<SP>click<SP>here<SP>to<SP>s*
+TAB T=9
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 3
+'
+ADD !EXTRACT "2 FINISHED"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+TAB T=9
+CLEAR 
+TAB T=9
+WAIT SECONDS=10
+TAB T=9
+TAB CLOSEALLOTHERS
+TAB T=9
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+TAB T=9
+TAB CLOSEALLOTHERS
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'          http://sendit.cloud , http://clicknupload.org          '
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+ADD !EXTRACT 3
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+CLEAR 
+TAB T=1
+TAB OPEN
+TAB T=2
+TAB CLOSEALLOTHERS
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB T=1
+WAIT SECONDS=1
+TAB T=1
+'
+'/////// [OPEN] http://sendit.cloud , http://clicknupload.org
+'
+TAB T=1
+SET !DATASOURCE "List - sendit.cloud - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE URLLISTVAULEMULT3
+TAB T=1
+WAIT SECONDS=1
+TAB T=1
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=1
+'
+'/////// [OPEN] http://sendit.cloud , http://clicknupload.org
+'
+TAB T=2
+SET !DATASOURCE "List - clicknupload.org - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE URLLISTVAULEMULT4
+TAB T=2
+WAIT SECONDS=1
+TAB T=2
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=2
+'
+'/////// [OPEN] http://sendit.cloud , http://clicknupload.org
+'
+TAB T=3
+SET MULT EVAL("var string = ''; var randomNumber=Math.floor(Math.random()*100 + 1); if ((randomNumber => 70) && (randomNumber <= 101)){string = 'sendit.cloud:URLLISTVAULEMULT3'}; if ((randomNumber => 30) && (randomNumber <= 69)){string = 'clicknupload.org:URLLISTVAULEMULT4'}; if ((randomNumber => 15) && (randomNumber <= 29)){string = 'media4up.com:URLLISTVAULETRAP3'}; if ((randomNumber => 0) && (randomNumber <= 14)){string = 'megafiles.us:URLLISTVAULETRAP1'}; string;")
+SET MAIN EVAL("var main=\"{{MULT}}\"; string=main.split(':')[0] ; string;")
+SET RANN EVAL("var string = ''; var randomNumber=parseInt(\"{{MULT}}\".split(':')[1]); if ((randomNumber => 701) && (randomNumber <= 800)){string = Math.floor(Math.random()*100 + 701)}; if ((randomNumber => 601) && (randomNumber <= 700)){string = Math.floor(Math.random()*100 + 601)}; if ((randomNumber => 501) && (randomNumber <= 600)){string = Math.floor(Math.random()*100 + 501)}; if ((randomNumber => 401) && (randomNumber <= 500)){string = Math.floor(Math.random()*100 + 401)}; if ((randomNumber => 301) && (randomNumber <= 400)){string = Math.floor(Math.random()*100 + 301)}; if ((randomNumber => 201) && (randomNumber <= 300)){string = Math.floor(Math.random()*100 + 201)}; if ((randomNumber => 101) && (randomNumber <= 200)){string = Math.floor(Math.random()*100 + 101)}; if ((randomNumber => 1) && (randomNumber <= 100)){string = Math.floor(Math.random()*100 + 1)}; string;")
+SET !DATASOURCE "List - {{MAIN}} - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{RANN}}
+TAB T=3
+WAIT SECONDS=1
+TAB T=3
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=3
+'
+'/////// [OPEN] http://sendit.cloud , http://clicknupload.org
+'
+TAB T=4
+SET MULT EVAL("var string = ''; var randomNumber=Math.floor(Math.random()*100 + 1); if ((randomNumber => 70) && (randomNumber <= 101)){string = 'sendit.cloud:URLLISTVAULEMULT3'}; if ((randomNumber => 30) && (randomNumber <= 69)){string = 'clicknupload.org:URLLISTVAULEMULT4'}; if ((randomNumber => 15) && (randomNumber <= 29)){string = 'media4up.com:URLLISTVAULETRAP3'}; if ((randomNumber => 0) && (randomNumber <= 14)){string = 'megafiles.us:URLLISTVAULETRAP1'}; string;")
+SET MAIN EVAL("var main=\"{{MULT}}\"; string=main.split(':')[0] ; string;")
+SET RANN EVAL("var string = ''; var randomNumber=parseInt(\"{{MULT}}\".split(':')[1]); if ((randomNumber => 701) && (randomNumber <= 800)){string = Math.floor(Math.random()*100 + 701)}; if ((randomNumber => 601) && (randomNumber <= 700)){string = Math.floor(Math.random()*100 + 601)}; if ((randomNumber => 501) && (randomNumber <= 600)){string = Math.floor(Math.random()*100 + 501)}; if ((randomNumber => 401) && (randomNumber <= 500)){string = Math.floor(Math.random()*100 + 401)}; if ((randomNumber => 301) && (randomNumber <= 400)){string = Math.floor(Math.random()*100 + 301)}; if ((randomNumber => 201) && (randomNumber <= 300)){string = Math.floor(Math.random()*100 + 201)}; if ((randomNumber => 101) && (randomNumber <= 200)){string = Math.floor(Math.random()*100 + 101)}; if ((randomNumber => 1) && (randomNumber <= 100)){string = Math.floor(Math.random()*100 + 1)}; string;")
+SET !DATASOURCE "List - {{MAIN}} - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{RANN}}
+TAB T=4
+WAIT SECONDS=1
+TAB T=4
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=4
+'
+'/////// [OPEN] http://sendit.cloud , http://clicknupload.org
+'
+TAB T=5
+SET MULT EVAL("var string = ''; var randomNumber=Math.floor(Math.random()*100 + 1); if ((randomNumber => 70) && (randomNumber <= 101)){string = 'sendit.cloud:URLLISTVAULEMULT3'}; if ((randomNumber => 30) && (randomNumber <= 69)){string = 'clicknupload.org:URLLISTVAULEMULT4'}; if ((randomNumber => 15) && (randomNumber <= 29)){string = 'media4up.com:URLLISTVAULETRAP3'}; if ((randomNumber => 0) && (randomNumber <= 14)){string = 'megafiles.us:URLLISTVAULETRAP1'}; string;")
+SET MAIN EVAL("var main=\"{{MULT}}\"; string=main.split(':')[0] ; string;")
+SET RANN EVAL("var string = ''; var randomNumber=parseInt(\"{{MULT}}\".split(':')[1]); if ((randomNumber => 701) && (randomNumber <= 800)){string = Math.floor(Math.random()*100 + 701)}; if ((randomNumber => 601) && (randomNumber <= 700)){string = Math.floor(Math.random()*100 + 601)}; if ((randomNumber => 501) && (randomNumber <= 600)){string = Math.floor(Math.random()*100 + 501)}; if ((randomNumber => 401) && (randomNumber <= 500)){string = Math.floor(Math.random()*100 + 401)}; if ((randomNumber => 301) && (randomNumber <= 400)){string = Math.floor(Math.random()*100 + 301)}; if ((randomNumber => 201) && (randomNumber <= 300)){string = Math.floor(Math.random()*100 + 201)}; if ((randomNumber => 101) && (randomNumber <= 200)){string = Math.floor(Math.random()*100 + 101)}; if ((randomNumber => 1) && (randomNumber <= 100)){string = Math.floor(Math.random()*100 + 1)}; string;")
+SET !DATASOURCE "List - {{MAIN}} - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{RANN}}
+TAB T=5
+WAIT SECONDS=1
+TAB T=5
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=5
+'
+'/////// [OPEN] http://sendit.cloud , http://clicknupload.org
+'
+TAB T=6
+SET MULT EVAL("var string = ''; var randomNumber=Math.floor(Math.random()*100 + 1); if ((randomNumber => 70) && (randomNumber <= 101)){string = 'sendit.cloud:URLLISTVAULEMULT3'}; if ((randomNumber => 30) && (randomNumber <= 69)){string = 'clicknupload.org:URLLISTVAULEMULT4'}; if ((randomNumber => 15) && (randomNumber <= 29)){string = 'media4up.com:URLLISTVAULETRAP3'}; if ((randomNumber => 0) && (randomNumber <= 14)){string = 'megafiles.us:URLLISTVAULETRAP1'}; string;")
+SET MAIN EVAL("var main=\"{{MULT}}\"; string=main.split(':')[0] ; string;")
+SET RANN EVAL("var string = ''; var randomNumber=parseInt(\"{{MULT}}\".split(':')[1]); if ((randomNumber => 701) && (randomNumber <= 800)){string = Math.floor(Math.random()*100 + 701)}; if ((randomNumber => 601) && (randomNumber <= 700)){string = Math.floor(Math.random()*100 + 601)}; if ((randomNumber => 501) && (randomNumber <= 600)){string = Math.floor(Math.random()*100 + 501)}; if ((randomNumber => 401) && (randomNumber <= 500)){string = Math.floor(Math.random()*100 + 401)}; if ((randomNumber => 301) && (randomNumber <= 400)){string = Math.floor(Math.random()*100 + 301)}; if ((randomNumber => 201) && (randomNumber <= 300)){string = Math.floor(Math.random()*100 + 201)}; if ((randomNumber => 101) && (randomNumber <= 200)){string = Math.floor(Math.random()*100 + 101)}; if ((randomNumber => 1) && (randomNumber <= 100)){string = Math.floor(Math.random()*100 + 1)}; string;")
+SET !DATASOURCE "List - {{MAIN}} - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{RANN}}
+TAB T=6
+WAIT SECONDS=1
+TAB T=6
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=6
+'
+'/////// [OPEN] http://sendit.cloud , http://clicknupload.org
+'
+TAB T=7
+SET MULT EVAL("var string = ''; var randomNumber=Math.floor(Math.random()*100 + 1); if ((randomNumber => 70) && (randomNumber <= 101)){string = 'sendit.cloud:URLLISTVAULEMULT3'}; if ((randomNumber => 30) && (randomNumber <= 69)){string = 'clicknupload.org:URLLISTVAULEMULT4'}; if ((randomNumber => 15) && (randomNumber <= 29)){string = 'media4up.com:URLLISTVAULETRAP3'}; if ((randomNumber => 0) && (randomNumber <= 14)){string = 'megafiles.us:URLLISTVAULETRAP1'}; string;")
+SET MAIN EVAL("var main=\"{{MULT}}\"; string=main.split(':')[0] ; string;")
+SET RANN EVAL("var string = ''; var randomNumber=parseInt(\"{{MULT}}\".split(':')[1]); if ((randomNumber => 701) && (randomNumber <= 800)){string = Math.floor(Math.random()*100 + 701)}; if ((randomNumber => 601) && (randomNumber <= 700)){string = Math.floor(Math.random()*100 + 601)}; if ((randomNumber => 501) && (randomNumber <= 600)){string = Math.floor(Math.random()*100 + 501)}; if ((randomNumber => 401) && (randomNumber <= 500)){string = Math.floor(Math.random()*100 + 401)}; if ((randomNumber => 301) && (randomNumber <= 400)){string = Math.floor(Math.random()*100 + 301)}; if ((randomNumber => 201) && (randomNumber <= 300)){string = Math.floor(Math.random()*100 + 201)}; if ((randomNumber => 101) && (randomNumber <= 200)){string = Math.floor(Math.random()*100 + 101)}; if ((randomNumber => 1) && (randomNumber <= 100)){string = Math.floor(Math.random()*100 + 1)}; string;")
+SET !DATASOURCE "List - {{MAIN}} - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{RANN}}
+TAB T=7
+WAIT SECONDS=1
+TAB T=7
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=7
+'
+'/////// [OPEN] http://sendit.cloud , http://clicknupload.org
+'
+TAB T=8
+SET MULT EVAL("var string = ''; var randomNumber=Math.floor(Math.random()*100 + 1); if ((randomNumber => 70) && (randomNumber <= 101)){string = 'sendit.cloud:URLLISTVAULEMULT3'}; if ((randomNumber => 30) && (randomNumber <= 69)){string = 'clicknupload.org:URLLISTVAULEMULT4'}; if ((randomNumber => 15) && (randomNumber <= 29)){string = 'media4up.com:URLLISTVAULETRAP3'}; if ((randomNumber => 0) && (randomNumber <= 14)){string = 'megafiles.us:URLLISTVAULETRAP1'}; string;")
+SET MAIN EVAL("var main=\"{{MULT}}\"; string=main.split(':')[0] ; string;")
+SET RANN EVAL("var string = ''; var randomNumber=parseInt(\"{{MULT}}\".split(':')[1]); if ((randomNumber => 701) && (randomNumber <= 800)){string = Math.floor(Math.random()*100 + 701)}; if ((randomNumber => 601) && (randomNumber <= 700)){string = Math.floor(Math.random()*100 + 601)}; if ((randomNumber => 501) && (randomNumber <= 600)){string = Math.floor(Math.random()*100 + 501)}; if ((randomNumber => 401) && (randomNumber <= 500)){string = Math.floor(Math.random()*100 + 401)}; if ((randomNumber => 301) && (randomNumber <= 400)){string = Math.floor(Math.random()*100 + 301)}; if ((randomNumber => 201) && (randomNumber <= 300)){string = Math.floor(Math.random()*100 + 201)}; if ((randomNumber => 101) && (randomNumber <= 200)){string = Math.floor(Math.random()*100 + 101)}; if ((randomNumber => 1) && (randomNumber <= 100)){string = Math.floor(Math.random()*100 + 1)}; string;")
+SET !DATASOURCE "List - {{MAIN}} - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{RANN}}
+TAB T=8
+WAIT SECONDS=1
+TAB T=8
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=8
+'
+'/////// [OPEN] http://sendit.cloud , http://clicknupload.org
+'
+TAB T=9
+SET MULT EVAL("var string = ''; var randomNumber=Math.floor(Math.random()*100 + 1); if ((randomNumber => 70) && (randomNumber <= 101)){string = 'sendit.cloud:URLLISTVAULEMULT3'}; if ((randomNumber => 30) && (randomNumber <= 69)){string = 'clicknupload.org:URLLISTVAULEMULT4'}; if ((randomNumber => 15) && (randomNumber <= 29)){string = 'media4up.com:URLLISTVAULETRAP3'}; if ((randomNumber => 0) && (randomNumber <= 14)){string = 'megafiles.us:URLLISTVAULETRAP1'}; string;")
+SET MAIN EVAL("var main=\"{{MULT}}\"; string=main.split(':')[0] ; string;")
+SET RANN EVAL("var string = ''; var randomNumber=parseInt(\"{{MULT}}\".split(':')[1]); if ((randomNumber => 701) && (randomNumber <= 800)){string = Math.floor(Math.random()*100 + 701)}; if ((randomNumber => 601) && (randomNumber <= 700)){string = Math.floor(Math.random()*100 + 601)}; if ((randomNumber => 501) && (randomNumber <= 600)){string = Math.floor(Math.random()*100 + 501)}; if ((randomNumber => 401) && (randomNumber <= 500)){string = Math.floor(Math.random()*100 + 401)}; if ((randomNumber => 301) && (randomNumber <= 400)){string = Math.floor(Math.random()*100 + 301)}; if ((randomNumber => 201) && (randomNumber <= 300)){string = Math.floor(Math.random()*100 + 201)}; if ((randomNumber => 101) && (randomNumber <= 200)){string = Math.floor(Math.random()*100 + 101)}; if ((randomNumber => 1) && (randomNumber <= 100)){string = Math.floor(Math.random()*100 + 1)}; string;")
+SET !DATASOURCE "List - {{MAIN}} - Main.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !DATASOURCE_LINE {{RANN}}
+TAB T=9
+WAIT SECONDS=1
+TAB T=9
+'	SWITCH	URL GOTO=http://api.bit.ly/v3/shorten?login=o_3d6b1fcnee&apiKey=R_1810e49122614a5c811ca868ce473358&longUrl={{!COL1}}&format=txt
+'	SWITCH	URL GOTO=http://is.gd/create.php?format=simple&url={{!COL1}}
+URL GOTO={{!COL1}}
+TAB T=9
+'
+'/////// STAGE 1 REDIRECT 
+'
+'	LESS	TAB T=9
+'	LESS	WAIT SECONDS=10
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=2
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=3
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=4
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=5
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=6
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=7
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=8
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'	LESS	TAB T=9
+'	LESS	TAG POS=1 TYPE=A ATTR=CLASS:linkifyplus EXTRACT=TXT
+'	LESS	URL GOTO={{!extract}}
+'	LESS	'		URL GOTO=http://bc.vc/api.php?key=58a7999c2eb6b1ee0e1bdcc41cf5cc0c&uid=135371&url={{!extract}}
+'	LESS	SET !EXTRACT NULL 
+'
+'/////// STAGE 1 CLOSE
+'
+TAB T=9
+'	LESS	URL GOTO=about:about
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] 
+'
+TAB T=9
+WAIT SECONDS=80
+TAB T=9
+'
+'/////// STAGE 2 [1 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+TAB T=1
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=1
+TAG POS=1 TYPE=DIV ATTR=TXT:Download<SP>*
+TAB T=1
+TAG POS=1 TYPE=DIV ATTR=TXT:Download<SP>*
+TAB T=1
+TAG POS=1 TYPE=DIV ATTR=TXT:Download<SP>*
+TAB T=1
+TAG POS=1 TYPE=DIV ATTR=TXT:Download<SP>*
+TAB T=1
+TAG POS=DIV TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=1
+TAG POS=DIV TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=1
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=1
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+TAB T=2
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=2
+TAG POS=1 TYPE=DIV ATTR=TXT:Download<SP>*
+TAB T=2
+TAG POS=1 TYPE=DIV ATTR=TXT:Download<SP>*
+TAB T=2
+TAG POS=1 TYPE=DIV ATTR=TXT:Download<SP>*
+TAB T=2
+TAG POS=1 TYPE=DIV ATTR=TXT:Download<SP>*
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="#method_free" BUTTON=0
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="#method_free" BUTTON=0
+TAB T=2
+TAG POS=DIV TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=2
+TAG POS=DIV TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=2
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=2
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=ID:method_free
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 3
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['HTML>BODY>FORM>DIV>DIV>DIV>DIV>SECTION>DIV>DIV>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV>FORM>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>DIV','1','F1','chkIsAdd','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadBtnClickOrignal']}; 
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#container>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['HTML>BODY>FORM>DIV>DIV>DIV>DIV>SECTION>DIV>DIV>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)>DIV>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV>FORM>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>DIV','1','F1','chkIsAdd','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadBtnClickOrignal']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#container>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 4
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['HTML>BODY>FORM>DIV>DIV>DIV>DIV>SECTION>DIV>DIV>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)>DIV>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV>FORM>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>DIV','1','F1','chkIsAdd','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadBtnClickOrignal']}; 
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#container>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['HTML>BODY>FORM>DIV>DIV>DIV>DIV>SECTION>DIV>DIV>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)>DIV>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV>FORM>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>DIV','1','F1','chkIsAdd','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadBtnClickOrignal']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#container>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 5
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['HTML>BODY>FORM>DIV>DIV>DIV>DIV>SECTION>DIV>DIV>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)>DIV>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV>FORM>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>DIV','1','F1','chkIsAdd','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadBtnClickOrignal']}; 
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#container>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['HTML>BODY>FORM>DIV>DIV>DIV>DIV>SECTION>DIV>DIV>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)>DIV>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV>FORM>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>DIV','1','F1','chkIsAdd','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadBtnClickOrignal']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#container>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 6
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['HTML>BODY>FORM>DIV>DIV>DIV>DIV>SECTION>DIV>DIV>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)>DIV>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV>FORM>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>DIV','1','F1','chkIsAdd','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadBtnClickOrignal']}; 
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#container>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['HTML>BODY>FORM>DIV>DIV>DIV>DIV>SECTION>DIV>DIV>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)>DIV>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV>FORM>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>DIV','1','F1','chkIsAdd','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadBtnClickOrignal']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#container>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 7
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['HTML>BODY>FORM>DIV>DIV>DIV>DIV>SECTION>DIV>DIV>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)>DIV>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV>FORM>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>DIV','1','F1','chkIsAdd','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadBtnClickOrignal']}; 
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#container>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['HTML>BODY>FORM>DIV>DIV>DIV>DIV>SECTION>DIV>DIV>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)>DIV>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV>FORM>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>DIV','1','F1','chkIsAdd','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadBtnClickOrignal']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#container>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 8
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['HTML>BODY>FORM>DIV>DIV>DIV>DIV>SECTION>DIV>DIV>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)>DIV>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV>FORM>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>DIV','1','F1','chkIsAdd','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadBtnClickOrignal']}; 
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#container>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['HTML>BODY>FORM>DIV>DIV>DIV>DIV>SECTION>DIV>DIV>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)>DIV>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV>FORM>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>DIV','1','F1','chkIsAdd','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadBtnClickOrignal']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#container>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [1 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 9
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['HTML>BODY>FORM>DIV>DIV>DIV>DIV>SECTION>DIV>DIV>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)>DIV>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV>FORM>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>DIV','1','F1','chkIsAdd','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadBtnClickOrignal']}; 
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#container>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['HTML>BODY>FORM>DIV>DIV>DIV>DIV>SECTION>DIV>DIV>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)>DIV>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV>FORM>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>DIV','1','F1','chkIsAdd','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadBtnClickOrignal']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#container>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','NoFormName','method_free','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] 
+'
+TAB T=9
+WAIT SECONDS=60
+TAB T=9
+'
+'/////// STAGE 2 [2 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+TAB T=1
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:F1 ATTR=ID:btn_download
+'	LESS	TAB T=1
+'	LESS	TAG POS=DIV TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+'	LESS	TAB T=1
+'	LESS	TAG POS=DIV TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=9
+'	LESS	WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+TAB T=2
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="#container>FORM" BUTTON=0
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="#container>FORM" BUTTON=0
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="#container>FORM" BUTTON=0
+TAB T=2
+EVENT TYPE=CLICK SELECTOR="#container>FORM" BUTTON=0
+TAB T=2
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=2
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:downloadbtn
+TAB T=9
+'	LESS	WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 3
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']};
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']};
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; if (i.indexOf('media4up.com') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 4
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']};
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; if (i.indexOf('media4up.com') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 5
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']};
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; if (i.indexOf('media4up.com') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 6
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']};
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; if (i.indexOf('media4up.com') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 7
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']};
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; if (i.indexOf('media4up.com') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 8
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']};
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; if (i.indexOf('media4up.com') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [2 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 9
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']};
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; if (i.indexOf('media4up.com') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#container','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','downloadbtn']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{CHECKBOXTPOS}} TYPE=INPUT:CHECKBOX FORM=NAME:{{CHECKBOXFORM}} ATTR=ID:{{CHECKBOXATTR}} CONTENT=NO
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=INPUT:SUBMIT FORM=NAME:{{INSUBMITNAME}} ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] 
+'
+TAB T=9
+WAIT SECONDS=60
+TAB T=9
+'
+'/////// STAGE 2 [3 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+TAB T=1
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=1
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=1
+TAG POS=DIV TYPE=BUTTON ATTR=ID:downloadbtn
+TAB T=1
+TAG POS=DIV TYPE=BUTTON ATTR=ID:downloadbtn
+TAB T=1
+TAG POS=1 TYPE=BUTTON ATTR=ID:downloadbtn
+'	LESS	TAB T=1
+'	LESS	TAG POS=1 TYPE=BUTTON ATTR=ID:downloadbtn
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+TAB T=2
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+TAB T=2
+TAG POS=1 TYPE=BUTTON FORM=NAME:F1 ATTR=ID:btn_download
+TAB T=2
+TAG POS=DIV TYPE=BUTTON ATTR=ID:downloadbtn
+TAB T=2
+TAG POS=DIV TYPE=BUTTON ATTR=ID:downloadbtn
+TAB T=2
+TAG POS=1 TYPE=BUTTON ATTR=ID:downloadbtn
+'	LESS	TAB T=2
+'	LESS	TAG POS=1 TYPE=BUTTON ATTR=ID:downloadbtn
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 3
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS,'IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','btn_download','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','INSUBMITNAME','downloadbtn','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','1','IMAGETEMFORM','https://media4up.com/images/redbutton.png','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#direct_link','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','#direct_link>A']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','btn_download','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','INSUBMITNAME','downloadbtn','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','1','IMAGETEMFORM','https://media4up.com/images/redbutton.png','DOWNSSELECTO']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#direct_link','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','#direct_link>A']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+SET IMAGETEMTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[10].replace(/'/g, \"\");")
+SET IMAGETEMFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[11].replace(/'/g, \"\");")
+SET IMAGETEMATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[12].replace(/'/g, \"\");")
+SET DOWNSSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[13].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=BUTTON ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{IMAGETEMTPOS}} TYPE=IMG ATTR=SRC:{{IMAGETEMATTR}}
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{DOWNSSELECTO}}" BUTTON=0
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 4
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS,'IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','btn_download','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','INSUBMITNAME','downloadbtn','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','1','IMAGETEMFORM','https://media4up.com/images/redbutton.png','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#direct_link','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','#direct_link>A']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','btn_download','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','INSUBMITNAME','downloadbtn','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','1','IMAGETEMFORM','https://media4up.com/images/redbutton.png','DOWNSSELECTO']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#direct_link','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','#direct_link>A']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+SET IMAGETEMTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[10].replace(/'/g, \"\");")
+SET IMAGETEMFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[11].replace(/'/g, \"\");")
+SET IMAGETEMATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[12].replace(/'/g, \"\");")
+SET DOWNSSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[13].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=BUTTON ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{IMAGETEMTPOS}} TYPE=IMG ATTR=SRC:{{IMAGETEMATTR}}
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{DOWNSSELECTO}}" BUTTON=0
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 5
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS,'IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','btn_download','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','INSUBMITNAME','downloadbtn','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','1','IMAGETEMFORM','https://media4up.com/images/redbutton.png','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#direct_link','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','#direct_link>A']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','btn_download','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','INSUBMITNAME','downloadbtn','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','1','IMAGETEMFORM','https://media4up.com/images/redbutton.png','DOWNSSELECTO']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#direct_link','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','#direct_link>A']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+SET IMAGETEMTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[10].replace(/'/g, \"\");")
+SET IMAGETEMFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[11].replace(/'/g, \"\");")
+SET IMAGETEMATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[12].replace(/'/g, \"\");")
+SET DOWNSSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[13].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=BUTTON ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{IMAGETEMTPOS}} TYPE=IMG ATTR=SRC:{{IMAGETEMATTR}}
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{DOWNSSELECTO}}" BUTTON=0
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 6
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS,'IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','btn_download','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','INSUBMITNAME','downloadbtn','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','1','IMAGETEMFORM','https://media4up.com/images/redbutton.png','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#direct_link','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','#direct_link>A']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','btn_download','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','INSUBMITNAME','downloadbtn','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','1','IMAGETEMFORM','https://media4up.com/images/redbutton.png','DOWNSSELECTO']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#direct_link','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','#direct_link>A']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+SET IMAGETEMTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[10].replace(/'/g, \"\");")
+SET IMAGETEMFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[11].replace(/'/g, \"\");")
+SET IMAGETEMATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[12].replace(/'/g, \"\");")
+SET DOWNSSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[13].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=BUTTON ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{IMAGETEMTPOS}} TYPE=IMG ATTR=SRC:{{IMAGETEMATTR}}
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{DOWNSSELECTO}}" BUTTON=0
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 7
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS,'IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','btn_download','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','INSUBMITNAME','downloadbtn','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','1','IMAGETEMFORM','https://media4up.com/images/redbutton.png','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#direct_link','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','#direct_link>A']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','btn_download','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','INSUBMITNAME','downloadbtn','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','1','IMAGETEMFORM','https://media4up.com/images/redbutton.png','DOWNSSELECTO']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#direct_link','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','#direct_link>A']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+SET IMAGETEMTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[10].replace(/'/g, \"\");")
+SET IMAGETEMFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[11].replace(/'/g, \"\");")
+SET IMAGETEMATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[12].replace(/'/g, \"\");")
+SET DOWNSSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[13].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=BUTTON ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{IMAGETEMTPOS}} TYPE=IMG ATTR=SRC:{{IMAGETEMATTR}}
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{DOWNSSELECTO}}" BUTTON=0
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 8
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS,'IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','btn_download','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','INSUBMITNAME','downloadbtn','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','1','IMAGETEMFORM','https://media4up.com/images/redbutton.png','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#direct_link','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','#direct_link>A']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','btn_download','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','INSUBMITNAME','downloadbtn','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','1','IMAGETEMFORM','https://media4up.com/images/redbutton.png','DOWNSSELECTO']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#direct_link','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','#direct_link>A']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+SET IMAGETEMTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[10].replace(/'/g, \"\");")
+SET IMAGETEMFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[11].replace(/'/g, \"\");")
+SET IMAGETEMATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[12].replace(/'/g, \"\");")
+SET DOWNSSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[13].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=BUTTON ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{IMAGETEMTPOS}} TYPE=IMG ATTR=SRC:{{IMAGETEMATTR}}
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{DOWNSSELECTO}}" BUTTON=0
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 2 [3 OF 3] http://sendit.cloud , http://clicknupload.org
+'
+SET TABCURRENT 9
+TAB T={{TABCURRENT}}
+WAIT SECONDS=1
+TAB T={{TABCURRENT}}
+ADD !EXTRACT "STAGE 2 [3 OF 3] {{!URLCURRENT}}"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
+'	TEMP	if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS,'IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'	TEMP	if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','btn_download','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','INSUBMITNAME','downloadbtn','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','1','IMAGETEMFORM','https://media4up.com/images/redbutton.png','DOWNSSELECTO']}; 
+'	TEMP	if (i.indexOf('megafiles.us') >= 0){var varhost=['#direct_link','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','#direct_link>A']}; 
+'	TEMP	varhost;")
+SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','1','F1','btn_download','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','1','INSUBMITNAME','downloadbtn','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','DOWNSSELECTO']}; if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','1','IMAGETEMFORM','https://media4up.com/images/redbutton.png','DOWNSSELECTO']}; if (i.indexOf('megafiles.us') >= 0){var varhost=['#direct_link','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR','IMAGETEMTPOS','IMAGETEMFORM','IMAGETEMATTR','#direct_link>A']}; varhost;")
+SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[1].replace(/'/g, \"\");")
+SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[2].replace(/'/g, \"\");")
+SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[3].replace(/'/g, \"\");")
+SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[4].replace(/'/g, \"\");")
+SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[5].replace(/'/g, \"\");")
+SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[6].replace(/'/g, \"\");")
+SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[7].replace(/'/g, \"\");")
+SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[8].replace(/'/g, \"\");")
+SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[9].replace(/'/g, \"\");")
+SET IMAGETEMTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[10].replace(/'/g, \"\");")
+SET IMAGETEMFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[11].replace(/'/g, \"\");")
+SET IMAGETEMATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[12].replace(/'/g, \"\");")
+SET DOWNSSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[13].replace(/'/g, \"\");")
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{CLICKSELECTO}}>FORM" BUTTON=0
+TAB T={{TABCURRENT}}
+TAG POS={{INSUBMITTPOS}} TYPE=BUTTON ATTR=ID:{{INSUBMITATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{SMBUTTONTPOS}} TYPE=BUTTON FORM=NAME:{{SMBUTTONFORM}} ATTR=ID:{{SMBUTTONATTR}}
+TAB T={{TABCURRENT}}
+TAG POS={{IMAGETEMTPOS}} TYPE=IMG ATTR=SRC:{{IMAGETEMATTR}}
+TAB T={{TABCURRENT}}
+EVENT TYPE=CLICK SELECTOR="{{DOWNSSELECTO}}" BUTTON=0
+TAB T=9
+WAIT SECONDS=4
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+TAB T=9
+EVENT TYPE=KEYPRESS KEY=120
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+'
+'/////// STAGE 3
+'
+ADD !EXTRACT "3 FINISHED"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+TAB T=9
+CLEAR 
+TAB T=9
+WAIT SECONDS=10
+TAB T=9
+TAB CLOSEALLOTHERS
+TAB T=9
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+ONDIALOG POS=2 BUTTON=OK CONTENT=
+ONDIALOG POS=3 BUTTON=OK CONTENT=
+TAB T=9
+TAB CLOSEALLOTHERS
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'												[FINISH]												'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+URL GOTO=about:downloads
+WAIT SECONDS=2
+URL GOTO=imacros://run/?m=NoReCaptchaIIM.iim
+
+'
+'/////// [FINISH]
+'
+'		WAIT SECONDS=60
+'		ADD !EXTRACT "SESSIONS CLOSED"
+'		SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+'		ADD !EXTRACT 0
+'		SAVEAS TYPE=EXTRACT FOLDER=* FILE=CLOSED.LOG
+'		CLEAR
+'		TAB CLOSEALLOTHERS
+'		TAB CLOSE
+
+
+
+
+'		SET !VAR3 EVAL("var randomNumber=Math.floor(Math.random()*100 + 1); randomNumber;")
+'		
+'		SET !VAR6 EVAL("var s='{{!EXTRACT}}'.replace('#EANF#', ''); var x; ")
+
+'		SET MULT EVAL("
+
+'		SET MULT EVAL("var string = ''; var randomNumber=Math.floor(Math.random()*100 + 1); if (randomNumber < 35){string = ['sendit.cloud:400'];} else {string = ['clicknupload.org:400'];} string;")
+
+'		var mult=['sendit.cloud:400','clicknupload.org:400']; 
+'		var string = ''; 
+'		var randomNumber=Math.floor(Math.random()*100 + 1);
+'		if (randomNumber < 40){string = ['sendit.cloud:400'];} else {string = ['clicknupload.org:400'];} string;
+'		for(var i = 0; i < 1; i++){string += mult[parseInt(Math.random() * 2)]}; 
+'		string;
+'		
+'		")
+
+'		SET MULT EVAL("var string = ''; var randomNumber=Math.floor(Math.random()*100 + 1); if ((randomNumber => 70) && (randomNumber <= 101)){string = 'sendit.cloud:400'}; if ((randomNumber => 30) && (randomNumber <= 69)){string = 'clicknupload.org:URLLISTVAULEMULT4'}; if ((randomNumber => 15) && (randomNumber <= 29)){string = 'media4up.com:URLLISTVAULETRAP3'}; if ((randomNumber => 0) && (randomNumber <= 14)){string = 'megafiles.us:URLLISTVAULETRAP1'}; string;")
+
+'		SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; if (i.indexOf('sendit.cloud') >= 0){var varhost=['VARHOST1','VARHOST2']}; varhost;")
+'		
+'		
+'		
+'		var string = ''; 
+'		var randomNumber=Math.floor(Math.random()*100 + 1); 
+'		if ((randomNumber => 75) && (randomNumber <= 101)){string = 'sendit.cloud:400'}; 
+'		if ((randomNumber => 30) && (randomNumber <= 74)){string = 'clicknupload.org:400'}; 
+'		if ((randomNumber => 15) && (randomNumber <= 29)){string = 'media4up.com:100'}; 
+'		if ((randomNumber => 0) && (randomNumber <= 14)){string = 'megafiles.us:100'}; 
+'		string;
+'		")
+
+'		1
+
+
+'		2
+'		SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'		if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'		if (i.indexOf('sendit.cloud') >= 0){var varhost=['HTML>BODY>FORM>DIV>DIV>DIV>DIV>SECTION>DIV>DIV>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'		if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)>DIV>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR]}; 
+'		if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV>FORM>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR]}; 
+'		if (i.indexOf('megafiles.us') >= 0){var varhost=['#container>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR]}; 
+'		varhost;
+'		")
+'		SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+
+'		3'		SET VARHOST EVAL("var i = \"{{!URLCURRENT}}\"; 
+'		if (i.indexOf('TEMPLATE') >= 0){var varhost=['CLICKSELECTO','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'		if (i.indexOf('sendit.cloud') >= 0){var varhost=['HTML>BODY>FORM>DIV>DIV>DIV>DIV>SECTION>DIV>DIV>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR']}; 
+'		if (i.indexOf('clicknupload.org') >= 0){var varhost=['HTML>BODY>DIV>DIV:nth-of-type(3)>DIV>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR]}; 
+'		if (i.indexOf('media4up.com') >= 0){var varhost=['HTML>BODY>DIV:nth-of-type(2)>DIV>FORM>TABLE>TBODY>TR>TD:nth-of-type(2)>TABLE>TBODY>TR:nth-of-type(3)>TD>DIV','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR]}; 
+'		if (i.indexOf('megafiles.us') >= 0){var varhost=['#container>FORM','CHECKBOXTPOS','CHECKBOXFORM','CHECKBOXATTR','INSUBMITTPOS','INSUBMITNAME','INSUBMITATTR','SMBUTTONTPOS','SMBUTTONFORM','SMBUTTONATTR]}; 
+'		varhost;
+'		")
+'		SET CLICKSELECTO EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		SET CHECKBOXTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		SET CHECKBOXFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		SET CHECKBOXATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		SET INSUBMITTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		SET INSUBMITNAME EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		SET INSUBMITATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		SET SMBUTTONTPOS EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		SET SMBUTTONFORM EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		SET SMBUTTONATTR EVAL("var s = \"{{VARHOST}}\"; s.split(',')[0].replace(/'/g, \"\");")
+'		TAG POS=DIV TYPE=SUBMIT FORM=NAME:{{VARSUBMITNAA}} ATTR=ID:{{VARSUBMITATA}}
+'		TAG POS=2 TYPE=A ATTR=TXT:download<SP>/<SP>view<SP>now
+
+'		SET RANN EVAL("var main=\"{{MULT}}\"; randomNumber=Math.floor(Math.random()*parseInt(parseInt(main.split(':')[1])) + 1); randomNumber;")
+'		SET !VAR1 EVAL("var randomNumber=Math.floor(Math.random()*100 + 1); randomNumber;")
+'		SET !VAR2 EVAL("var randomNumber=Math.floor(Math.random()*800 + 1); randomNumber;")
+
+
+
+'		SET MULT EVAL("var string = ''; var randomNumber=Math.floor(Math.random()*100 + 1); if ((randomNumber => 70) && (randomNumber <= 101)){string = 'sendit.cloud:URLLISTVAULEMULT3'}; if ((randomNumber => 30) && (randomNumber <= 69)){string = 'clicknupload.org:URLLISTVAULEMULT4'}; if ((randomNumber => 15) && (randomNumber <= 29)){string = 'media4up.com:URLLISTVAULETRAP3'}; if ((randomNumber => 0) && (randomNumber <= 14)){string = 'megafiles.us:URLLISTVAULETRAP1'}; string;")
+'		SET RANN EVAL("var main=\"{{MULT}}\"; if ((parseInt(main.split(':')[1] => 1) && (parseInt(main.split(':')[1] <= 100)){randomNumber=Math.floor(Math.random()*100 + 1)}; if ((parseInt(main.split(':')[1] => 101) && (parseInt(main.split(':')[1] <= 200)){randomNumber=Math.floor(Math.random()*100 + 101)}; if ((parseInt(main.split(':')[1] => 201) && (parseInt(main.split(':')[1] <= 300)){randomNumber=Math.floor(Math.random()*100 + 201)}; if ((parseInt(main.split(':')[1] => 301) && (parseInt(main.split(':')[1] <= 400)){randomNumber=Math.floor(Math.random()*100 + 301)}; if ((parseInt(main.split(':')[1] => 401) && (parseInt(main.split(':')[1] <= 500)){randomNumber=Math.floor(Math.random()*100 + 401)}; if ((parseInt(main.split(':')[1] => 501) && (parseInt(main.split(':')[1] <= 600)){randomNumber=Math.floor(Math.random()*100 + 501)}; if ((parseInt(main.split(':')[1] => 601) && (parseInt(main.split(':')[1] <= 700)){randomNumber=Math.floor(Math.random()*100 + 601)}; if ((parseInt(main.split(':')[1] => 701) && (parseInt(main.split(':')[1] <= 800)){randomNumber=Math.floor(Math.random()*100 + 701)}; randomNumber;")
+
+'		SET MULT EVAL("var mult=['userscloud.com:800','uploadfiles.eu:800']; var string = ''; for(var i = 0; i < 1; i++){string += mult[parseInt(Math.random() * 2)]}; string;")
+'		SET MAIN EVAL("var main=\"{{MULT}}\"; string=main.split(':')[0] ; string;")
+'		SET RANN EVAL("var main=\"{{MULT}}\"; randomNumber=Math.floor(Math.random()*parseInt(main.split(':')[1]) + 1); randomNumber;")
+'		SET !DATASOURCE "List - {{MAIN}} - Main.csv"
+'		SET !DATASOURCE_COLUMNS 1
+'		SET !DATASOURCE_LINE {{RANN}}

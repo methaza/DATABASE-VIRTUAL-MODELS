@@ -1,0 +1,6 @@
+{
+  "blackwhitelistingenabled" : true,
+  "enabled" : false,
+  "threadpoolsize" : 5,
+  "username" : null
+}

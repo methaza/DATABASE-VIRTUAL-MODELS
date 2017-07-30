@@ -1,0 +1,547 @@
+﻿SET !REPLAYSPEED FAST 
+SET !TIMEOUT_STEP 1
+SET !TIMEOUT_TAG 1
+SET !TIMEOUT 1
+SET !TIMEOUT_PAGE 1
+SET !ERRORIGNORE YES
+SET !ERRORCONTINUE YES
+SET !WAITPAGECOMPLETE NO
+SET !EXTRACT_TEST_POPUP NO
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'///////////////////////////////////////////// [VPNGATE] \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'	LESS	ADD !EXTRACT 1
+'	LESS	SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+'	LESS	CLEAR 
+TAB T=1
+TAB OPEN
+TAB T=2
+TAB CLOSEALLOTHERS
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB OPEN
+TAB T=1
+WAIT SECONDS=1
+TAB T=1
+SET !VAR1 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR1}}
+SET !VAR1 {{!COL1}}
+TAB T=1
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=2
+SET !VAR2 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR2}}
+SET !VAR2 {{!COL1}}
+TAB T=2
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=3
+SET !VAR3 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR3}}
+SET !VAR3 {{!COL1}}
+TAB T=3
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=4
+SET !VAR4 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR4}}
+SET !VAR4 {{!COL1}}
+TAB T=4
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=5
+SET !VAR5 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR5}}
+SET !VAR5 {{!COL1}}
+TAB T=5
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=6
+SET !VAR6 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR6}}
+SET !VAR6 {{!COL1}}
+TAB T=6
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=7
+SET !VAR7 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR7}}
+SET !VAR7 {{!COL1}}
+TAB T=7
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=8
+SET !VAR8 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR8}}
+SET !VAR8 {{!COL1}}
+TAB T=8
+URL GOTO=data:text/plain;base64,{{!COL15}}
+WAIT SECONDS=2
+TAB T=1
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR1}}.ovpn
+TAB T=2
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR2}}.ovpn
+TAB T=3
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR3}}.ovpn
+TAB T=4
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR4}}.ovpn
+TAB T=5
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR5}}.ovpn
+TAB T=6
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR6}}.ovpn
+TAB T=7
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR7}}.ovpn
+TAB T=8
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR8}}.ovpn
+TAB T=9
+WAIT SECONDS=2
+TAB T=1
+SET !VAR1 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR1}}
+SET !VAR1 {{!COL1}}
+TAB T=1
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=2
+SET !VAR2 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR2}}
+SET !VAR2 {{!COL1}}
+TAB T=2
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=3
+SET !VAR3 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR3}}
+SET !VAR3 {{!COL1}}
+TAB T=3
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=4
+SET !VAR4 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR4}}
+SET !VAR4 {{!COL1}}
+TAB T=4
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=5
+SET !VAR5 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR5}}
+SET !VAR5 {{!COL1}}
+TAB T=5
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=6
+SET !VAR6 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR6}}
+SET !VAR6 {{!COL1}}
+TAB T=6
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=7
+SET !VAR7 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR7}}
+SET !VAR7 {{!COL1}}
+TAB T=7
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=8
+SET !VAR8 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR8}}
+SET !VAR8 {{!COL1}}
+TAB T=8
+URL GOTO=data:text/plain;base64,{{!COL15}}
+WAIT SECONDS=2
+TAB T=1
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR1}}.ovpn
+TAB T=2
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR2}}.ovpn
+TAB T=3
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR3}}.ovpn
+TAB T=4
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR4}}.ovpn
+TAB T=5
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR5}}.ovpn
+TAB T=6
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR6}}.ovpn
+TAB T=7
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR7}}.ovpn
+TAB T=8
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR8}}.ovpn
+TAB T=9
+WAIT SECONDS=2
+TAB T=1
+SET !VAR1 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR1}}
+SET !VAR1 {{!COL1}}
+TAB T=1
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=2
+SET !VAR2 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR2}}
+SET !VAR2 {{!COL1}}
+TAB T=2
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=3
+SET !VAR3 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR3}}
+SET !VAR3 {{!COL1}}
+TAB T=3
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=4
+SET !VAR4 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR4}}
+SET !VAR4 {{!COL1}}
+TAB T=4
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=5
+SET !VAR5 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR5}}
+SET !VAR5 {{!COL1}}
+TAB T=5
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=6
+SET !VAR6 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR6}}
+SET !VAR6 {{!COL1}}
+TAB T=6
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=7
+SET !VAR7 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR7}}
+SET !VAR7 {{!COL1}}
+TAB T=7
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=8
+SET !VAR8 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR8}}
+SET !VAR8 {{!COL1}}
+TAB T=8
+URL GOTO=data:text/plain;base64,{{!COL15}}
+WAIT SECONDS=2
+TAB T=1
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR1}}.ovpn
+TAB T=2
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR2}}.ovpn
+TAB T=3
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR3}}.ovpn
+TAB T=4
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR4}}.ovpn
+TAB T=5
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR5}}.ovpn
+TAB T=6
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR6}}.ovpn
+TAB T=7
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR7}}.ovpn
+TAB T=8
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR8}}.ovpn
+TAB T=9
+WAIT SECONDS=2
+TAB T=1
+SET !VAR1 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR1}}
+SET !VAR1 {{!COL1}}
+TAB T=1
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=2
+SET !VAR2 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR2}}
+SET !VAR2 {{!COL1}}
+TAB T=2
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=3
+SET !VAR3 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR3}}
+SET !VAR3 {{!COL1}}
+TAB T=3
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=4
+SET !VAR4 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR4}}
+SET !VAR4 {{!COL1}}
+TAB T=4
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=5
+SET !VAR5 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR5}}
+SET !VAR5 {{!COL1}}
+TAB T=5
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=6
+SET !VAR6 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR6}}
+SET !VAR6 {{!COL1}}
+TAB T=6
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=7
+SET !VAR7 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR7}}
+SET !VAR7 {{!COL1}}
+TAB T=7
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=8
+SET !VAR8 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR8}}
+SET !VAR8 {{!COL1}}
+TAB T=8
+URL GOTO=data:text/plain;base64,{{!COL15}}
+WAIT SECONDS=2
+TAB T=1
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR1}}.ovpn
+TAB T=2
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR2}}.ovpn
+TAB T=3
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR3}}.ovpn
+TAB T=4
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR4}}.ovpn
+TAB T=5
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR5}}.ovpn
+TAB T=6
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR6}}.ovpn
+TAB T=7
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR7}}.ovpn
+TAB T=8
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR8}}.ovpn
+TAB T=9
+WAIT SECONDS=2
+TAB T=1
+SET !VAR1 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR1}}
+SET !VAR1 {{!COL1}}
+TAB T=1
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=2
+SET !VAR2 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR2}}
+SET !VAR2 {{!COL1}}
+TAB T=2
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=3
+SET !VAR3 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR3}}
+SET !VAR3 {{!COL1}}
+TAB T=3
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=4
+SET !VAR4 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR4}}
+SET !VAR4 {{!COL1}}
+TAB T=4
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=5
+SET !VAR5 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR5}}
+SET !VAR5 {{!COL1}}
+TAB T=5
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=6
+SET !VAR6 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR6}}
+SET !VAR6 {{!COL1}}
+TAB T=6
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=7
+SET !VAR7 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR7}}
+SET !VAR7 {{!COL1}}
+TAB T=7
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=8
+SET !VAR8 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR8}}
+SET !VAR8 {{!COL1}}
+TAB T=8
+URL GOTO=data:text/plain;base64,{{!COL15}}
+WAIT SECONDS=2
+TAB T=1
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR1}}.ovpn
+TAB T=2
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR2}}.ovpn
+TAB T=3
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR3}}.ovpn
+TAB T=4
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR4}}.ovpn
+TAB T=5
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR5}}.ovpn
+TAB T=6
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR6}}.ovpn
+TAB T=7
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR7}}.ovpn
+TAB T=8
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR8}}.ovpn
+TAB T=9
+WAIT SECONDS=2
+TAB T=1
+SET !VAR1 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR1}}
+SET !VAR1 {{!COL1}}
+TAB T=1
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=2
+SET !VAR2 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR2}}
+SET !VAR2 {{!COL1}}
+TAB T=2
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=3
+SET !VAR3 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR3}}
+SET !VAR3 {{!COL1}}
+TAB T=3
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=4
+SET !VAR4 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR4}}
+SET !VAR4 {{!COL1}}
+TAB T=4
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=5
+SET !VAR5 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR5}}
+SET !VAR5 {{!COL1}}
+TAB T=5
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=6
+SET !VAR6 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR6}}
+SET !VAR6 {{!COL1}}
+TAB T=6
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=7
+SET !VAR7 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR7}}
+SET !VAR7 {{!COL1}}
+TAB T=7
+URL GOTO=data:text/plain;base64,{{!COL15}}
+TAB T=8
+SET !VAR8 EVAL("var randomNumber=Math.floor(Math.random()*95 + 3); randomNumber;")
+SET !DATASOURCE "C:\\Program Files\\JDownloader Secondary\\VPN.CSV"
+SET !DATASOURCE_COLUMNS 15
+SET !DATASOURCE_LINE {{!VAR8}}
+SET !VAR8 {{!COL1}}
+TAB T=8
+URL GOTO=data:text/plain;base64,{{!COL15}}
+WAIT SECONDS=2
+TAB T=1
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR1}}.ovpn
+TAB T=2
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR2}}.ovpn
+TAB T=3
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR3}}.ovpn
+TAB T=4
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR4}}.ovpn
+TAB T=5
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR5}}.ovpn
+TAB T=6
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR6}}.ovpn
+TAB T=7
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR7}}.ovpn
+TAB T=8
+SAVEAS TYPE=TXT FOLDER="C:\\Program Files\\JDownloader Secondary\\OPENVPN\\vpngate.net" FILE={{!VAR8}}.ovpn
+
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'///////////////////////////////////////////// [FINISH] \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+WAIT SECONDS=2
+URL GOTO=imacros://run/?m=FINISH.iim
+
+'
+'/////// [FINISH]
+'
+'		LESS		WAIT SECONDS=60
+'		LESS		ADD !EXTRACT "SESSIONS CLOSED"
+'		LESS		SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+'		LESS		ADD !EXTRACT 0
+'		LESS		SAVEAS TYPE=EXTRACT FOLDER=* FILE=CLOSED.LOG
+'		CLEAR
+'		TAB CLOSEALLOTHERS
+'		TAB CLOSE

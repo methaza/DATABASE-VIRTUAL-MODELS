@@ -1,0 +1,109 @@
+<UserScriptConfig>
+	<Script basedir="Linkify_Plus" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="Turn plain text URLs into links. Supports http, https, ftp, email addresses." enabled="true" filename="linkify-plus.user.js" installTime="1426200075638" modified="1463837538000" name="Linkify Plus" namespace="http://arantius.com/misc/greasemonkey/" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="741ddb9a-72d0-45ff-a4a8-edde570d021d" version="2.1.4" installurl="http://www.arantius.com/misc/greasemonkey/linkify-plus.user.js" updateurl="http://www.arantius.com/misc/greasemonkey/linkify-plus.user.js">
+		<Exclude>http*://www.google.tld/search*</Exclude>
+		<Exclude>http*://music.google.com/*</Exclude>
+		<Exclude>http*://mail.google.com/*</Exclude>
+		<Exclude>http*://docs.google.com/*</Exclude>
+		<Exclude>http://mxr.mozilla.org/*</Exclude>
+		<Exclude>http://*.tinypaste.com/*</Exclude>
+		<Exclude>http://*.tny.cz/*</Exclude>
+		<Exclude>*://up09.com/*</Exclude>
+		<Exclude>*://downlod.co/*</Exclude>
+		<Exclude>*://tusfiles.net/*</Exclude>
+		<Exclude>*://openload.co/*</Exclude>
+		<Exclude>*://pix.wf/*</Exclude>
+		<Exclude>*://imzdrop.com/*</Exclude>
+		<Exclude>*://imgmega.com/*</Exclude>
+		<Exclude>*://goimge.com/*</Exclude>
+		<Exclude>*://imageon.org/*</Exclude>
+		<Exclude>*://imageontime.com/*</Exclude>
+		<Exclude>*://uplimg.com/*</Exclude>
+		<Exclude>*://megaimage.org/*</Exclude>
+		<Exclude>*://extraimg.org/*</Exclude>
+		<Exclude>*://photoshare.link/*</Exclude>
+		<Exclude>*://imageteam.org/*</Exclude>
+		<Exclude>*://imgdrive.co/*</Exclude>
+		<Exclude>*://imgchili.net/*</Exclude>
+		<Exclude>*://img.yt/*</Exclude>
+		<Exclude>*://imgdevil.com/*</Exclude>
+		<Exclude>*://*.up09.com/*</Exclude>
+		<Exclude>*://*.downlod.co/*</Exclude>
+		<Exclude>*://*.tusfiles.net/*</Exclude>
+		<Exclude>*://*.openload.co/*</Exclude>
+		<Exclude>*://*.pix.wf/*</Exclude>
+		<Exclude>*://*.imzdrop.com/*</Exclude>
+		<Exclude>*://*.imgmega.com/*</Exclude>
+		<Exclude>*://*.goimge.com/*</Exclude>
+		<Exclude>*://*.imageon.org/*</Exclude>
+		<Exclude>*://*.imageontime.com/*</Exclude>
+		<Exclude>*://*.uplimg.com/*</Exclude>
+		<Exclude>*://*.megaimage.org/*</Exclude>
+		<Exclude>*://*.extraimg.org/*</Exclude>
+		<Exclude>*://*.photoshare.link/*</Exclude>
+		<Exclude>*://*.imageteam.org/*</Exclude>
+		<Exclude>*://*.imgdrive.co/*</Exclude>
+		<Exclude>*://*.imgchili.net/*</Exclude>
+		<Exclude>*://*.img.yt/*</Exclude>
+		<Exclude>*://*.imgdevil.com/*</Exclude>
+		<Grant>none</Grant>
+		<Include>http*</Include>
+		<UserInclude>*://*.bit.ly/*</UserInclude>
+	</Script>
+	<Script author="wOxxOm" basedir="simple_html_numeric_captcha_solver" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="After you click &quot;Slow download&quot; button the script solves the numeric captcha, waits for the countdown to finish, clicks the download button" enabled="true" filename="simple_html_numeric_captcha_solver.user.js" installTime="1429813983295" modified="1491218067734" name="Simple html numeric captcha solver" namespace="wOxxOm.scripts" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="de57ee9b-fc77-4bb3-8684-f98b4f27f5d5" version="1.0.8" installurl="https://greasyfork.org/scripts/9325-simple-html-numeric-captcha-solver/code/Simple%20html%20numeric%20captcha%20solver.user.js" updateurl="https://greasyfork.org/scripts/9325-simple-html-numeric-captcha-solver/code/Simple%20html%20numeric%20captcha%20solver.user.js">
+		<Grant>none</Grant>
+		<Include>*://www.rziz.net/*/*.html</Include>
+		<Include>*://file.up09.com/*</Include>
+		<Include>*://clicknupload.com/*</Include>
+		<Include>*://hulkload.com/*</Include>
+		<Include>*://up4.im/*</Include>
+		<Include>*://mrfile.co/*.html</Include>
+		<Include>*://fileshd.net/*</Include>
+		<Include>*://nizfile.net/*.html</Include>
+		<Include>*://lynxshare.com/*</Include>
+		<Include>*://upvast.com/*</Include>
+		<Include>*://up07.net/*</Include>
+		<Include>*://up08.net/*</Include>
+		<Include>*://media4up.com/*</Include>
+		<Include>*://datasbit.com/*</Include>
+		<Include>*://uploadserv.com/*</Include>
+		<Include>*://faststore.org/*</Include>
+		<Include>*://oload.net/*</Include>
+		<Include>*://katfile.com/*</Include>
+		<Include>*://file-upload.cc/*</Include>
+		<Include>*://xeupload.com/*</Include>
+		<Include>*://www.up-4ever.com/*</Include>
+		<Include>*://drfile.net/*</Include>
+	</Script>
+	<Script author="Cologler" basedir="skip_bitly.com_warnning" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="skip bitly.com warnning" enabled="true" filename="warnning.bitly.com.cologler.user.js" installTime="1441547949901" modified="1463811988000" name="skip bitly.com warnning" namespace="http://warnning.bitly.com.cologler/" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="1423e103-c8fe-46af-9542-f9bef71c17f2" version="1.0" installurl="https://gist.github.com/DarKWinGTM/83a70694ddcccb9a2e0e/raw/75a47c80fba2a2f9051d05c8f09aa8bc223ee78e/skip%2520bitly.com%2520warnning.user.js" updateurl="https://gist.github.com/DarKWinGTM/83a70694ddcccb9a2e0e/raw/75a47c80fba2a2f9051d05c8f09aa8bc223ee78e/skip%2520bitly.com%2520warnning.user.js">
+		<Grant>none</Grant>
+		<Match>*://bitly.com/a/warning?url=*&amp;hash=*</Match>
+		<Match>*://bitly.com/a/warning?url=*</Match>
+		<Match>*://bitly.com/a/*</Match>
+	</Script>
+	<Script author="Royalgamer06 &amp; Tackyou" basedir="reCAPTCHA_Helper" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="This automatically clicks on any recaptcha on the webpage and submits it directly after you solved it" enabled="true" filename="reCAPTCHA_Helper.user.js" installTime="1487646950015" modified="1489141472271" name="reCAPTCHA Helper" namespace="https://greasyfork.org/scripts/18449-recaptcha-form-autosubmit/" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="322f1c88-12ec-4ae2-b14e-f98bd4cf0372" version="0.4001" installurl="file:///Z:/Database/gm_scripts/reCAPTCHA_Helper/reCAPTCHA_Helper.user.js" updateurl="file:///Z:/Database/gm_scripts/reCAPTCHA_Helper/reCAPTCHA_Helper.user.js">
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Grant>GM_setClipboard</Grant>
+		<Include>*</Include>
+	</Script>
+	<Script author="DarKWinGTM" basedir="Linkify_Plus_Redirect" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="Turn plain text URLs into links. Supports http, https, ftp, email addresses." enabled="true" filename="Linkify_Plus_Redirect.user.js" installTime="1489213583387" modified="1489742963109" name="Linkify Plus Redirect" namespace="http://arantius.com/misc/greasemonkey/" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="78300e95-a385-4833-93de-e34d021e5c23" version="2.1.4" installurl="file:///Z:/Database/gm_scripts/Linkify_Plus_Redirect/Linkify_Plus_Redirect.user.js" updateurl="file:///Z:/Database/gm_scripts/Linkify_Plus_Redirect/Linkify_Plus_Redirect.user.js">
+		<Grant>none</Grant>
+		<Include>http://is.gd/*</Include>
+		<Include>https://is.gd/*</Include>
+		<Include>http://bit.ly/*</Include>
+		<Include>https://bit.ly/*</Include>
+		<Include>http://api.bit.ly/*</Include>
+		<Include>https://api.bit.ly/*</Include>
+	</Script>
+	<Script author="Royalgamer06 &amp; Tackyou" basedir="reCAPTCHA_Helper_input_houndify" checkRemoteUpdates="1" dependhash="a5664c60ed5451ae44d51cd8ffa15823f37e0ec4" description="This automatically clicks on any recaptcha on the webpage and submits it directly after you solved it &quot;https://github.com/eligrey/FileSaver.js/&quot;" enabled="true" filename="reCAPTCHA_Helper_input_houndify.user.js" installTime="1492872682384" modified="1492872682384" name="reCAPTCHA Helper input houndify" namespace="https://greasyfork.org/scripts/18449-recaptcha-form-autosubmit/" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="c2822834-4c2f-4191-a1c2-dba3a1c29424" version="0.4001" installurl="file:///Z:/Database/gm_scripts/reCAPTCHA_Helper_input_houndify/reCAPTCHA_Helper_input_houndify.user.js" updateurl="file:///Z:/Database/gm_scripts/reCAPTCHA_Helper_input_houndify/reCAPTCHA_Helper_input_houndify.user.js">
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Grant>GM_setClipboard</Grant>
+		<Include>*</Include>
+		<Require filename="FileSaver.js"/>
+	</Script>
+	<Script author="Royalgamer06 &amp; Tackyou" basedir="reCAPTCHA_Helper_input" checkRemoteUpdates="1" dependhash="a5664c60ed5451ae44d51cd8ffa15823f37e0ec4" description="This automatically clicks on any recaptcha on the webpage and submits it directly after you solved it &quot;https://github.com/eligrey/FileSaver.js/&quot;" enabled="true" filename="reCAPTCHA_Helper_Input.user.js" installTime="1492936419188" modified="1492936419188" name="reCAPTCHA Helper input" namespace="https://greasyfork.org/scripts/18449-recaptcha-form-autosubmit/" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="2988f20c-cb48-486f-adb7-7617c3d2a68a" version="0.4001" installurl="file:///Z:/Database/ff/gm_scripts/reCAPTCHA_Helper_Input/reCAPTCHA_Helper_Input.user.js" updateurl="file:///Z:/Database/ff/gm_scripts/reCAPTCHA_Helper_input/reCAPTCHA_Helper_Input.user.js">
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Grant>GM_setClipboard</Grant>
+		<Include>*</Include>
+		<Require filename="FileSaver.js"/>
+	</Script>
+</UserScriptConfig>

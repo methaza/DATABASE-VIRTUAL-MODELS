@@ -1,0 +1,131 @@
+// CUSTOM UI
+// user_pref("browser.uiCustomization.state", "{\"placements\":{\"PanelUI-contents\":[\"edit-controls\",\"zoom-controls\",\"new-window-button\",\"privatebrowsing-button\",\"save-page-button\",\"print-button\",\"history-panelmenu\",\"fullscreen-button\",\"find-button\",\"preferences-button\",\"add-ons-button\",\"developer-button\",\"sync-button\"],\"addon-bar\":[\"addonbar-closebutton\",\"status-bar\",\"flashgot-fake-tbb\"],\"PersonalToolbar\":[\"personal-bookmarks\"],\"nav-bar\":[\"urlbar-container\",\"action-button--skipredirectsblask-skip-redirect-button\",\"search-container\",\"imacros-toggle-button\",\"abp-toolbarbutton\",\"widget:jid1-AVgCeF1zoVzMjA@jetpack-agent-spoof\",\"greasemonkey-tbb\",\"refcontrol-toolbarbutton\",\"action-button--jid1-avgcef1zovzmjajetpack-random-agent-spoofer\",\"ublock0-button\",\"flashgot-media-tbb\"],\"TabsToolbar\":[\"tabbrowser-tabs\",\"tabmixScrollBox\",\"new-tab-button\",\"alltabs-button\",\"tabmix-tabs-closebutton\"],\"toolbar-menubar\":[\"menubar-items\"]},\"seen\":[\"pocket-button\",\"ublock0-button\",\"developer-button\",\"action-button--jid1-avgcef1zovzmjajetpack-random-agent-spoofer\",\"action-button--skipredirectsblask-skip-redirect-button\",\"action-button--redirectcontrolhjgwmvya-redirectcontrol-option-button\"],\"dirtyAreaCache\":[\"addon-bar\",\"PersonalToolbar\",\"nav-bar\",\"TabsToolbar\",\"toolbar-menubar\",\"PanelUI-contents\"],\"currentVersion\":6,\"newElementCount\":0}");
+// user_pref("browser.uiCustomization.state", "{\"placements\":{\"PanelUI-contents\":[\"edit-controls\",\"zoom-controls\",\"new-window-button\",\"privatebrowsing-button\",\"save-page-button\",\"print-button\",\"history-panelmenu\",\"fullscreen-button\",\"find-button\",\"preferences-button\",\"add-ons-button\",\"developer-button\",\"sync-button\"],\"addon-bar\":[\"addonbar-closebutton\",\"status-bar\",\"flashgot-fake-tbb\"],\"PersonalToolbar\":[\"personal-bookmarks\"],\"nav-bar\":[\"urlbar-container\",\"action-button--skipredirectsblask-skip-redirect-button\",\"search-container\",\"imacros-toggle-button\",\"abp-toolbarbutton\",\"widget:jid1-AVgCeF1zoVzMjA@jetpack-agent-spoof\",\"greasemonkey-tbb\",\"refcontrol-toolbarbutton\",\"action-button--jid1-avgcef1zovzmjajetpack-random-agent-spoofer\",\"ublock0-button\",\"flashgot-media-tbb\"],\"TabsToolbar\":[\"tabbrowser-tabs\",\"new-tab-button\",\"alltabs-button\",\"tabmix-tabs-closebutton\"],\"toolbar-menubar\":[\"menubar-items\"]},\"seen\":[\"pocket-button\",\"ublock0-button\",\"developer-button\",\"action-button--jid1-avgcef1zovzmjajetpack-random-agent-spoofer\",\"action-button--skipredirectsblask-skip-redirect-button\",\"action-button--redirectcontrolhjgwmvya-redirectcontrol-option-button\"],\"dirtyAreaCache\":[\"addon-bar\",\"PersonalToolbar\",\"nav-bar\",\"TabsToolbar\",\"toolbar-menubar\",\"PanelUI-contents\"],\"currentVersion\":6,\"newElementCount\":0}");
+
+// BLOCK CONFIG
+// user_pref("Accessibility.blockautorefresh", true);
+// user_pref("BlockSite.authenticate", true);
+// user_pref("BlockSite.enabled", true);
+// user_pref("BlockSite.listtype", "blacklistRadio");
+// user_pref("BlockSite.locations.0", "http://anchorfree.us/|||http://anchorfree.us/*|||http://*.anchorfree.us/*|||*://*.anchorfree.us/*|||http://www1.techbrowsing.com/|||http://www1.techbrowsing.com/*|||http://*.techbrowsing.com/*|||*://*.techbrowsing.com/*|||http://hsselite.com/|||http://hsselite.com/*|||http://*.hsselite.com/*|||*://*.hsselite.com/*|||http://hotspotshield.com|||http://hotspotshield.com/*|||http://*.hotspotshield.com/*|||*://*.hotspotshield.com/*|||http://box.anchorfree.net|||http://box.anchorfree.net/*|||http://*.box.anchorfree.net/*|||*://*.box.anchorfree.net/*|||http://anchorfree.net|||http://anchorfree.net/*|||http://*.anchorfree.net/*|||*://*.anchorfree.net/*|||http://gamblingparadiseonline.com|||http://gamblingparadiseonline.com/*|||http://*.gamblingparadiseonline.com/*|||*://*.gamblingparadiseonline.com/*|||http://penguintips.com|||http://penguintips.com/*|||http://*.penguintips.com/*|||*://*.penguintips.com/*|||http://accessprice.com|||http://accessprice.com/*|||http://*.accessprice.com/*|||*://*.accessprice.com/*|||http://livingbettr.com|||http://livingbettr.com/*|||http://*.livingbettr.com/*|||*://*.livingbettr.com/*|||http://yourzeitgeist.com|||http://yourzeitgeist.com/*|||http://*.yourzeitgeist.com/*|||*://*.yourzeitgeist.com/*|||http://activepedia.com|||http://activepedia.com/*|||http://*.activepedia.com/*|||*://*.activepedia.com/*|||http://www.tradeadexchange.com|||http://www.tradeadexchange.com/*|||http://*.www.tradeadexchange.com/*|||*://*.www.tradeadexchange.com/*|||http://tradeadexchange.com|||http://tradeadexchange.com/*|||http://*.tradeadexchange.com/*|||*://*.tradeadexchange.com/*|||http://www.terraclicks.com|||http://www.terraclicks.com/*|||http://*.terraclicks.com/*|||*://*.terraclicks.com/*|||http://*.www.terraclicks.com/*|||*://*.www.terraclicks.com/*|||http://www.security.pc-errors-call-urgent.com/*|||http://*.security.pc-errors-call-urgent.com/*|||*://*.security.pc-errors-call-urgent.com/*|||http://*.www.security.pc-errors-call-urgent.com/*|||*://*.www.security.pc-errors-call-urgent.com/*|||https://hotspotshield.com/|||https://hotspotshield.com/*|||https://*.hotspotshield.com/*|||*://*.hotspotshield.com/*|||https://www.hotspotshield.com/|||https://www.hotspotshield.com/*|||https://*.www.hotspotshield.com/*|||*://*.www.hotspotshield.com/*|||*://*.dprtb.com/*|||http://dprtb.com/|||http://dprtb.com/*|||http://*.dprtb.com/*|||*://*.dprtb.com/*|||*://*.share.gethss.io/*|||http://share.gethss.io/|||http://share.gethss.io/*|||http://*.share.gethss.io/*|||*://*.share.gethss.io/*|||http://www.hotspotshield.com/|||http://www.hotspotshield.com/*|||http://*.www.hotspotshield.com/*|||*://*.www.hotspotshield.com/*|||http://userscloud.com/css/app/layout.css|||*://userscloud.com/css/app/layout.css|||*://*.userscloud.com/css/app/layout.css|||http://userscloud.com/css/app/navbar.css|||*://userscloud.com/css/app/navbar.css|||*://*.userscloud.com/css/app/navbar.css");
+// user_pref("BlockSite.locations.1", "");
+// user_pref("BlockSite.regexp.0", "^http\\:\\/\\/anchorfree\\.us\\/|^http\\:\\/\\/anchorfree\\.us\\/|^http\\:\\/\\/.*\\.anchorfree\\.us\\/|^\\:\\/\\/.*\\.anchorfree\\.us\\/|^http\\:\\/\\/www1\\.techbrowsing\\.com\\/|^http\\:\\/\\/www1\\.techbrowsing\\.com\\/|^http\\:\\/\\/.*\\.techbrowsing\\.com\\/|^\\:\\/\\/.*\\.techbrowsing\\.com\\/|^http\\:\\/\\/hsselite\\.com\\/|^http\\:\\/\\/hsselite\\.com\\/|^http\\:\\/\\/.*\\.hsselite\\.com\\/|^\\:\\/\\/.*\\.hsselite\\.com\\/|^http\\:\\/\\/hotspotshield\\.com|^http\\:\\/\\/hotspotshield\\.com\\/|^http\\:\\/\\/.*\\.hotspotshield\\.com\\/|^\\:\\/\\/.*\\.hotspotshield\\.com\\/|^http\\:\\/\\/box\\.anchorfree\\.net|^http\\:\\/\\/box\\.anchorfree\\.net\\/|^http\\:\\/\\/.*\\.box\\.anchorfree\\.net\\/|^\\:\\/\\/.*\\.box\\.anchorfree\\.net\\/|^http\\:\\/\\/anchorfree\\.net|^http\\:\\/\\/anchorfree\\.net\\/|^http\\:\\/\\/.*\\.anchorfree\\.net\\/|^\\:\\/\\/.*\\.anchorfree\\.net\\/|^http\\:\\/\\/gamblingparadiseonline\\.com|^http\\:\\/\\/gamblingparadiseonline\\.com\\/|^http\\:\\/\\/.*\\.gamblingparadiseonline\\.com\\/|^\\:\\/\\/.*\\.gamblingparadiseonline\\.com\\/|^http\\:\\/\\/penguintips\\.com|^http\\:\\/\\/penguintips\\.com\\/|^http\\:\\/\\/.*\\.penguintips\\.com\\/|^\\:\\/\\/.*\\.penguintips\\.com\\/|^http\\:\\/\\/accessprice\\.com|^http\\:\\/\\/accessprice\\.com\\/|^http\\:\\/\\/.*\\.accessprice\\.com\\/|^\\:\\/\\/.*\\.accessprice\\.com\\/|^http\\:\\/\\/livingbettr\\.com|^http\\:\\/\\/livingbettr\\.com\\/|^http\\:\\/\\/.*\\.livingbettr\\.com\\/|^\\:\\/\\/.*\\.livingbettr\\.com\\/|^http\\:\\/\\/yourzeitgeist\\.com|^http\\:\\/\\/yourzeitgeist\\.com\\/|^http\\:\\/\\/.*\\.yourzeitgeist\\.com\\/|^\\:\\/\\/.*\\.yourzeitgeist\\.com\\/|^http\\:\\/\\/activepedia\\.com|^http\\:\\/\\/activepedia\\.com\\/|^http\\:\\/\\/.*\\.activepedia\\.com\\/|^\\:\\/\\/.*\\.activepedia\\.com\\/|^http\\:\\/\\/www\\.tradeadexchange\\.com|^http\\:\\/\\/www\\.tradeadexchange\\.com\\/|^http\\:\\/\\/.*\\.www\\.tradeadexchange\\.com\\/|^\\:\\/\\/.*\\.www\\.tradeadexchange\\.com\\/|^http\\:\\/\\/tradeadexchange\\.com|^http\\:\\/\\/tradeadexchange\\.com\\/|^http\\:\\/\\/.*\\.tradeadexchange\\.com\\/|^\\:\\/\\/.*\\.tradeadexchange\\.com\\/|^http\\:\\/\\/www\\.terraclicks\\.com|^http\\:\\/\\/www\\.terraclicks\\.com\\/|^http\\:\\/\\/.*\\.terraclicks\\.com\\/|^\\:\\/\\/.*\\.terraclicks\\.com\\/|^http\\:\\/\\/.*\\.www\\.terraclicks\\.com\\/|^\\:\\/\\/.*\\.www\\.terraclicks\\.com\\/|^http\\:\\/\\/www\\.security\\.pc\\-errors\\-call\\-urgent\\.com\\/|^http\\:\\/\\/.*\\.security\\.pc\\-errors\\-call\\-urgent\\.com\\/|^\\:\\/\\/.*\\.security\\.pc\\-errors\\-call\\-urgent\\.com\\/|^http\\:\\/\\/.*\\.www\\.security\\.pc\\-errors\\-call\\-urgent\\.com\\/|^\\:\\/\\/.*\\.www\\.security\\.pc\\-errors\\-call\\-urgent\\.com\\/|^https\\:\\/\\/hotspotshield\\.com\\/|^https\\:\\/\\/hotspotshield\\.com\\/|^https\\:\\/\\/.*\\.hotspotshield\\.com\\/|^\\:\\/\\/.*\\.hotspotshield\\.com\\/|^https\\:\\/\\/www\\.hotspotshield\\.com\\/|^https\\:\\/\\/www\\.hotspotshield\\.com\\/|^https\\:\\/\\/.*\\.www\\.hotspotshield\\.com\\/|^\\:\\/\\/.*\\.www\\.hotspotshield\\.com\\/|^\\:\\/\\/.*\\.dprtb\\.com\\/|^http\\:\\/\\/dprtb\\.com\\/|^http\\:\\/\\/dprtb\\.com\\/|^http\\:\\/\\/.*\\.dprtb\\.com\\/|^\\:\\/\\/.*\\.dprtb\\.com\\/|^\\:\\/\\/.*\\.share\\.gethss\\.io\\/|^http\\:\\/\\/share\\.gethss\\.io\\/|^http\\:\\/\\/share\\.gethss\\.io\\/|^http\\:\\/\\/.*\\.share\\.gethss\\.io\\/|^\\:\\/\\/.*\\.share\\.gethss\\.io\\/|^http\\:\\/\\/www\\.hotspotshield\\.com\\/|^http\\:\\/\\/www\\.hotspotshield\\.com\\/|^http\\:\\/\\/.*\\.www\\.hotspotshield\\.com\\/|^\\:\\/\\/.*\\.www\\.hotspotshield\\.com\\/|^http\\:\\/\\/userscloud\\.com\\/css\\/app\\/layout\\.css|^\\:\\/\\/userscloud\\.com\\/css\\/app\\/layout\\.css|^\\:\\/\\/.*\\.userscloud\\.com\\/css\\/app\\/layout\\.css|^http\\:\\/\\/userscloud\\.com\\/css\\/app\\/navbar\\.css|^\\:\\/\\/userscloud\\.com\\/css\\/app\\/navbar\\.css|^\\:\\/\\/.*\\.userscloud\\.com\\/css\\/app\\/navbar\\.css");
+// user_pref("BlockSite.regexp.1", "");
+// user_pref("BlockSite.removeLinks", true);
+// user_pref("BlockSite.showWarning", false);
+// user_pref("browser.safebrowsing.enabled", false);
+// user_pref("browser.safebrowsing.malware.enabled", false);
+
+// FIX REDIRECT
+// user_pref("capability.policy.policynames", "noredirect");
+// user_pref("capability.policy.noredirect.sites", "http://127.0.0.1");
+// user_pref("capability.policy.noredirect.Window.Location.replace", "noAccess");
+// user_pref("capability.policy.noredirect.Window.Location.assign", "noAccess");
+// user_pref("capability.policy.noredirect.Window.Location.reload", "noAccess");
+// user_pref("capability.policy.noredirect.Window.Location", "noAccess");
+// user_pref("capability.policy.noredirect.Document.Location.replace", "noAccess");
+// user_pref("capability.policy.noredirect.Document.Location.assign", "noAccess");
+// user_pref("capability.policy.noredirect.Document.Location.reload", "noAccess");
+// user_pref("capability.policy.noredirect.Document.Location", "noAccess");
+// user_pref("capability.policy.noredirect.Location.replace", "noAccess");
+// user_pref("capability.policy.noredirect.Location.assign", "noAccess");
+// user_pref("capability.policy.noredirect.Location.reload", "noAccess");
+
+
+// BROWSER PERFORMANCE CONFIG
+// user_pref("image.animation_mode", "None");
+// user_pref("image.mem.max_decoded_image_kb", 32768);
+// user_pref("browser.startup.homepage", "imacros://run/?m=Ads%20Skip%20Bot.iim");
+// user_pref("browser.display.show_image_placeholders", false);
+// user_pref("browser.toolbarbuttons.introduced.pocket-button", true);
+// user_pref("signon.importedFromSqlite", true);
+// user_pref("places.history.expiration.transient_current_max_pages", 26830);
+// user_pref("plugin.disable_full_page_plugin_for_types", "application/pdf");
+//	user_pref("plugin.importedState", true);
+
+// VERSIONS CONFIG
+// user_pref("pdfjs.migrationVersion", 2);
+// user_pref("extensions.greasemonkey.version", "3.2");
+// user_pref("extensions.jid1-wZqm19rJzRkZUA@jetpack.version", "0.1.1");
+// user_pref("flashgot.version", "1.5.6.12");
+// user_pref("extensions.tabmix.version", "0.4.1.8");
+// user_pref("extensions.lastAppVersion", "39.0");
+// user_pref("extensions.lastPlatformVersion", "39.0");
+// user_pref("extensions.imacros.version", "8.9.2.1-signed");
+// user_pref("extensions.greasemonkey.version", "3.2");
+// user_pref("extensions.blocklist.pingCountVersion", 0);
+// user_pref("datareporting.policy.dataSubmissionPolicyAcceptedVersion", 2);
+// user_pref("extensions.adblockedge.currentVersion", "2.1.9.1-signed");
+
+// NETWORK CONFIG
+// user_pref("network.buffer.cache.count", 32);
+// user_pref("network.buffer.cache.size", 16384);
+// user_pref("network.cookie.prefsMigrated", true);
+// user_pref("network.dns.disableIPv6", true);
+// user_pref("network.http.keep-alive", false);
+// user_pref("network.http.keep-alive.timeout", 0);
+// user_pref("network.http.max-connections", 512);
+// user_pref("network.http.max-connections-per-server", 64);
+// user_pref("network.http.max-persistent-connections-per-proxy", 256);
+// user_pref("network.http.max-persistent-connections-per-server", 256);
+// user_pref("network.http.pipelining.firstrequest", false);
+// user_pref("network.http.pipelining.abtest", false);
+// user_pref("network.http.pipelining.aggressive", true);
+// user_pref("network.http.pipelining.max-optimistic-requests", 3);
+// user_pref("network.http.pipelining.maxrequests", 32);
+// user_pref("network.http.pipelining.maxsize", 300000);
+// user_pref("network.http.pipelining.read-timeout", 60000);
+// user_pref("network.http.pipelining.reschedule-on-timeout", true);
+// user_pref("network.http.pipelining.reschedule-timeout", 15000);
+// user_pref("network.http.pipelining.ssl", true);
+// user_pref("network.http.pipelining", true);
+// user_pref("network.http.proxy.pipelining", true);
+// user_pref("network.http.redirection-limit", 20);
+// user_pref("network.http.request.max-start-delay", 0);
+// user_pref("network.http.fast-fallback-to-IPv4", true);
+// user_pref("network.dns.disablePrefetch", true);
+// user_pref("network.prefetch-next", false);
+// user_pref("network.http.spdy.send-buffer-size", 32768);
+// user_pref("network.http.use-cache", false);
+// user_pref("network.predictor.cleaned-up", true);
+// user_pref("network.proxy.backup.ftp", "127.0.0.1");
+// user_pref("network.proxy.backup.ftp_port", 895);
+// user_pref("network.proxy.backup.socks", "127.0.0.1");
+// user_pref("network.proxy.backup.socks_port", 895);
+// user_pref("network.proxy.backup.ssl", "127.0.0.1");
+// user_pref("network.proxy.backup.ssl_port", 895);
+// user_pref("network.proxy.ftp", "127.0.0.1");
+// user_pref("network.proxy.ftp_port", 895);
+// user_pref("network.proxy.http", "127.0.0.1");
+// user_pref("network.proxy.http_port", 895);
+// user_pref("network.proxy.share_proxy_settings", true);
+// user_pref("network.proxy.socks", "127.0.0.1");
+// user_pref("network.proxy.socks_port", 895);
+// user_pref("network.proxy.ssl", "127.0.0.1");
+// user_pref("network.proxy.ssl_port", 895);
+// user_pref("network.proxy.type", 0);
+
+// EXTENSIONS CONFIG USER AGENT
+// tusfiles.net=http://fontfabric.com
+// www.tusfiles.net=http://fontfabric.com
+// pic-maniac.com=REFERERVAULEVIEWTAB3
+// shotimg.org=REFERERVAULEVIEWTAB5
+// imgdiamond.com=REFERERVAULEVIEWTAB6
+// imgbabes.com=REFERERVAULEVIEWTAB7
+// www.imgbabes.com=REFERERVAULEVIEWTAB7
+// imgchili.net=REFERERVAULEVIEWTAB8
+// up09.com=REFERERVAULEHOSTTAB1
+// file.up09.com=REFERERVAULEHOSTTAB1 
+// |tusfiles.net;1;CHECK;WINDOWS,TABS,LINKS;1
+// |www.tusfiles.net;1;CHECK;WINDOWS,TABS,LINKS;1
+// |pic-maniac.com;1;CHECK;WINDOWS,TABS,LINKS;1
+// |shotimg.org;1;CHECK;WINDOWS,TABS,LINKS;1
+// |imgdiamond.com;1;CHECK;WINDOWS,TABS,LINKS;1
+// |www.imgbabes.com;1;CHECK;WINDOWS,TABS,LINKS;1
+// |imgbabes.com;1;CHECK;WINDOWS,TABS,LINKS;1
+// |imgchili.net;1;CHECK;WINDOWS,TABS,LINKS;1
+// |up09.com;1;CHECK;WINDOWS,TABS,LINKS;1
+// |file.up09.com;1;CHECK;WINDOWS,TABS,LINKS;1
+
+// user_pref("browser.display.show_image_placeholders", false);
+// user_pref("dom.popup_maximum", 5);

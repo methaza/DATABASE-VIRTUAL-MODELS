@@ -1,0 +1,12 @@
+{
+  "tooglewindowstatuswithsingleclickenabled" : false,
+  "onminimizeaction" : "TO_TASKBAR",
+  "enabled" : true,
+  "startminimizedenabled" : false,
+  "tooltipenabled" : true,
+  "oncloseaction" : "ASK",
+  "gnometrayicontransparentenabled" : true,
+  "greyiconenabled" : false,
+  "trayonlyvisibleifwindowishiddenenabled" : false,
+  "freshinstall" : false
+}

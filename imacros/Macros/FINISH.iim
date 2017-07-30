@@ -1,0 +1,28 @@
+﻿SET !REPLAYSPEED FAST 
+SET !TIMEOUT_STEP 1
+SET !TIMEOUT_TAG 1
+SET !TIMEOUT 1
+SET !TIMEOUT_PAGE 1
+SET !ERRORIGNORE YES
+SET !ERRORCONTINUE YES
+SET !WAITPAGECOMPLETE NO
+SET !EXTRACT_TEST_POPUP NO
+
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'///////////////////////////////////////////// [FINISH] \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+URL GOTO=about:downloads
+
+'
+'/////// [FINISH]
+'
+WAIT SECONDS=10
+ADD !EXTRACT "SESSIONS CLOSED"
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
+ADD !EXTRACT 0
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=CLOSED.LOG
+CLEAR
+TAB CLOSEALLOTHERS
+'	TAB CLOSE

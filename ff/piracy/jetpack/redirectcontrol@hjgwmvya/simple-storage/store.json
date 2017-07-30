@@ -1,0 +1,1 @@
+{"settings":{"allowSameDomain":false,"allowSameBaseDomain":true,"ignoreSubdomains":true,"allowTriggeredByLinkClick":true},"rules":[{"source":"*","target":"*","regularExpression":false}],"dataVersion":"0.1.3"}

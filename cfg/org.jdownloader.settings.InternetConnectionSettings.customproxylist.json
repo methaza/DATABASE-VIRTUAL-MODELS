@@ -1,0 +1,37 @@
+[ {
+  "proxy" : {
+    "username" : null,
+    "password" : null,
+    "port" : 80,
+    "address" : null,
+    "type" : "NONE",
+    "preferNativeImplementation" : false,
+    "connectMethodPrefered" : false
+  },
+  "rangeRequestsSupported" : true,
+  "filter" : {
+    "type" : "BLACKLIST",
+    "entries" : [ "*" ]
+  },
+  "pac" : false,
+  "reconnectSupported" : true,
+  "enabled" : true
+}, {
+  "proxy" : {
+    "username" : null,
+    "password" : null,
+    "port" : 8555,
+    "address" : "127.0.0.1",
+    "type" : "HTTP",
+    "preferNativeImplementation" : false,
+    "connectMethodPrefered" : false
+  },
+  "rangeRequestsSupported" : true,
+  "filter" : {
+    "type" : "BLACKLIST",
+    "entries" : [ "https://www.jdownloader.org", "http://www.jdownloader.org", "https://jdownloader.org", "http://jdownloader.org", "jdownloader.org", "https://www.api.jdownloader.org", "http://www.api.jdownloader.org", "https://api.jdownloader.org", "http://api.jdownloader.org", "api.jdownloader.org", "|| FILES HOST", "|| FILES HOST", "|| FILES HOST", "|| FILES HOST", "|| FILES HOST", "https://www.up09.com", "http://www.up09.com", "https://up09.com", "http://up09.com", "up09.com", "https://www.file.up09.com", "http://www.file.up09.com", "https://file.up09.com", "http://file.up09.com", "file.up09.com", "https://www.85.25.44.91", "http://www.85.25.44.91", "https://85.25.44.91", "http://85.25.44.91", "85.25.44.91", "https://www.85.25.44.91:182", "http://www.85.25.44.91:182", "https://85.25.44.91:182", "http://85.25.44.91:182", "85.25.44.91:182", "https://www.up08.net", "http://www.up08.net", "https://up08.net", "http://up08.net", "up08.net", "https://www.file.up08.net", "http://www.file.up08.net", "https://file.up08.net", "http://file.up08.net", "file.up08.net", "https://www.62.138.0.89", "http://www.62.138.0.89", "https://62.138.0.89", "http://62.138.0.89", "62.138.0.89", "https://www.62.138.0.89:182", "http://www.62.138.0.89:182", "https://62.138.0.89:182", "http://62.138.0.89:182", "62.138.0.89:182", "https://www.tusfiles.net", "http://www.tusfiles.net", "https://tusfiles.net", "http://tusfiles.net", "tusfiles.net", "https://www.i.tusfiles.net", "http://www.i.tusfiles.net", "https://i.tusfiles.net", "http://i.tusfiles.net", "i.tusfiles.net", "https://www.k.tusfiles.net", "http://www.k.tusfiles.net", "https://k.tusfiles.net", "http://k.tusfiles.net", "k.tusfiles.net", "https://www.s.tusfiles.net", "http://www.s.tusfiles.net", "https://s.tusfiles.net", "http://s.tusfiles.net", "s.tusfiles.net", "https://www.dl.tusfiles.net", "http://www.dl.tusfiles.net", "https://dl.tusfiles.net", "http://dl.tusfiles.net", "dl.tusfiles.net", "https://www.gwshare.com", "http://www.gwshare.com", "https://gwshare.com", "http://gwshare.com", "gwshare.com", "https://www.x1.gwshare.com", "http://www.x1.gwshare.com", "https://x1.gwshare.com", "http://x1.gwshare.com", "x1.gwshare.com", "https://www.x2.gwshare.com", "http://www.x2.gwshare.com", "https://x2.gwshare.com", "http://x2.gwshare.com", "x2.gwshare.com", "https://www.x3.gwshare.com", "http://www.x3.gwshare.com", "https://x3.gwshare.com", "http://x3.gwshare.com", "x3.gwshare.com", "https://www.uploadfiles.eu", "http://www.uploadfiles.eu", "https://uploadfiles.eu", "http://uploadfiles.eu", "uploadfiles.eu", "https://www.dl.uploadfiles.eu", "http://www.dl.uploadfiles.eu", "https://dl.uploadfiles.eu", "http://dl.uploadfiles.eu", "dl.uploadfiles.eu", "https://www.upvast.com", "http://www.upvast.com", "https://upvast.com", "http://upvast.com", "upvast.com", "https://www.fs16.upvast.com:182", "http://www.fs16.upvast.com:182", "https://fs16.upvast.com:182", "http://fs16.upvast.com:182", "fs16.upvast.com:182", "https://www.clicknupload.link", "http://www.clicknupload.link", "https://clicknupload.link", "http://clicknupload.link", "clicknupload.link", "https://www.datasbit.com", "http://www.datasbit.com", "https://datasbit.com", "http://datasbit.com", "datasbit.com", "https://www.katfile.com", "http://www.katfile.com", "https://katfile.com", "http://katfile.com", "katfile.com", "https://www.katfile.com:182", "http://www.katfile.com:182", "https://katfile.com:182", "http://katfile.com:182", "katfile.com:182", "https://www.s1.katfile.com", "http://www.s1.katfile.com", "https://s1.katfile.com", "http://s1.katfile.com", "s1.katfile.com", "https://www.s1.katfile.com:182", "http://www.s1.katfile.com:182", "https://s1.katfile.com:182", "http://s1.katfile.com:182", "s1.katfile.com:182", "https://www.uploadkadeh.ir", "http://www.uploadkadeh.ir", "https://uploadkadeh.ir", "http://uploadkadeh.ir", "uploadkadeh.ir", "https://www.uploadkadeh.ir:182", "http://www.uploadkadeh.ir:182", "https://uploadkadeh.ir:182", "http://uploadkadeh.ir:182", "uploadkadeh.ir:182", "|| IMAGE HOST", "|| IMAGE HOST", "|| IMAGE HOST", "|| IMAGE HOST", "|| IMAGE HOST", "https://www.img.yt", "http://www.img.yt", "https://img.yt", "http://img.yt", "img.yt", "https://www.imgchili.net", "http://www.imgchili.net", "https://imgchili.net", "http://imgchili.net", "imgchili.net", "https://www.imgchili.com", "http://www.imgchili.com", "https://imgchili.com", "http://imgchili.com", "imgchili.com", "https://www.hulkimge.com", "http://www.hulkimge.com", "https://hulkimge.com", "http://hulkimge.com", "hulkimge.com", "https://www.imgmaze.com", "http://www.imgmaze.com", "https://imgmaze.com", "http://imgmaze.com", "imgmaze.com", "https://www.imgbb.com", "http://www.imgbb.com", "https://imgbb.com", "http://imgbb.com", "imgbb.com", "https://www.adultimg.org", "http://www.adultimg.org", "https://adultimg.org", "http://adultimg.org", "adultimg.org", "https://www.shotimg.org", "http://www.shotimg.org", "https://shotimg.org", "http://shotimg.org", "shotimg.org", "https://www.imageon.org", "http://www.imageon.org", "https://imageon.org", "http://imageon.org", "imageon.org", "https://www.imageteam.org", "http://www.imageteam.org", "https://imageteam.org", "http://imageteam.org", "imageteam.org", "https://www.imageontime.org", "http://www.imageontime.org", "https://imageontime.org", "http://imageontime.org", "imageontime.org", "https://www.bigimage.to", "http://www.bigimage.to", "https://bigimage.to", "http://bigimage.to", "bigimage.to", "|| SHORTURL HOST", "|| SHORTURL HOST", "|| SHORTURL HOST", "|| SHORTURL HOST", "|| SHORTURL HOST", "https://www.bc.vc", "http://www.bc.vc", "https://bc.vc", "http://bc.vc", "bc.vc", "https://www.cur.lv", "http://www.cur.lv", "https://cur.lv", "0http://cur.lv", "cur.lv", "https://www.coinurl.com", "http://www.coinurl.com", "https://coinurl.com", "http://coinurl.com", "coinurl.com" ]
+  },
+  "pac" : false,
+  "reconnectSupported" : false,
+  "enabled" : false
+} ]
