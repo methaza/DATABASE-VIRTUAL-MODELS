@@ -1,5 +1,0 @@
-
-CheckTitleChk := "[RC] DETECTED [1]"
-F8::
-	StringReplace, CheckTitleChk, CheckTitleChk, [,, All
-	MsgBox, The text is : %CheckTitleChk%

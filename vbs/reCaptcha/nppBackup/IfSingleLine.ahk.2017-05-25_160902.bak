@@ -1,4 +1,0 @@
-F8::
-	CHECKTITLE := 0
-	COMPLETERC := 0
-	If (CHECKTITLE == COMPLETERC) {MsgBox, Your name is nothing special. ; MsgBox, Your name is nothing special.}

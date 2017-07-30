@@ -1,5 +1,0 @@
-x = 123456789
-
-F8::
-VarSetCapacity(x, -1)
-ToolTip, Check Title : x, 0, 0

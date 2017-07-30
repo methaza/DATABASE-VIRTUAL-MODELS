@@ -1,7 +1,0 @@
-x = 11111111
-
-F8::
-if (GrantedCapacity := VarSetCapacity(CLIPBOARD, -1)) > 15
-	ToolTip, Check Title : %x% %GrantedCapacity%, 0, 0
-else	
-	ToolTip, Check Title : Hello, 0, 0
