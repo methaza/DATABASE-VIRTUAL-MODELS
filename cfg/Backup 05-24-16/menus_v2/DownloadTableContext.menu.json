@@ -1,0 +1,780 @@
+{
+  "items" : [ {
+    "items" : [ ],
+    "name" : null,
+    "iconKey" : null,
+    "className" : null,
+    "actionData" : {
+      "data" : null,
+      "clazzName" : "org.jdownloader.gui.views.linkgrabber.contextmenu.AddLinksContextMenuAction",
+      "name" : null,
+      "iconKey" : null,
+      "setup" : null,
+      "tooltip" : null
+    },
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : null,
+    "iconKey" : null,
+    "className" : null,
+    "actionData" : {
+      "data" : null,
+      "clazzName" : "org.jdownloader.gui.views.linkgrabber.contextmenu.AddContainerContextMenuAction",
+      "name" : null,
+      "iconKey" : null,
+      "setup" : null,
+      "tooltip" : null
+    },
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : "Seperator",
+    "iconKey" : null,
+    "className" : "org.jdownloader.controlling.contextmenu.SeperatorData",
+    "actionData" : null,
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ {
+      "items" : [ ],
+      "name" : null,
+      "iconKey" : null,
+      "className" : null,
+      "actionData" : {
+        "data" : null,
+        "clazzName" : "org.jdownloader.gui.views.components.packagetable.context.CheckStatusAction",
+        "name" : null,
+        "iconKey" : null,
+        "setup" : null,
+        "tooltip" : null
+      },
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    }, {
+      "items" : [ ],
+      "name" : null,
+      "iconKey" : null,
+      "className" : null,
+      "actionData" : {
+        "data" : null,
+        "clazzName" : "org.jdownloader.gui.views.components.packagetable.context.RenameAction",
+        "name" : null,
+        "iconKey" : null,
+        "setup" : null,
+        "tooltip" : null
+      },
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    }, {
+      "items" : [ ],
+      "name" : null,
+      "iconKey" : null,
+      "className" : null,
+      "actionData" : {
+        "data" : null,
+        "clazzName" : "org.jdownloader.gui.views.downloads.action.OpenInBrowserAction",
+        "name" : null,
+        "iconKey" : null,
+        "setup" : null,
+        "tooltip" : null
+      },
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    }, {
+      "items" : [ ],
+      "name" : null,
+      "iconKey" : null,
+      "className" : null,
+      "actionData" : {
+        "data" : null,
+        "clazzName" : "org.jdownloader.gui.views.components.packagetable.context.URLEditorAction",
+        "name" : null,
+        "iconKey" : null,
+        "setup" : null,
+        "tooltip" : null
+      },
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    }, {
+      "items" : [ ],
+      "name" : "Seperator",
+      "iconKey" : null,
+      "className" : "org.jdownloader.controlling.contextmenu.SeperatorData",
+      "actionData" : null,
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    }, {
+      "items" : [ ],
+      "name" : null,
+      "iconKey" : null,
+      "className" : null,
+      "actionData" : {
+        "data" : null,
+        "clazzName" : "org.jdownloader.gui.views.downloads.action.PackageNameAction",
+        "name" : null,
+        "iconKey" : null,
+        "setup" : null,
+        "tooltip" : null
+      },
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    }, {
+      "items" : [ ],
+      "name" : null,
+      "iconKey" : null,
+      "className" : null,
+      "actionData" : {
+        "data" : null,
+        "clazzName" : "org.jdownloader.gui.views.downloads.action.SetDownloadFolderInDownloadTableAction",
+        "name" : null,
+        "iconKey" : null,
+        "setup" : null,
+        "tooltip" : null
+      },
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    }, {
+      "items" : [ ],
+      "name" : null,
+      "iconKey" : null,
+      "className" : null,
+      "actionData" : {
+        "data" : null,
+        "clazzName" : "org.jdownloader.gui.views.components.packagetable.context.SetDownloadPassword",
+        "name" : null,
+        "iconKey" : null,
+        "setup" : null,
+        "tooltip" : null
+      },
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    }, {
+      "items" : [ {
+        "items" : [ ],
+        "name" : null,
+        "iconKey" : null,
+        "className" : null,
+        "actionData" : {
+          "data" : null,
+          "clazzName" : "org.jdownloader.gui.views.components.packagetable.context.PriorityLowerAction",
+          "name" : null,
+          "iconKey" : null,
+          "setup" : null,
+          "tooltip" : null
+        },
+        "type" : "ACTION",
+        "mnemonic" : null,
+        "shortcut" : null,
+        "visible" : true
+      }, {
+        "items" : [ ],
+        "name" : null,
+        "iconKey" : null,
+        "className" : null,
+        "actionData" : {
+          "data" : null,
+          "clazzName" : "org.jdownloader.gui.views.components.packagetable.context.PriorityDefaultAction",
+          "name" : null,
+          "iconKey" : null,
+          "setup" : null,
+          "tooltip" : null
+        },
+        "type" : "ACTION",
+        "mnemonic" : null,
+        "shortcut" : null,
+        "visible" : true
+      }, {
+        "items" : [ ],
+        "name" : null,
+        "iconKey" : null,
+        "className" : null,
+        "actionData" : {
+          "data" : null,
+          "clazzName" : "org.jdownloader.gui.views.components.packagetable.context.PriorityHighAction",
+          "name" : null,
+          "iconKey" : null,
+          "setup" : null,
+          "tooltip" : null
+        },
+        "type" : "ACTION",
+        "mnemonic" : null,
+        "shortcut" : null,
+        "visible" : true
+      }, {
+        "items" : [ ],
+        "name" : null,
+        "iconKey" : null,
+        "className" : null,
+        "actionData" : {
+          "data" : null,
+          "clazzName" : "org.jdownloader.gui.views.components.packagetable.context.PriorityHigherAction",
+          "name" : null,
+          "iconKey" : null,
+          "setup" : null,
+          "tooltip" : null
+        },
+        "type" : "ACTION",
+        "mnemonic" : null,
+        "shortcut" : null,
+        "visible" : true
+      }, {
+        "items" : [ ],
+        "name" : null,
+        "iconKey" : null,
+        "className" : null,
+        "actionData" : {
+          "data" : null,
+          "clazzName" : "org.jdownloader.gui.views.components.packagetable.context.PriorityHighestAction",
+          "name" : null,
+          "iconKey" : null,
+          "setup" : null,
+          "tooltip" : null
+        },
+        "type" : "ACTION",
+        "mnemonic" : null,
+        "shortcut" : null,
+        "visible" : true
+      } ],
+      "name" : "Set Priority",
+      "iconKey" : "prio_2",
+      "className" : "org.jdownloader.gui.views.downloads.context.submenu.PriorityMenuContainer",
+      "actionData" : null,
+      "type" : "CONTAINER",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    } ],
+    "name" : "Properties",
+    "iconKey" : "settings",
+    "className" : "org.jdownloader.gui.views.downloads.context.submenu.SettingsMenuContainer",
+    "actionData" : null,
+    "type" : "CONTAINER",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : "Seperator",
+    "iconKey" : null,
+    "className" : "org.jdownloader.controlling.contextmenu.SeperatorData",
+    "actionData" : null,
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : "Plugin Menu Entries",
+    "iconKey" : "plugin",
+    "className" : "org.jdownloader.gui.views.downloads.contextmenumanager.DownloadsTablePluginLink",
+    "actionData" : null,
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : "Seperator",
+    "iconKey" : null,
+    "className" : "org.jdownloader.controlling.contextmenu.SeperatorData",
+    "actionData" : null,
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : null,
+    "iconKey" : null,
+    "className" : null,
+    "actionData" : {
+      "data" : null,
+      "clazzName" : "org.jdownloader.gui.views.downloads.action.OpenFileAction",
+      "name" : null,
+      "iconKey" : null,
+      "setup" : null,
+      "tooltip" : null
+    },
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : null,
+    "iconKey" : null,
+    "className" : null,
+    "actionData" : {
+      "data" : null,
+      "clazzName" : "org.jdownloader.gui.views.downloads.action.OpenDirectoryAction",
+      "name" : null,
+      "iconKey" : null,
+      "setup" : null,
+      "tooltip" : null
+    },
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : null,
+    "iconKey" : null,
+    "className" : null,
+    "actionData" : {
+      "data" : null,
+      "clazzName" : "org.jdownloader.gui.views.linkgrabber.contextmenu.SortAction",
+      "name" : null,
+      "iconKey" : null,
+      "setup" : null,
+      "tooltip" : null
+    },
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : null,
+    "iconKey" : null,
+    "className" : null,
+    "actionData" : {
+      "data" : null,
+      "clazzName" : "org.jdownloader.gui.views.components.packagetable.context.EnabledAction",
+      "name" : null,
+      "iconKey" : null,
+      "setup" : null,
+      "tooltip" : null
+    },
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : null,
+    "iconKey" : null,
+    "className" : null,
+    "actionData" : {
+      "data" : null,
+      "clazzName" : "org.jdownloader.gui.views.downloads.action.SkipAction",
+      "name" : null,
+      "iconKey" : null,
+      "setup" : null,
+      "tooltip" : null
+    },
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : "Seperator",
+    "iconKey" : null,
+    "className" : "org.jdownloader.controlling.contextmenu.SeperatorData",
+    "actionData" : null,
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : null,
+    "iconKey" : null,
+    "className" : null,
+    "actionData" : {
+      "data" : null,
+      "clazzName" : "org.jdownloader.gui.views.downloads.action.ForceDownloadAction",
+      "name" : null,
+      "iconKey" : null,
+      "setup" : null,
+      "tooltip" : null
+    },
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : "pressed F9",
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : null,
+    "iconKey" : null,
+    "className" : null,
+    "actionData" : {
+      "data" : null,
+      "clazzName" : "org.jdownloader.gui.views.downloads.action.StopsignAction",
+      "name" : null,
+      "iconKey" : null,
+      "setup" : null,
+      "tooltip" : null
+    },
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : "Seperator",
+    "iconKey" : null,
+    "className" : "org.jdownloader.controlling.contextmenu.SeperatorData",
+    "actionData" : null,
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ {
+      "items" : [ ],
+      "name" : null,
+      "iconKey" : null,
+      "className" : null,
+      "actionData" : {
+        "data" : null,
+        "clazzName" : "org.jdownloader.gui.views.downloads.action.ResumeAction",
+        "name" : null,
+        "iconKey" : null,
+        "setup" : null,
+        "tooltip" : null
+      },
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : "pressed F11",
+      "visible" : true
+    }, {
+      "items" : [ ],
+      "name" : null,
+      "iconKey" : null,
+      "className" : null,
+      "actionData" : {
+        "data" : null,
+        "clazzName" : "org.jdownloader.gui.views.downloads.action.ResetAction",
+        "name" : null,
+        "iconKey" : null,
+        "setup" : null,
+        "tooltip" : null
+      },
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : "pressed F12",
+      "visible" : true
+    }, {
+      "items" : [ ],
+      "name" : "Seperator",
+      "iconKey" : null,
+      "className" : "org.jdownloader.controlling.contextmenu.SeperatorData",
+      "actionData" : null,
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    }, {
+      "items" : [ ],
+      "name" : null,
+      "iconKey" : null,
+      "className" : null,
+      "actionData" : {
+        "data" : null,
+        "clazzName" : "org.jdownloader.gui.views.downloads.action.NewPackageAction",
+        "name" : null,
+        "iconKey" : null,
+        "setup" : null,
+        "tooltip" : null
+      },
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    }, {
+      "items" : [ ],
+      "name" : null,
+      "iconKey" : null,
+      "className" : null,
+      "actionData" : {
+        "data" : null,
+        "clazzName" : "org.jdownloader.gui.views.downloads.action.CreateDLCAction",
+        "name" : null,
+        "iconKey" : null,
+        "setup" : null,
+        "tooltip" : null
+      },
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    } ],
+    "name" : "Other",
+    "iconKey" : "batch",
+    "className" : "org.jdownloader.gui.views.downloads.context.submenu.MoreMenuContainer",
+    "actionData" : null,
+    "type" : "CONTAINER",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : "Seperator",
+    "iconKey" : null,
+    "className" : "org.jdownloader.controlling.contextmenu.SeperatorData",
+    "actionData" : null,
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : null,
+    "iconKey" : null,
+    "className" : null,
+    "actionData" : {
+      "data" : null,
+      "clazzName" : "org.jdownloader.gui.views.downloads.action.GenericDeleteFromDownloadlistContextAction",
+      "name" : "Delete",
+      "iconKey" : "delete",
+      "setup" : {
+        "DELETEALL" : true
+      },
+      "tooltip" : null
+    },
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : "pressed DELETE",
+    "visible" : true
+  }, {
+    "items" : [ {
+      "items" : [ ],
+      "name" : null,
+      "iconKey" : null,
+      "className" : null,
+      "actionData" : {
+        "data" : null,
+        "clazzName" : "org.jdownloader.gui.views.downloads.action.GenericDeleteFromDownloadlistContextAction",
+        "name" : null,
+        "iconKey" : "remove_disabled",
+        "setup" : {
+          "DELETEDISABLED" : true
+        },
+        "tooltip" : null
+      },
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    }, {
+      "items" : [ ],
+      "name" : null,
+      "iconKey" : null,
+      "className" : null,
+      "actionData" : {
+        "data" : null,
+        "clazzName" : "org.jdownloader.gui.views.downloads.action.GenericDeleteFromDownloadlistContextAction",
+        "name" : null,
+        "iconKey" : "remove_failed",
+        "setup" : {
+          "DELETEFAILED" : true
+        },
+        "tooltip" : null
+      },
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    }, {
+      "items" : [ ],
+      "name" : null,
+      "iconKey" : null,
+      "className" : null,
+      "actionData" : {
+        "data" : null,
+        "clazzName" : "org.jdownloader.gui.views.downloads.action.GenericDeleteFromDownloadlistContextAction",
+        "name" : null,
+        "iconKey" : "remove_ok",
+        "setup" : {
+          "DELETEFINISHED" : true
+        },
+        "tooltip" : null
+      },
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    }, {
+      "items" : [ ],
+      "name" : null,
+      "iconKey" : null,
+      "className" : null,
+      "actionData" : {
+        "data" : null,
+        "clazzName" : "org.jdownloader.gui.views.downloads.action.GenericDeleteFromDownloadlistContextAction",
+        "name" : null,
+        "iconKey" : "remove_offline",
+        "setup" : {
+          "DELETEOFFLINE" : true
+        },
+        "tooltip" : null
+      },
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    }, {
+      "items" : [ ],
+      "name" : null,
+      "iconKey" : null,
+      "className" : null,
+      "actionData" : {
+        "data" : null,
+        "clazzName" : "org.jdownloader.gui.views.downloads.action.GenericDeleteFromDownloadlistContextAction",
+        "name" : null,
+        "iconKey" : "ok",
+        "setup" : {
+          "DELETEALL" : true,
+          "INCLUDESELECTEDLINKS" : false,
+          "INCLUDEUNSELECTEDLINKS" : true
+        },
+        "tooltip" : null
+      },
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    } ],
+    "name" : "Clean Up...",
+    "iconKey" : "clear",
+    "className" : "org.jdownloader.gui.views.downloads.context.submenu.DeleteMenuContainer",
+    "actionData" : null,
+    "type" : "CONTAINER",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : "Seperator",
+    "iconKey" : null,
+    "className" : "org.jdownloader.controlling.contextmenu.SeperatorData",
+    "actionData" : null,
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : null,
+    "iconKey" : null,
+    "className" : null,
+    "actionData" : {
+      "data" : null,
+      "clazzName" : "org.jdownloader.gui.views.downloads.action.PropertiesAction",
+      "name" : null,
+      "iconKey" : null,
+      "setup" : null,
+      "tooltip" : null
+    },
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : "Seperator",
+    "iconKey" : null,
+    "className" : "org.jdownloader.controlling.contextmenu.SeperatorData",
+    "actionData" : null,
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ ],
+    "name" : null,
+    "iconKey" : null,
+    "className" : null,
+    "actionData" : {
+      "data" : null,
+      "clazzName" : "org.jdownloader.gui.views.downloads.action.MenuManagerAction",
+      "name" : null,
+      "iconKey" : null,
+      "setup" : null,
+      "tooltip" : null
+    },
+    "type" : "ACTION",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : true
+  }, {
+    "items" : [ {
+      "items" : [ ],
+      "name" : null,
+      "iconKey" : null,
+      "className" : null,
+      "actionData" : {
+        "data" : null,
+        "clazzName" : "org.jdownloader.gui.views.downloads.action.CollapseExpandContextAction",
+        "name" : null,
+        "iconKey" : null,
+        "setup" : null,
+        "tooltip" : null
+      },
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    }, {
+      "items" : [ ],
+      "name" : null,
+      "iconKey" : null,
+      "className" : null,
+      "actionData" : {
+        "data" : null,
+        "clazzName" : "org.jdownloader.gui.views.downloads.action.CopyGenericContextAction",
+        "name" : null,
+        "iconKey" : null,
+        "setup" : null,
+        "tooltip" : null
+      },
+      "type" : "ACTION",
+      "mnemonic" : null,
+      "shortcut" : null,
+      "visible" : true
+    } ],
+    "name" : "More Actions...",
+    "iconKey" : "menu",
+    "className" : "org.jdownloader.gui.mainmenu.container.OptionalContainer",
+    "actionData" : null,
+    "type" : "CONTAINER",
+    "mnemonic" : null,
+    "shortcut" : null,
+    "visible" : false
+  } ],
+  "name" : null,
+  "iconKey" : null,
+  "className" : "org.jdownloader.controlling.contextmenu.MenuContainerRoot",
+  "actionData" : null,
+  "type" : "CONTAINER",
+  "mnemonic" : null,
+  "shortcut" : null,
+  "visible" : true
+}

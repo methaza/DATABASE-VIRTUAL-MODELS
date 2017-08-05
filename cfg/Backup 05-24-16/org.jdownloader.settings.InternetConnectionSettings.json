@@ -1,0 +1,10 @@
+{
+  "proxyvoleautodetectionenabled" : true,
+  "httpconnecttimeout" : 10000,
+  "nonedefault" : false,
+  "nonerotationenabled" : false,
+  "routeripcheckconnecttimeout" : 2000,
+  "localpacscript" : null,
+  "httpreadtimeout" : 60000,
+  "routeripcheckreadtimeout" : 5000
+}

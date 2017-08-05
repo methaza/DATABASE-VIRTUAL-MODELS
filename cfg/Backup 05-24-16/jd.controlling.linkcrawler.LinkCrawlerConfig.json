@@ -1,0 +1,5 @@
+{
+  "threadkeepalive" : 20000,
+  "deepdecryptloadlimit" : 2097152,
+  "maxthreads" : 12
+}

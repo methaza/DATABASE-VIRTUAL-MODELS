@@ -1,0 +1,17 @@
+{
+  "autohideguiiftherearenoupdatesenabled" : true,
+  "proxydialogonnoconnectionenabled" : true,
+  "donotasktoinstallemergencyupdates" : true,
+  "donotasktoinstallupdatesonstartup" : true,
+  "donotasktoinstallplugins" : true,
+  "stid" : "40",
+  "updateinterval" : 600000,
+  "lastst" : 0,
+  "donotasktodownloademergencyupdates" : true,
+  "autohideguiifsilentupdateswereinstalledenabled" : true,
+  "donotaskjustinstallonnextstartupenabled" : true,
+  "jardiffenabled" : true,
+  "updateguialwaysontop" : true,
+  "doaskbeforedownloadinganupdate" : false,
+  "autoupdatecheckenabled" : false
+}

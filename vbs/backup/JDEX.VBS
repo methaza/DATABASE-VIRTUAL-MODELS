@@ -1,0 +1,17 @@
+Dim WshShell
+Set WshShell = CreateObject("WScript.Shell")
+WshShell.AppActivate "Jdownloader 2"
+WScript.Sleep 500
+WshShell.AppActivate "Jdownloader 2"
+WshShell.SendKeys "{F8}"
+WScript.Sleep 500
+WshShell.AppActivate "Jdownloader 2"
+WshShell.SendKeys "{F8}"
+WScript.Sleep 500
+WshShell.AppActivate "Jdownloader 2"
+WshShell.SendKeys "{F8}"
+WScript.Sleep 500
+WshShell.AppActivate "Jdownloader 2"
+WshShell.SendKeys "{F8}"
+WScript.Sleep 500
+Set WshShell = Nothing
