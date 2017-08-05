@@ -28,30 +28,22 @@ SET _RndAlphaNum=!_RndAlphaNum!!_Alphanumeric:~%_RND%,1!
 If !_count! lss %_RNDLength% goto _loop
 :CHECKCOMLIST
 IF "%COMPUTERNAME%" EQU "VMWARE-PC" (
-	:: FOR /F "tokens=1 DELIMS=" %%N IN ('net view ^| find /c "\\COM"') DO SET /A COMxN=%%N
-	SET "COMxX=COMx01"
+	DIR /B "Z:\" | FIND "COM" >NUL 2>NUL && (
+		FOR /F "tokens=*" %%N IN ('DIR /B "Z:\" ^| FIND "COM"') DO SET "COMxX=%%N"
+	) || (	
+		FOR /F "tokens=1 DELIMS=-" %%N IN ('ECHO %COMPUTERNAME%') DO SET "COMxX=%%N"
+	)
 	SET SWITCH=GENSET	
 )
 IF "%COMPUTERNAME%" NEQ "VMWARE-PC" (
-	:: FOR /F "tokens=1 DELIMS=-" %%N IN ('ECHO %COMPUTERNAME%') DO SET COMxX=%%N
-	SET "COMxX=COMx01"
+	DIR /B "Z:\" | FIND "COM" >NUL 2>NUL && (
+		FOR /F "tokens=*" %%N IN ('DIR /B "Z:\" ^| FIND "COM"') DO SET "COMxX=%%N"
+	) || (	
+		FOR /F "tokens=1 DELIMS=-" %%N IN ('ECHO %COMPUTERNAME%') DO SET "COMxX=%%N"
+	)
 	SET SWITCH=%SWITCH%
 )
 GOTO %SWITCH%
-:: IF %COMxN% NEQ 1 (
-:: 	IF %COMxN% LEQ 9 (
-:: 		SET "COMxX=COMX0%COMxN%"
-:: 	) ELSE (
-:: 		SET "COMxX=COMX%COMxN%"
-:: 	)
-:: )
-:: FOR /F "tokens=1 DELIMS=" %%C IN ('net view ^| find /c "\\%COMxX%"') DO SET /A COMxC=%%C
-:: IF %COMxC% GTR 1 (
-:: 	SET /A COMxN+=1
-:: 	GOTO CHECKCOMLIST
-:: ) ELSE (
-:: 	GOTO %SWITCH%
-:: )
 
 
 

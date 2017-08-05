@@ -1,15 +1,5 @@
 @ECHO OFF
 
-IF "%1" EQU "CLEANOVPN" (
-	FORFILES -p Z:\Sync\IPLOGS -m *.LOG -d -1 -c "cmd /c DEL /Q @file"
-	FORFILES -p Z:\Sync\IPLOGS\HISTORY -m *.LOG -d -2 -c "cmd /c DEL @file"
-	FORFILES -p Z:\OPENVPN\vpngate.net -m *.ovpn -d -1 -c "cmd /c del /q @file"
-	FOR %%V IN (Z:\OPENVPN\vpngate.net\*.ovpn) DO (
-		CALL :vpngate.net "%%V"
-	)
-	EXIT
-)
-
 TITLE REALTIME.BAT
 
 :CONFIG
@@ -42,7 +32,11 @@ RMDIR ".\ff\Data\profile_piracy\" /s /q
 REM ##############
 REM |_| SERVER |_|
 REM ##############
-FOR /F "tokens=1 DELIMS=-" %%N IN ('ECHO %COMPUTERNAME%') DO SET "COMxX=%%N"
+DIR /B "Z:\" | FIND "COM" >NUL 2>NUL && (
+	FOR /F "tokens=*" %%N IN ('DIR /B "Z:\" ^| FIND "COM"') DO SET "COMxX=%%N"
+) || (	
+	FOR /F "tokens=1 DELIMS=-" %%N IN ('ECHO %COMPUTERNAME%') DO SET "COMxX=%%N"
+)
 IF "%SERVERNAME%" EQU "" FOR /F "tokens=5 DELIMS=:. " %%S IN ('ipconfig ^| find "Default Gateway" ^| find "192.168."') DO SET "VMDGATEWAY=%%S"
 IF "%SERVERNAME%" EQU "" FOR /F "tokens=1 DELIMS=< " %%S IN ('nbtstat -a 192.168.%VMDGATEWAY%.1 ^| find "<00>  UNIQUE"') DO SET "SERVERNAME=%%S"
 IF "%SERVERNAME%" EQU "" FOR /F "tokens=1 DELIMS=< " %%S IN ('nbtstat -a 192.168.%VMDGATEWAY%.1 ^| find "<00>  UNIQUE"') DO SET "SERVERNAME=%%S"
@@ -67,10 +61,10 @@ REM |_|vpngate.|_|
 REM ##############
 IF "%SERVERNAME%" EQU "CNR-BATCHER-PC" (
 	IF "%COMxX%" EQU "COMx01" (
-		CMD /C START /MAX "CLEAN OVPN vpngate.net" /D "%PROGRAMFILES%\JDownloader Secondary" "Z:\Database\realtime.bat" CLEANOVPN
+		CMD /C START /MAX "CLEAN OVPN vpngate.net" /D "%PROGRAMFILES%\JDownloader Secondary" "Z:\Database\cleanvpn.exe"
 	)
 	IF "%COMxX%" EQU "COMX01"  (
-		CMD /C START /MAX "CLEAN OVPN vpngate.net" /D "%PROGRAMFILES%\JDownloader Secondary" "Z:\Database\realtime.bat" CLEANOVPN
+		CMD /C START /MAX "CLEAN OVPN vpngate.net" /D "%PROGRAMFILES%\JDownloader Secondary" "Z:\Database\cleanvpn.exe"
 	)
 )
 MOVE ".\OPENVPN\vpngate.net\*.ovpn" "Z:\OPENVPN\vpngate.net"
@@ -273,9 +267,9 @@ CLS
 SET "KEYUSE="
 SET "KEYPAS="
 IF NOT EXIST ".\OPENVPN" MKDIR ".\OPENVPN"
-SET /A VPNRANDOM=%RANDOM% %%70 +1
+SET /A VPNRANDOM=%RANDOM% %%78 +1
 IF %VPNRANDOM% GEQ 1 (
-	IF NOT %VPNRANDOM% GEQ 10 (
+	IF NOT %VPNRANDOM% GEQ 8 (
 		SET VPNON=hotspotshield.com.get
 		SET VPNEXTEN=ovpn
 		IF NOT EXIST ".\OPENVPN\hotspotshield.com.get" MKDIR ".\OPENVPN\hotspotshield.com.get" && MKDIR ".\OPENVPN\hotspotshield.com.get\out" && MKDIR ".\OPENVPN\hotspotshield.com.get\limite"
@@ -290,7 +284,7 @@ IF %VPNRANDOM% GEQ 1 (
 		SET VPNUSAGE=LOADHSS && GOTO LOADLST
 	)
 )
-IF %VPNRANDOM% GEQ 11 (
+IF %VPNRANDOM% GEQ 9 (
 	IF NOT %VPNRANDOM% GEQ 16 (
 		SET VPNON=purevpn.com.get
 		SET KEYON=purevpn.com
@@ -298,11 +292,11 @@ IF %VPNRANDOM% GEQ 11 (
 		IF NOT EXIST ".\OPENVPN\purevpn.com.get" MKDIR ".\OPENVPN\purevpn.com.get" && MKDIR ".\OPENVPN\purevpn.com.get\out" && MKDIR ".\OPENVPN\purevpn.com.get\limite"
 		FORFILES -p .\OPENVPN\purevpn.com.get\out -m *.txt -d -1 -c "cmd /c del /q @file"
 		FORFILES -p .\OPENVPN\purevpn.com.get\limite -m *.txt -d -1 -c "cmd /c  del /q @file"
-		CALL :purevpn.com
+		CALL :purevpn
 		SET /A VPNRSPAM=0
-		SET /A VPNMSPAM=2
+		SET /A VPNMSPAM=4
 		SET /A ACTRSPAM=0
-		SET /A ACTMSPAM=4
+		SET /A ACTMSPAM=8
 		SET VPNRETRY=LOADLST
 		SET VPNLOCAL=OpenVPN
 		SET VPNUSAGE=LOADGUI && GOTO LOADLST
@@ -343,7 +337,7 @@ IF %VPNRANDOM% GEQ 22 (
 	)
 )
 IF %VPNRANDOM% GEQ 25 (
-	IF NOT %VPNRANDOM% GEQ 50 (
+	IF NOT %VPNRANDOM% GEQ 56 (
 		SET VPNON=vpngate.net
 		SET VPNEXTEN=ovpn
 		IF NOT EXIST ".\OPENVPN\vpngate.net" MKDIR ".\OPENVPN\vpngate.net" && MKDIR ".\OPENVPN\vpngate.net\out" && MKDIR ".\OPENVPN\vpngate.net\limite"
@@ -355,16 +349,16 @@ IF %VPNRANDOM% GEQ 25 (
 		SET /A PORTOVPN=61
 		SET /A PROTOCOL=40
 		SET /A VPNRSPAM=0
-		SET /A VPNMSPAM=6
+		SET /A VPNMSPAM=4
 		SET /A ACTRSPAM=0
-		SET /A ACTMSPAM=12
+		SET /A ACTMSPAM=8
 		SET VPNRETRY=LOADLST
 		SET VPNLOCAL=OpenVPN
 		SET VPNUSAGE=LOADCON && GOTO LOADLST
 	)
 )
-IF %VPNRANDOM% GEQ 51 (
-	IF NOT %VPNRANDOM% GEQ 56 (
+IF %VPNRANDOM% GEQ 57 (
+	IF NOT %VPNRANDOM% GEQ 62 (
 		SET VPNON=ipvanish.com.get
 		SET VPNEXTEN=ovpn
 		IF NOT EXIST ".\OPENVPN\ipvanish.com.get" MKDIR ".\OPENVPN\ipvanish.com.get" && MKDIR ".\OPENVPN\ipvanish.com.get\out" && MKDIR ".\OPENVPN\ipvanish.com.get\limite"
@@ -379,37 +373,37 @@ IF %VPNRANDOM% GEQ 51 (
 		SET VPNUSAGE=LOADGUI && GOTO LOADLST
 	)
 )
-IF %VPNRANDOM% GEQ 57 (
-	IF NOT %VPNRANDOM% GEQ 63 (
+IF %VPNRANDOM% GEQ 63 (
+	IF NOT %VPNRANDOM% GEQ 70 (
 		SET VPNON=nordvpn.com.get
 		SET KEYON=nordvpn.com
 		SET VPNEXTEN=ovpn
 		IF NOT EXIST ".\OPENVPN\nordvpn.com.get" MKDIR ".\OPENVPN\nordvpn.com.get" && MKDIR ".\OPENVPN\nordvpn.com.get\out" && MKDIR ".\OPENVPN\nordvpn.com.get\limite"
 		FORFILES -p .\OPENVPN\nordvpn.com.get\out -m *.txt -d -1 -c "cmd /c del /q @file"
 		FORFILES -p .\OPENVPN\nordvpn.com.get\limite -m *.txt -d -1 -c "cmd /c  del /q @file"
-		CALL :nordvpn.com
+		CALL :nordvpn
 		SET /A VPNRSPAM=0
-		SET /A VPNMSPAM=2
+		SET /A VPNMSPAM=4
 		SET /A ACTRSPAM=0
-		SET /A ACTMSPAM=4
+		SET /A ACTMSPAM=8
 		SET VPNRETRY=LOADLST
 		SET VPNLOCAL=OpenVPN
 		SET VPNUSAGE=LOADGUI && GOTO LOADLST
 	)
 )
-IF %VPNRANDOM% GEQ 64 (
-	IF NOT %VPNRANDOM% GEQ 70 (
+IF %VPNRANDOM% GEQ 71 (
+	IF NOT %VPNRANDOM% GEQ 78 (
 		SET VPNON=safervpn.com
 		SET KEYON=safervpn.com
 		SET VPNEXTEN=ovpn
 		IF NOT EXIST ".\OPENVPN\safervpn.com" MKDIR ".\OPENVPN\safervpn.com" && MKDIR ".\OPENVPN\safervpn.com\out" && MKDIR ".\OPENVPN\safervpn.com\limite"
 		FORFILES -p .\OPENVPN\safervpn.com\out -m *.txt -d -1 -c "cmd /c del /q @file"
 		FORFILES -p .\OPENVPN\safervpn.com\limite -m *.txt -d -1 -c "cmd /c  del /q @file"
-		CALL :safervpn.com
+		CALL :safervpn
 		SET /A VPNRSPAM=0
-		SET /A VPNMSPAM=2
+		SET /A VPNMSPAM=4
 		SET /A ACTRSPAM=0
-		SET /A ACTMSPAM=4
+		SET /A ACTMSPAM=8
 		SET VPNRETRY=LOADLST
 		SET VPNLOCAL=OpenVPN
 		SET VPNUSAGE=LOADGUI && GOTO LOADLST
@@ -521,11 +515,7 @@ START /MAX CMD /C ..\%VPNLOCAL%\data\bin\hxvpn.exe "..\%VPNLOCAL%\config\%VPNNAM
 TIMEOUT 20 /NOBREAK
 FOR /F %%F IN ('TYPE ".\ACTION.LOG" ^| FIND /C /I "Connection timed out"') DO SET /A ACTION=%%F
 IF %ACTION% GEQ 2 (
-	:: IF /I EXIST "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%" (
-		ECHO %VPNNAMEONTYPE% > ".\OPENVPN\%VPNON%\out\%VPNNAMEONTYPE%.txt"  
-		:: DEL /Q "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%"
-		GOTO %VPNRETRY%
-	:: )
+	ECHO %VPNNAMEONTYPE% > ".\OPENVPN\%VPNON%\out\%VPNNAMEONTYPE%.txt"
 	GOTO %VPNRETRY%
 )
 GOTO PING
@@ -534,8 +524,23 @@ COPY /Y "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%" "..\%VPNLOCAL%\config\%VPNNAMEONTYP
 COPY /Y "Z:\OPENVPN\%VPNON%\key\*.key" "..\%VPNLOCAL%\config\key\"
 COPY /Y "Z:\OPENVPN\%VPNON%\key\*.ca" "..\%VPNLOCAL%\config\key\"
 COPY /Y "Z:\OPENVPN\%VPNON%\key\*.crt" "..\%VPNLOCAL%\config\key\"
-IF "%KEYUSE%" NEQ "" ECHO %KEYUSE% > "..\%VPNLOCAL%\config\key\%KEYON%.key"
-IF "%KEYPAS%" NEQ "" ECHO %KEYPAS% >> "..\%VPNLOCAL%\config\key\%KEYON%.key"
+
+IF "%KEYUSE%" NEQ "" (
+	ECHO %KEYUSE% > "..\%VPNLOCAL%\config\key\%KEYON%.hex"
+	FOR /F "tokens=1 DELIMS=-" %%R IN ('type "..\%VPNLOCAL%\config\key\%KEYON%.hex"') DO (
+		ECHO %%R > "..\%VPNLOCAL%\config\key\%KEYON%.key"
+	)
+)
+IF "%KEYPAS%" NEQ "" (
+	ECHO %KEYPAS% > "..\%VPNLOCAL%\config\key\%KEYON%.hex"
+	FOR /F "tokens=1 DELIMS=-" %%R IN ('type "..\%VPNLOCAL%\config\key\%KEYON%.hex"') DO (
+		ECHO %%R >> "..\%VPNLOCAL%\config\key\%KEYON%.key"
+	)
+)
+
+"Z:\Database\sed.exe" "s/\s*$//" "..\%VPNLOCAL%\config\key\%KEYON%.key" > "..\%VPNLOCAL%\config\key\%KEYON%.txt"
+"Z:\Database\sed.exe" "s/\n\n*$//" "..\%VPNLOCAL%\config\key\%KEYON%.txt" > "..\%VPNLOCAL%\config\key\%KEYON%.key"
+
 REM #############
 REM |_| ROUTE |_|
 REM #############
@@ -593,38 +598,38 @@ TIMEOUT 30 /NOBREAK
 FOR /F %%F IN ('TYPE "..\%VPNLOCAL%\log\%VPNNAMENOTYPE%.LOG" ^| FIND /C /I "try again in 2 seconds"') DO SET /A ACTION=%%F
 IF %ACTION% GEQ 2 (
 	IF /I EXIST "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%" (
-		ECHO %VPNNAMEONTYPE% > ".\OPENVPN\%VPNON%\out\%VPNNAMEONTYPE%.txt"  
-		:: DEL /Q "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%"
+		ECHO %VPNNAMEONTYPE% > ".\OPENVPN\%VPNON%\out\%VPNNAMEONTYPE%.txt"
+		GOTO %VPNRETRY%
+	) ELSE (
 		GOTO %VPNRETRY%
 	)
-	GOTO %VPNRETRY%
 )
 FOR /F %%F IN ('TYPE "..\%VPNLOCAL%\log\%VPNNAMENOTYPE%.LOG" ^| FIND /C /I "try again in 5 seconds"') DO SET /A ACTION=%%F
 IF %ACTION% GEQ 2 (
 	IF /I EXIST "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%" (
-		ECHO %VPNNAMEONTYPE% > ".\OPENVPN\%VPNON%\out\%VPNNAMEONTYPE%.txt"  
-		:: DEL /Q "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%"
+		ECHO %VPNNAMEONTYPE% > ".\OPENVPN\%VPNON%\out\%VPNNAMEONTYPE%.txt"
+		GOTO %VPNRETRY%
+	) ELSE (
 		GOTO %VPNRETRY%
 	)
-	GOTO %VPNRETRY%
 )
 FOR /F %%F IN ('TYPE "..\%VPNLOCAL%\log\%VPNNAMENOTYPE%.LOG" ^| FIND /C /I "Restart pause, 5 second"') DO SET /A ACTION=%%F
 IF %ACTION% GEQ 2 (
 	IF /I EXIST "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%" (
-		ECHO %VPNNAMEONTYPE% > ".\OPENVPN\%VPNON%\out\%VPNNAMEONTYPE%.txt"  
-		DEL /Q "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%"
+		ECHO %VPNNAMEONTYPE% > ".\OPENVPN\%VPNON%\out\%VPNNAMEONTYPE%.txt"
+		GOTO %VPNRETRY%
+	) ELSE (
 		GOTO %VPNRETRY%
 	)
-	GOTO %VPNRETRY%
 )
 FOR /F %%F IN ('TYPE "..\%VPNLOCAL%\log\%VPNNAMENOTYPE%.LOG" ^| FIND /C /I "Restart pause, 2 second"') DO SET /A ACTION=%%F
 IF %ACTION% GEQ 2 (
 	IF /I EXIST "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%" (
-		ECHO %VPNNAMEONTYPE% > ".\OPENVPN\%VPNON%\out\%VPNNAMEONTYPE%.txt"  
-		:: DEL /Q "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%"
+		ECHO %VPNNAMEONTYPE% > ".\OPENVPN\%VPNON%\out\%VPNNAMEONTYPE%.txt"
+		GOTO %VPNRETRY%
+	) ELSE (
 		GOTO %VPNRETRY%
 	)
-	GOTO %VPNRETRY%
 )
 GOTO PING
 :LOADCON
@@ -743,11 +748,11 @@ TIMEOUT 02 /NOBREAK
 FOR /F %%F IN ('TYPE ".\ACTION.LOG" ^| FIND /C /I "completed successfully"') DO SET /A ACTION=%%F
 IF %ACTION% EQU 0 (
 	IF /I EXIST "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%" (
-		ECHO %VPNNAMEONTYPE% > ".\OPENVPN\%VPNON%\out\%VPNNAMEONTYPE%.txt"  
-		DEL /Q "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%"
+		ECHO %VPNNAMEONTYPE% > ".\OPENVPN\%VPNON%\out\%VPNNAMEONTYPE%.txt"
+		GOTO %VPNRETRY%
+	) ELSE (
 		GOTO %VPNRETRY%
 	)
-	GOTO %VPNRETRY%
 )
 REM #############
 REM |_| ROUTE |_|
@@ -907,11 +912,7 @@ IF %COUNT% GEQ %COUNTLIMIT% (
 		DEL /Q "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%"
 		GOTO %VPNRETRY%
 	) ELSE (
-		:: IF /I EXIST "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%" (
-			ECHO %VPNNAMEONTYPE% > ".\OPENVPN\%VPNON%\out\%VPNNAMEONTYPE%.txt"  
-			:: DEL /Q "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%"
-			GOTO %VPNRETRY%
-		:: )
+		ECHO %VPNNAMEONTYPE% > ".\OPENVPN\%VPNON%\out\%VPNNAMEONTYPE%.txt"
 		GOTO %VPNRETRY%
 	)
 )
@@ -951,16 +952,11 @@ IF %IPLOGS% GEQ 2 (
 		DEL /Q "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%"
 		GOTO %VPNRETRY%
 	) ELSE (
-		:: IF /I EXIST "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%" (
-			ECHO %VPNNAMEONTYPE% > ".\OPENVPN\%VPNON%\out\%VPNNAMEONTYPE%.txt"  
-			:: DEL /Q "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%"
-			GOTO %VPNRETRY%
-		:: )
+		ECHO %VPNNAMEONTYPE% > ".\OPENVPN\%VPNON%\out\%VPNNAMEONTYPE%.txt"  
 		GOTO %VPNRETRY%
 	)
 )
 SET /A AVGOUTDNS=0 && FOR /F "tokens=10 delims==m " %%F in ('ping -n 5 8.8.8.8 ^| find "Average ="') DO SET /A AVGOUTDNS=%%F
-:: SET /A AVGOUTBITLY=0 && FOR /F "tokens=10 delims==m " %%F in ('ping -n 5 bit.ly ^| find "Average ="') DO SET /A AVGOUTBITLY=%%F
 SET "AVGOUT=%AVGOUTDNS%"
 IF "%VPNON%" EQU "vpngate.net" (
 	IF %AVGOUTDNS% EQU 0 (
@@ -971,14 +967,6 @@ IF "%VPNON%" EQU "vpngate.net" (
 		DEL /Q "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%"
 		GOTO %VPNRETRY%
 	)
-	:: IF %AVGOUTBITLY% EQU 0 (
-	:: 	DEL /Q "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%"
-	:: 	GOTO %VPNRETRY%
-	:: )
-	:: IF %AVGOUTBITLY% GEQ 800 (
-	:: 	DEL /Q "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%"
-	:: 	GOTO %VPNRETRY%
-	:: )
 )
 .\wget\wget -q -O PROXY.LOG http://whatismyipaddress.com --user-agent="Mozilla/5.0 (Mozilla/5.0 (iPhone; CPU iPhone OS 9_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/47.0.2526.70 Mobile/13C71 Safari/601.1.46" --tries=2 --connect-timeout=15
 TIMEOUT 2 /NOBREAK && FIND /C /I "Confirmed Proxy Server" ".\PROXY.LOG"
@@ -987,11 +975,7 @@ IF %ERRORLEVEL% EQU 0 (
 		DEL /Q "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%"
 		GOTO %VPNRETRY%
 	) ELSE (
-		:: IF /I EXIST "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%" (
-			ECHO %VPNNAMEONTYPE% > ".\OPENVPN\%VPNON%\out\%VPNNAMEONTYPE%.txt"  
-			:: DEL /Q "Z:\OPENVPN\%VPNON%\%VPNNAMEONTYPE%"
-			GOTO %VPNRETRY%
-		:: )
+		ECHO %VPNNAMEONTYPE% > ".\OPENVPN\%VPNON%\out\%VPNNAMEONTYPE%.txt"
 		GOTO %VPNRETRY%
 	)
 )
@@ -1450,43 +1434,25 @@ IF "%HOSTCHECKIPLOOP%" EQU "5" SET "HOSTCHECKIP=ifconfig.co/ip"
 IF "%HOSTCHECKIPLOOP%" EQU "6" SET "HOSTCHECKIP=bot.whatismyipaddress.com"
 IF "%HOSTCHECKIPLOOP%" EQU "7" SET "HOSTCHECKIP=myip.dnsomatic.com"
 GOTO:EOF
-:vpngate.net
-SET "UNWANT=%~1"
-ECHO %UNWANT% | FIND "\.ovpn" && (
-	ECHO NO && DEL /Q "%~1"
-)
-ECHO %UNWANT% | FIND "(1).ovpn" && (
-	ECHO NO && DEL /Q "%~1"
-)
-ECHO %UNWANT% | FIND "(2).ovpn" && (
-	ECHO NO && DEL /Q "%~1"
-)
-ECHO %UNWANT% | FIND "(3).ovpn" && (
-	ECHO NO && DEL /Q "%~1"
-)
-ECHO %UNWANT% | FIND "[Conflict].ovpn" && (
-	ECHO NO && DEL /Q "%~1"
-)
-GOTO:EOF
-:purevpn.com
+:purevpn
 FOR /F %%H IN ('type "Z:\OPENVPN\purevpn.com.get\key\purevpn.com.hex" ^| FIND /C "/"') DO SET /A HEXGEN=(%RANDOM%*%%H/32768) + 1
 FOR /F "tokens=1-2 skip=%HEXGEN% delims=/" %%A in ('type "Z:\OPENVPN\purevpn.com.get\key\purevpn.com.hex"') DO (
-	SET KEYUSE=%%A
-	SET KEYPAS=%%B
+	SET "KEYUSE=%%A-"
+	SET "KEYPAS=%%B-"
 	GOTO:EOF
 )
-:nordvpn.com
+:nordvpn
 FOR /F %%H IN ('type "Z:\OPENVPN\nordvpn.com.get\key\nordvpn.com.hex" ^| FIND /C "/"') DO SET /A HEXGEN=(%RANDOM%*%%H/32768) + 1
 FOR /F "tokens=1-2 skip=%HEXGEN% delims=/" %%A in ('type "Z:\OPENVPN\nordvpn.com.get\key\nordvpn.com.hex"') DO (
-	SET KEYUSE=%%A
-	SET KEYPAS=%%B
+	SET "KEYUSE=%%A-"
+	SET "KEYPAS=%%B-"
 	GOTO:EOF
 )
-:safervpn.com
+:safervpn
 FOR /F %%H IN ('type "Z:\OPENVPN\safervpn.com\key\safervpn.com.hex" ^| FIND /C "/"') DO SET /A HEXGEN=(%RANDOM%*%%H/32768) + 1
 FOR /F "tokens=1-2 skip=%HEXGEN% delims=/" %%A in ('type "Z:\OPENVPN\safervpn.com\key\safervpn.com.hex"') DO (
-	SET KEYUSE=%%A
-	SET KEYPAS=%%B
+	SET "KEYUSE=%%A-"
+	SET "KEYPAS=%%B-"
 	GOTO:EOF
 )
 :MODELOG

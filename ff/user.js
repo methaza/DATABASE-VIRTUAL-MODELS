@@ -7,7 +7,7 @@ user_pref("extensions.ublock0.dashboardLastVisitedPane", "whitelist.html");
 user_pref("extensions.ublock0.popupFirewallPane", "true");
 
 // FIX REDIRECT
-user_pref("extensions.skipredirect.exceptions", "bitly.com|is.gd|127.0.0.2:5000|cmp20.com|adexchangeprediction.com|histock.info|onclickads.net|onclkds.com|sabavision.com|shiek1ph.com|urldelivery.com|poptm.com|adk2x.com|ppixemo.com|prpops.com|mulheresgostosas.org|mail-find.com|a4g.com|appflys.com|16rd20117.xyz|xxlargepop.com|aerobins.com|exdynsrv.com|n152adserv.com|paradition.com|ppixeme.com|clicksgear.com|doubleclick.net|roughted.com|kniverto.com|di7wee8.top|16rd0117.xyz|bowlingle.com|65xps.com|witchcraftcash.com|signoredom.com|xl415.com|loading123.net|bestadbid.com|trafficjunky.net|qqc.co|maxprofitcontrol.com|juicyads.com|worthyslice.com|exoclick.com|wonderlandads.com|newadsclicks.com|gri98.com|uebadu.com|selfsrver.com|prestoris.com|spotscenered.info|frstlead.com|performanceadexchange.com|paclitor.com|joredii.com|clevernt.com|urlbeat.net|gebadu.com|alxsite.com|akamai.com|jclick-adnow.com|respecials.com|n282adserv.com|nanoadexchange.com|autoreview.info|zanox.com|theih1w.top|siniature.com|inclk.com|repressina.com|himselves.com|cmp10.com|ioredi.com|apparede.com|webmasterplan.com|cpm10.com|exerciale.com|speculese.com|seegamese.com|newstartads.com|shalleda.com|camkiiis.com|stendef.com|stencef.com");
+user_pref("extensions.skipredirect.exceptions", "bitly.com|is.gd|127.0.0.2:5000|mxttrf.com|redonetype.com|advserver.xyz|webgains.com|trigginge.com|blobar.org|onclickmax.com|cpm20.com|adexchangeprediction.com|histock.info|onclickads.net|onclkds.com|sabavision.com|shiek1ph.com|urldelivery.com|poptm.com|adk2x.com|ppixemo.com|prpops.com|mulheresgostosas.org|mail-find.com|a4g.com|appflys.com|16rd20117.xyz|xxlargepop.com|aerobins.com|exdynsrv.com|n152adserv.com|paradition.com|ppixeme.com|clicksgear.com|doubleclick.net|roughted.com|kniverto.com|di7wee8.top|16rd0117.xyz|bowlingle.com|65xps.com|witchcraftcash.com|signoredom.com|xl415.com|loading123.net|bestadbid.com|trafficjunky.net|qqc.co|maxprofitcontrol.com|juicyads.com|worthyslice.com|exoclick.com|wonderlandads.com|newadsclicks.com|gri98.com|uebadu.com|selfsrver.com|prestoris.com|spotscenered.info|frstlead.com|performanceadexchange.com|paclitor.com|joredii.com|clevernt.com|urlbeat.net|gebadu.com|alxsite.com|akamai.com|jclick-adnow.com|respecials.com|n282adserv.com|nanoadexchange.com|autoreview.info|zanox.com|theih1w.top|siniature.com|inclk.com|repressina.com|himselves.com|cmp10.com|ioredi.com|apparede.com|webmasterplan.com|cpm10.com|exerciale.com|speculese.com|seegamese.com|newstartads.com|shalleda.com|camkiiis.com|stendef.com|stencef.com");
 user_pref("extensions.skipredirect@sblask.sdk.baseURI", "resource://skipredirect-at-sblask/");
 user_pref("extensions.skipredirect@sblask.sdk.domain", "skipredirect-at-sblask");
 user_pref("extensions.skipredirect@sblask.sdk.load.reason", "enable");
@@ -181,7 +181,7 @@ user_pref("extensions.adblockplus.blockableItemsSize", "{\"width\":\"200\",\"hei
 user_pref("extensions.adblockpluspopupaddon.allowTabBlocking", true);
 user_pref("extensions.adblockpluspopupaddon.enableOnAlerts", true);
 user_pref("extensions.adblockpluspopupaddon.enableOnLinks", true);
-user_pref("extensions.adblockpluspopupaddon.rules", "*;1;CHECK;WINDOWS,TABS,LINKS;1|bitly.com;1;CHECK;WINDOWS,TABS,LINKS;1|bit.ly;1;CHECK;WINDOWS,TABS,LINKS;1|userscloud.com;1;CHECK;WINDOWS,TABS,LINKS;1|uploadfiles.eu;1;CHECK;WINDOWS,TABS,LINKS;1|sendit.cloud;1;CHECK;WINDOWS,TABS,LINKS;1|clicknupload.org;1;CHECK;WINDOWS,TABS,LINKS;1|megafiles.us;1;CHECK;WINDOWS,TABS,LINKS;1|uploadkadeh.com;1;CHECK;WINDOWS,TABS,LINKS;1|media4up.com;1;CHECK;WINDOWS,TABS,LINKS;1|4downfiles.org;1;CHECK;WINDOWS,TABS,LINKS;1|filedot.xyz;1;CHECK;WINDOWS,TABS,LINKS;1|upera.co;1;CHECK;WINDOWS,TABS,LINKS;1|public.upera.co;1;CHECK;WINDOWS,TABS,LINKS;1|uploadocean.com;1;CHECK;WINDOWS,TABS,LINKS;1|uplod.ws;1;CHECK;WINDOWS,TABS,LINKS;1|europeup.com;1;CHECK;WINDOWS,TABS,LINKS;1|up-4ever.com;1;CHECK;WINDOWS,TABS,LINKS;1|fistfast.net;1;CHECK;WINDOWS,TABS,LINKS;1|sonifiles.com;1;CHECK;WINDOWS,TABS,LINKS;1|userscdn.com;1;CHECK;WINDOWS,TABS,LINKS;1|uploadify.net;1;CHECK;WINDOWS,TABS,LINKS;1|xeupload.com;1;CHECK;WINDOWS,TABS,LINKS;1|imagetwist.com;1;CHECK;WINDOWS,TABS,LINKS;1|hulkimge.com;1;CHECK;WINDOWS,TABS,LINKS;1|imgchili.net;1;CHECK;WINDOWS,TABS,LINKS;1|imageteam.org;1;CHECK;WINDOWS,TABS,LINKS;1|imgrock.co;1;CHECK;WINDOWS,TABS,LINKS;1|imgant.com;1;CHECK;WINDOWS,TABS,LINKS;1|imggold.org;1;CHECK;WINDOWS,TABS,LINKS;1|imgdiamond.com;1;CHECK;WINDOWS,TABS,LINKS;1");
+user_pref("extensions.adblockpluspopupaddon.rules", "*;1;CHECK;WINDOWS,TABS,LINKS;1|bitly.com;1;CHECK;WINDOWS,TABS,LINKS;1|bit.ly;1;CHECK;WINDOWS,TABS,LINKS;1|userscloud.com;1;CHECK;WINDOWS,TABS,LINKS;1|uploadfiles.eu;1;CHECK;WINDOWS,TABS,LINKS;1|sendit.cloud;1;CHECK;WINDOWS,TABS,LINKS;1|openload.co;1;CHECK;WINDOWS,TABS,LINKS;1|megafiles.us;1;CHECK;WINDOWS,TABS,LINKS;1|uploadkadeh.com;1;CHECK;WINDOWS,TABS,LINKS;1|media4up.com;1;CHECK;WINDOWS,TABS,LINKS;1|4downfiles.org;1;CHECK;WINDOWS,TABS,LINKS;1|douploads.com;1;CHECK;WINDOWS,TABS,LINKS;1|upera.co;1;CHECK;WINDOWS,TABS,LINKS;1|public.upera.co;1;CHECK;WINDOWS,TABS,LINKS;1|uploadocean.com;1;CHECK;WINDOWS,TABS,LINKS;1|uplod.ws;1;CHECK;WINDOWS,TABS,LINKS;1|europeup.com;1;CHECK;WINDOWS,TABS,LINKS;1|up-4ever.com;1;CHECK;WINDOWS,TABS,LINKS;1|fistfast.net;1;CHECK;WINDOWS,TABS,LINKS;1|sonifiles.com;1;CHECK;WINDOWS,TABS,LINKS;1|userscdn.com;1;CHECK;WINDOWS,TABS,LINKS;1|uploadify.net;1;CHECK;WINDOWS,TABS,LINKS;1|xeupload.com;1;CHECK;WINDOWS,TABS,LINKS;1|imgshot.org;1;CHECK;WINDOWS,TABS,LINKS;1|hulkimge.com;1;CHECK;WINDOWS,TABS,LINKS;1|imgchili.net;1;CHECK;WINDOWS,TABS,LINKS;1|imageteam.org;1;CHECK;WINDOWS,TABS,LINKS;1|imgrock.co;1;CHECK;WINDOWS,TABS,LINKS;1|imgant.com;1;CHECK;WINDOWS,TABS,LINKS;1|imggold.org;1;CHECK;WINDOWS,TABS,LINKS;1|imgdiamond.com;1;CHECK;WINDOWS,TABS,LINKS;1");
 
 // EXTENSIONS CONFIG USER AGENT
 user_pref("extensions.agentSpoof.acceptDefault", false);
@@ -343,13 +343,13 @@ user_pref("flashgot.nested-menu", true);
 user_pref("flashgot.options.tabSelectedIndexes", "5");
 user_pref("flashgot.tmpDir", "C:\\Download\\Jdownloader");
 // CUSTOM REF
-user_pref("refcontrol.actions", "@DEFAULT=@NORMAL megafiles.us=http://google.fr uploadkadeh.com=http://google.gf media4up.com=http://google.gl 4downfiles.org=http://google.is filedot.xyz=http://google.hu upera.co=http://google.ae upera.co=http://google.ae upera.in=http://google.ae public.upera.co=@NORMAL uploadocean.com=http://google.at www.uploadocean.com=@NORMAL uplod.ws=http://google.tt fakenamegenerator.com=http://google.com.af houndify.com=http://google.com.au europeup.com=http://google.com.hk up-4ever.com=http://google.com.do fistfast.net=http://google.com.co sonifiles.com=http://google.com.ag userscdn.com=http://google.com.kh uploadify.net=http://google.com.br www.imagetwist.com=http://image.google.co.uz imagetwist.com=@NORMAL hulkimge.com=http://image.google.co.ug imgchili.net=http://image.google.co.kr imageteam.org=http://image.google.co.jp imgrock.co=http://image.google.co.ke imgant.com=http://image.google.co.ma imggold.org=http://image.google.co.mz imgdiamond.com=http://image.google.co.nz userscloud.com=http://google.ws uploadfiles.eu=http://google.vu sendit.cloud=http://google.us clicknupload.org=http://google.sh soundhound.com=http://hotmail.com email.soundhound.com=http://hotmail.com click.email.soundhound.com=http://hotmail.com bit.ly=http://google.co.th bitly.com=http://google.co.th is.gd=http://google.co.uk blogspot.com=http://search.google.com imgoutlet.co=http://image.google.co.vi imgdew.com=http://image.google.co.ls acidimg.cc=http://image.google.co.za xeimg.yt=http://image.google.co.zm imgbabes.com=http://image.google.co.zw www.imgbabes.com=@NORMAL affimg.org=http://image.google.co.tz damimage.com=http://image.google.co.ve gogoimage.org=http://image.google.co.ao");
+user_pref("refcontrol.actions", "@DEFAULT=@NORMAL megafiles.us=http://google.fr uploadkadeh.com=http://google.gf media4up.com=http://google.gl 4downfiles.org=http://google.is douploads.com=http://google.hu upera.co=http://google.ae public.upera.co=@NORMAL uploadocean.com=http://google.at www.uploadocean.com=@NORMAL uplod.ws=http://google.tt fakenamegenerator.com=http://google.com.af houndify.com=http://google.com.au europeup.com=http://google.com.hk up-4ever.com=http://google.com.do fistfast.net=http://google.com.co sonifiles.com=http://google.com.ag userscdn.com=http://google.com.kh uploadify.net=http://google.com.br imgshot.org=http://image.google.co.uz hulkimge.com=http://image.google.co.ug imgchili.net=http://image.google.co.kr imageteam.org=http://image.google.co.jp imgrock.co=http://image.google.co.ke imgant.com=http://image.google.co.ma imggold.org=http://image.google.co.mz imgdiamond.com=http://image.google.co.nz userscloud.com=http://google.ws uploadfiles.eu=http://google.vu sendit.cloud=http://google.us openload.co=@NORMAL www.openload.co=http://google.sh soundhound.com=http://hotmail.com email.soundhound.com=http://hotmail.com click.email.soundhound.com=http://hotmail.com bit.ly=http://google.co.th bitly.com=http://google.co.th is.gd=http://google.co.uk blogspot.com=http://search.google.com imgoutlet.co=http://image.google.co.vi dimtus.com=http://image.google.co.ls www.acidimg.cc=http://image.google.co.za acidimg.cc=http://image.google.co.za xeimg.yt=http://image.google.co.zm imgbabes.com=http://image.google.co.zw www.imgbabes.com=@NORMAL www.affimg.org=http://image.google.co.tz affimg.org=@NORMAL damimage.com=http://image.google.co.ve gogoimage.org=http://image.google.co.ao");
 // @DEFAULT=@NORMAL
 // megafiles.us=http://google.fr
 // uploadkadeh.com=http://google.gf
 // media4up.com=http://google.gl
 // 4downfiles.org=http://google.is
-// filedot.xyz=http://google.hu
+// douploads.com=http://google.hu
 // upera.co=http://google.ae
 // uploadocean.com=http://google.at
 // uplod.ws=http://google.tt
@@ -361,7 +361,7 @@ user_pref("refcontrol.actions", "@DEFAULT=@NORMAL megafiles.us=http://google.fr 
 // sonifiles.com=http://google.com.ag
 // userscdn.com=http://google.com.kh
 // uploadify.net=http://google.com.br
-// imagetwist.com=http://image.google.co.uz
+// imgshot.org=http://image.google.co.uz
 // hulkimge.com=http://image.google.co.ug
 // imgchili.net=http://image.google.co.kr
 // imageteam.org=http://image.google.co.jp
@@ -372,7 +372,7 @@ user_pref("refcontrol.actions", "@DEFAULT=@NORMAL megafiles.us=http://google.fr 
 // userscloud.com=http://google.ws
 // uploadfiles.eu=http://google.vu
 // sendit.cloud=http://google.us
-// clicknupload.org=http://google.sh
+// openload.co=http://google.sh
 // soundhound.com=http://hotmail.com
 // email.soundhound.com=http://hotmail.com
 // click.email.soundhound.com=http://hotmail.com
@@ -384,7 +384,7 @@ user_pref("refcontrol.actions", "@DEFAULT=@NORMAL megafiles.us=http://google.fr 
 // popads.net=@NORMAL
 // onclasrv.com=@NORMAL
 // imgoutlet.co=http://image.google.co.vi
-// imgdew.com=http://image.google.co.ls
+// dimtus.com=http://image.google.co.ls
 // acidimg.cc=http://image.google.co.za
 // xeimg.yt=http://image.google.co.zm
 // imgbabes.com=http://image.google.co.zw

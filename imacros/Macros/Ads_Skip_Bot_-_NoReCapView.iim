@@ -15,7 +15,7 @@ SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
 
 
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-'          http://imagetwist.com , http://hulkimge.com , http://imgchili.net , http://imageteam.org , http://imgrock.co , http://imgant.com , http://imggold.org , http://imgdiamond.com          '
+'          http://imgshot.org , http://hulkimge.com , http://imgchili.net , http://imageteam.org , http://imgrock.co , http://imgant.com , http://imggold.org , http://imgdiamond.com          '
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 ADD !EXTRACT 1
 SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
@@ -36,11 +36,11 @@ TAB T=1
 WAIT SECONDS=1
 TAB T=1
 '
-'/////// [OPEN] http://imagetwist.com
+'/////// [OPEN] http://imgshot.org
 '
 TAB T=1
 SET !VAR1 EVAL("var randomNumber=Math.floor(Math.random()*3 + 1); randomNumber;")
-SET !DATASOURCE "List - imagetwist.com - Load.csv"
+SET !DATASOURCE "List - imgshot.org - Load.csv"
 SET !DATASOURCE_COLUMNS 1
 SET !DATASOURCE_LINE {{!VAR1}}
 TAB T=1
@@ -176,11 +176,11 @@ TAB T=9
 TAB T=9
 WAIT SECONDS=10
 '
-'/////// [OPEN] http://imagetwist.com
+'/////// [OPEN] http://imgshot.org
 '
 TAB T=1
 SET !VAR1 EVAL("var randomNumber=Math.floor(Math.random()*27 + 1); randomNumber;")
-SET !DATASOURCE "List - imagetwist.com - Main.csv"
+SET !DATASOURCE "List - imgshot.org - Main.csv"
 SET !DATASOURCE_COLUMNS 1
 SET !DATASOURCE_LINE {{!VAR1}}
 TAB T=1
@@ -333,7 +333,7 @@ TAB T=9
 WAIT SECONDS=50
 TAB T=9
 '
-'/////// STAGE 2 [1 OF 3] http://imagetwist.com
+'/////// STAGE 2 [1 OF 3] http://imgshot.org
 '
 TAB T=1
 ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
@@ -530,13 +530,13 @@ EVENT TYPE=CLICK SELECTOR="#advertisementModal>DIV>DIV>DIV" BUTTON=0
 TAB T=6
 EVENT TYPE=CLICK SELECTOR="#advertisementModal>DIV>DIV>DIV" BUTTON=0
 TAB T=6
-TAG POS=2 TYPE=SPAN ATTR=TXT:×
+TAG POS=1 TYPE=SPAN ATTR=TXT:Close<SP>×
 TAB T=6
-TAG POS=2 TYPE=SPAN ATTR=TXT:×
+TAG POS=1 TYPE=SPAN ATTR=TXT:Close<SP>×
 TAB T=6
-TAG POS=1 TYPE=IMG ATTR=ID:picView
+TAG POS=1 TYPE=SMALL ATTR=TXT:Close
 TAB T=6
-TAG POS=1 TYPE=IMG ATTR=ID:picView
+TAG POS=1 TYPE=SMALL ATTR=TXT:Close
 TAB T=9
 WAIT SECONDS=6
 TAB T=9
@@ -835,13 +835,13 @@ ONDIALOG POS=1 BUTTON=OK CONTENT=
 ONDIALOG POS=2 BUTTON=OK CONTENT=
 ONDIALOG POS=3 BUTTON=OK CONTENT=
 '
-'/////// STAGE 2 [2 OF 3] http://imagetwist.com
+'/////// STAGE 2 [2 OF 3] http://imgshot.org
 '
 TAB T=1
 ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
 SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
 TAB T=1
-TAG POS=1 TYPE=IMG ATTR=SRC:http://*.imagetwist.com/*/*/*.jpg/*.jpg
+TAG POS=1 TYPE=IMG ATTR=SRC:http://*.imgshot.org/*/*/*.jpg/*.jpg
 TAB T=1
 TAG POS=1 TYPE=A ATTR=TXT:Download<SP>Image
 TAB T=1
@@ -974,13 +974,13 @@ TAB T=6
 ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
 SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
 TAB T=6
-EVENT TYPE=CLICK SELECTOR="#advertisementModal>DIV>DIV>DIV" BUTTON=0
+TAG POS=1 TYPE=SPAN ATTR=TXT:Close<SP>×
 TAB T=6
-EVENT TYPE=CLICK SELECTOR="#advertisementModal>DIV>DIV>DIV" BUTTON=0
+TAG POS=1 TYPE=SPAN ATTR=TXT:Close<SP>×
 TAB T=6
-EVENT TYPE=CLICK SELECTOR="#advertisementModal>DIV>DIV>DIV" BUTTON=0
+TAG POS=1 TYPE=SMALL ATTR=TXT:Close
 TAB T=6
-EVENT TYPE=CLICK SELECTOR="#advertisementModal>DIV>DIV>DIV" BUTTON=0
+TAG POS=1 TYPE=SMALL ATTR=TXT:Close
 TAB T=6
 TAG POS=2 TYPE=SPAN ATTR=TXT:×
 TAB T=6
@@ -989,6 +989,10 @@ TAB T=6
 TAG POS=1 TYPE=IMG ATTR=ID:picView
 TAB T=6
 TAG POS=1 TYPE=IMG ATTR=ID:picView
+TAB T=6
+TAG POS=1 TYPE=BUTTON ATTR=DATA-FANCYBOX-CLOSE:&&CLASS:fancybox-button<SP>fancybox-button--close&&TITLE:Close<SP>(Esc)&&TXT:
+TAB T=6
+TAG POS=1 TYPE=BUTTON ATTR=DATA-FANCYBOX-CLOSE:&&CLASS:fancybox-button<SP>fancybox-button--close&&TITLE:Close<SP>(Esc)&&TXT:
 TAB T=9
 WAIT SECONDS=5
 TAB T=9
@@ -1067,9 +1071,9 @@ ONDIALOG POS=2 BUTTON=OK CONTENT=
 ONDIALOG POS=3 BUTTON=OK CONTENT=
 
 
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-'          http://imgoutlet.co , http://imgdew.com , http://acidimg.cc , http://xeimg.yt , http://imgbabes.com , http://affimg.org , http://damimage.com , http://gogoimage.org          '
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'          http://imgoutlet.co , http://dimtus.com , http://acidimg.cc , http://xeimg.yt , http://imgbabes.com , http://affimg.org , http://damimage.com , http://gogoimage.org          '
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 ADD !EXTRACT 2
 SAVEAS TYPE=EXTRACT FOLDER=* FILE=SESSIONS.LOG
 CLEAR 
@@ -1104,11 +1108,11 @@ TAB T=1
 URL GOTO={{!COL1}}
 TAB T=1
 '
-'/////// [OPEN] http://imgdew.com
+'/////// [OPEN] http://dimtus.com
 '
 TAB T=2
 SET !VAR2 EVAL("var randomNumber=Math.floor(Math.random()*3 + 1); randomNumber;")
-SET !DATASOURCE "List - imgdew.com - Load.csv"
+SET !DATASOURCE "List - dimtus.com - Load.csv"
 SET !DATASOURCE_COLUMNS 1
 SET !DATASOURCE_LINE {{!VAR2}}
 TAB T=2
@@ -1244,11 +1248,11 @@ TAB T=1
 URL GOTO={{!COL1}}
 TAB T=1
 '
-'/////// [OPEN] http://imgdew.com
+'/////// [OPEN] http://dimtus.com
 '
 TAB T=2
 SET !VAR2 EVAL("var randomNumber=Math.floor(Math.random()*33 + 1); randomNumber;")
-SET !DATASOURCE "List - imgdew.com - Main.csv"
+SET !DATASOURCE "List - dimtus.com - Main.csv"
 SET !DATASOURCE_COLUMNS 1
 SET !DATASOURCE_LINE {{!VAR2}}
 TAB T=2
@@ -1413,7 +1417,7 @@ ONDIALOG POS=1 BUTTON=OK CONTENT=
 ONDIALOG POS=2 BUTTON=OK CONTENT=
 ONDIALOG POS=3 BUTTON=OK CONTENT=
 '
-'/////// STAGE 2 [1 OF 3] http://imgdew.com
+'/////// STAGE 2 [1 OF 3] http://dimtus.com
 '
 TAB T=2
 ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
@@ -1559,17 +1563,17 @@ TAB T=6
 ADD !EXTRACT "STAGE 2 [1 OF 3] {{!URLCURRENT}}"
 SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
 TAB T=6
-EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD" BUTTON=0
+EVENT TYPE=CLICK SELECTOR="#continuetoimage>FORM>P" BUTTON=0
 TAB T=6
-EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD" BUTTON=0
+EVENT TYPE=CLICK SELECTOR="#continuetoimage>FORM>P" BUTTON=0
 TAB T=6
-EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD:nth-of-type(3)" BUTTON=0
+EVENT TYPE=CLICK SELECTOR="#continuetoimage>FORM>P" BUTTON=0
 TAB T=6
-EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>TABLE>TBODY>TR>TD:nth-of-type(3)" BUTTON=
+EVENT TYPE=CLICK SELECTOR="#continuetoimage>FORM>P" BUTTON=0
 TAB T=6
-TAG POS=6 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:next
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:imgContinue
 TAB T=6
-TAG POS=6 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:next
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:imgContinue
 TAB T=9
 WAIT SECONDS=6
 TAB T=9
@@ -1905,13 +1909,13 @@ ONDIALOG POS=1 BUTTON=OK CONTENT=
 ONDIALOG POS=2 BUTTON=OK CONTENT=
 ONDIALOG POS=3 BUTTON=OK CONTENT=
 '
-'/////// STAGE 2 [2 OF 3] http://imgdew.com
+'/////// STAGE 2 [2 OF 3] http://dimtus.com
 '
 TAB T=2
 ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
 SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
 TAB T=2
-TAG POS=1 TYPE=IMG ATTR=SRC:http://*.imgdew.com/img/*/*.jpg
+TAG POS=1 TYPE=IMG ATTR=SRC:http://*.dimtus.com/img/*/*.jpg
 '	LESS	TAB T=2
 '	LESS	TAG POS=1 TYPE=A ATTR=TXT:Full<SP>Size
 TAB T=2
@@ -2009,17 +2013,17 @@ TAB T=6
 ADD !EXTRACT "STAGE 2 [2 OF 3] {{!URLCURRENT}}"
 SAVEAS TYPE=EXTRACT FOLDER=* FILE=URLCURRENT.LOG
 TAB T=6
-EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV:nth-of-type(3)>DIV" BUTTON=0
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(2)" BUTTON=0
 TAB T=6
-EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(3)>DIV:nth-of-type(3)>DIV" BUTTON=0
+EVENT TYPE=CLICK SELECTOR="HTML>BODY>DIV:nth-of-type(2)" BUTTON=0
 TAB T=6
-TAG POS=1 TYPE=BUTTON ATTR=TXT:Continue
+TAG POS=1 TYPE=IMG ATTR=SRC:http://affimg.org/upload/*/*/*/*/*.jpg
 TAB T=6
-TAG POS=1 TYPE=BUTTON ATTR=TXT:Continue
+TAG POS=1 TYPE=IMG ATTR=SRC:http://affimg.org/upload/*/*/*/*/*.jpg
 TAB T=6
-TAG POS=1 TYPE=IMG ATTR=SRC:http://*.affimg.org/img/*/*.jpg
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Download<SP>Image
 TAB T=6
-TAG POS=1 TYPE=IMG ATTR=SRC:http://*.affimg.org/img/*/*.jpg
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Download<SP>Image
 TAB T=9
 WAIT SECONDS=5
 TAB T=9

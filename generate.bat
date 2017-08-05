@@ -32,6 +32,7 @@ IF /I NOT EXIST "%USERPROFILE%\Documents\iMacros\Macros" MKDIR "%USERPROFILE%\Do
 IF /I NOT EXIST "%USERPROFILE%\Documents\iMacros\Macros\iMacros" MKDIR "%USERPROFILE%\Documents\iMacros\Macros\iMacros"
 COPY /Y "Z:\Database\Imacros\Datasources\*.CSV" "%USERPROFILE%\Documents\iMacros\Datasources"
 COPY /Y "Z:\Database\Imacros\Macros\*.IIM" "%USERPROFILE%\Documents\iMacros\Macros"
+COPY /Y "Z:\Database\Imacros\Datasources\Custom\*.CSV" "%USERPROFILE%\Documents\iMacros\Datasources"
 COPY /Y "Z:\Database\Imacros\Macros\Custom\*.IIM" "%USERPROFILE%\Documents\iMacros\Macros"
 COPY /Y "Z:\Database\ff\defaults\pref\*.JS" ".\ff\app\firefox\defaults\pref"
 COPY /Y "Z:\Database\ff\mms.cfg" "%SYSTEMROOT%\SYSTEM32\Macromed\Flash\mms.cfg"
@@ -110,7 +111,7 @@ SET /A CSVHOSTLOAD=(%RANDOM%*%CSVHOSTLOAD%/32768)+1
 SET /A CSVHOSTMAIN=(%RANDOM%*%CSVHOSTMAIN%/32768)+1
 SET URLLISTVAULEMULT1=
 SET REFERERVAULEMULT1=
-CALL :%GETREFERERS% %CSVHOSTMAIN% URLLISTVAULEMULT1 REFERERVAULEMULT1 || CALL :DATASOURCEINCORRECT %GETREFHOSTS% %CSVHOSTMAIN% %URLLISTVAULEMULT2% %REFERERVAULEMULT1%
+CALL :%GETREFERERS% %CSVHOSTMAIN% URLLISTVAULEMULT1 REFERERVAULEMULT1 || CALL :DATASOURCEINCORRECT %GETREFHOSTS% %CSVHOSTMAIN% %URLLISTVAULEMULT1% %REFERERVAULEMULT1%
 :REFERERVAULEMULT2
 CALL :GETREFHOSTS 372
 FOR /F %%F IN ('type "%USERPROFILE%\Documents\iMacros\Datasources\List - %GETREFHOSTS% - Load.csv" ^| FIND /C "://"') DO SET /A CSVHOSTLOAD=%%F
@@ -380,16 +381,16 @@ IF "%REFERERRANDOM%" GEQ "12" SET REFERERVAULEreCA8=%REFERERVAULEDEFAULT%
 :REFERERVAULEVIEW01
 SET /A REFERERRANDOM=%RANDOM% %%15 +1
 IF "%REFERERRANDOM%"=="1" SET REFERERVAULEVIEW01="http://gallery-dump.com"
-IF "%REFERERRANDOM%"=="2" SET REFERERVAULEVIEW01="http://gallery-dump.com/forum/viewtopic.php?t=360228"
-IF "%REFERERRANDOM%"=="3" SET REFERERVAULEVIEW01="http://www.gallery-dump.com/forum/viewtopic.php?t=360228"
+IF "%REFERERRANDOM%"=="2" SET REFERERVAULEVIEW01="http://gallery-dump.com/forum/viewtopic.php?t=364127"
+IF "%REFERERRANDOM%"=="3" SET REFERERVAULEVIEW01="http://www.gallery-dump.com/forum/viewtopic.php?t=364127"
 IF "%REFERERRANDOM%"=="4" SET REFERERVAULEVIEW01=%REFERERVAULEDEFAULT%
 IF "%REFERERRANDOM%"=="5" SET REFERERVAULEVIEW01="http://gallery-dump.net"
-IF "%REFERERRANDOM%"=="6" SET REFERERVAULEVIEW01="http://gallery-dump.net/hentai/50623/gallery.html"
-IF "%REFERERRANDOM%"=="7" SET REFERERVAULEVIEW01="http://www.gallery-dump.net/hentai/50623/gallery.html"
+IF "%REFERERRANDOM%"=="6" SET REFERERVAULEVIEW01="http://gallery-dump.net/hentai/62843/gallery.html"
+IF "%REFERERRANDOM%"=="7" SET REFERERVAULEVIEW01="http://www.gallery-dump.net/hentai/62843/gallery.html"
 IF "%REFERERRANDOM%"=="8" SET REFERERVAULEVIEW01=%REFERERVAULEDEFAULT%
 IF "%REFERERRANDOM%"=="9" SET REFERERVAULEVIEW01="http://gallery-dump.info"
-IF "%REFERERRANDOM%"=="10" SET REFERERVAULEVIEW01="http://gallery-dump.info/hentai/357782/images.html"
-IF "%REFERERRANDOM%"=="11" SET REFERERVAULEVIEW01="http://www.gallery-dump.info/hentai/357782/images.html"
+IF "%REFERERRANDOM%"=="10" SET REFERERVAULEVIEW01="http://gallery-dump.info/hentai/373798/images.html"
+IF "%REFERERRANDOM%"=="11" SET REFERERVAULEVIEW01="http://www.gallery-dump.info/hentai/373798/images.html"
 IF "%REFERERRANDOM%" GEQ "12" SET REFERERVAULEVIEW01=%REFERERVAULEHENTAI%
 :REFERERVAULEVIEW02
 SET /A REFERERRANDOM=%RANDOM% %%15 +1
@@ -492,16 +493,16 @@ IF "%REFERERRANDOM%" GEQ "12" SET REFERERVAULEVIEW08=%REFERERVAULEHENTAI%
 :REFERERVAULEVIEW09
 SET /A REFERERRANDOM=%RANDOM% %%15 +1
 IF "%REFERERRANDOM%"=="1" SET REFERERVAULEVIEW09="http://gallery-dump.com"
-IF "%REFERERRANDOM%"=="2" SET REFERERVAULEVIEW09="http://gallery-dump.com/forum/viewtopic.php?t=362690"
-IF "%REFERERRANDOM%"=="3" SET REFERERVAULEVIEW09="http://www.gallery-dump.com/forum/viewtopic.php?t=362690"
+IF "%REFERERRANDOM%"=="2" SET REFERERVAULEVIEW09="http://gallery-dump.com/forum/viewtopic.php?t=364131"
+IF "%REFERERRANDOM%"=="3" SET REFERERVAULEVIEW09="http://www.gallery-dump.com/forum/viewtopic.php?t=364131"
 IF "%REFERERRANDOM%"=="4" SET REFERERVAULEVIEW09=%REFERERVAULEDEFAULT%
 IF "%REFERERRANDOM%"=="5" SET REFERERVAULEVIEW09="http://gallery-dump.net"
-IF "%REFERERRANDOM%"=="6" SET REFERERVAULEVIEW09="http://gallery-dump.net/hentai/57184/gallery.html"
-IF "%REFERERRANDOM%"=="7" SET REFERERVAULEVIEW09="http://www.gallery-dump.net/hentai/57184/gallery.html"
+IF "%REFERERRANDOM%"=="6" SET REFERERVAULEVIEW09="http://gallery-dump.net/hentai/62845/gallery.html"
+IF "%REFERERRANDOM%"=="7" SET REFERERVAULEVIEW09="http://www.gallery-dump.net/hentai/62845/gallery.html"
 IF "%REFERERRANDOM%"=="8" SET REFERERVAULEVIEW09=%REFERERVAULEDEFAULT%
 IF "%REFERERRANDOM%"=="9" SET REFERERVAULEVIEW09="http://gallery-dump.info"
-IF "%REFERERRANDOM%"=="10" SET REFERERVAULEVIEW09="http://gallery-dump.info/hentai/367315/images.html"
-IF "%REFERERRANDOM%"=="11" SET REFERERVAULEVIEW09="http://www.gallery-dump.info/hentai/367315/images.html"
+IF "%REFERERRANDOM%"=="10" SET REFERERVAULEVIEW09="http://gallery-dump.info/hentai/373802/images.html"
+IF "%REFERERRANDOM%"=="11" SET REFERERVAULEVIEW09="http://www.gallery-dump.info/hentai/373802/images.html"
 IF "%REFERERRANDOM%"=="12" SET REFERERVAULEVIEW09=%REFERERVAULEHENTAI%
 IF "%REFERERRANDOM%"=="13" SET REFERERVAULEVIEW09=%REFERERVAULEHENTAI%
 IF "%REFERERRANDOM%"=="14" SET REFERERVAULEVIEW09=%REFERERVAULEHENTAI%
@@ -509,30 +510,30 @@ IF "%REFERERRANDOM%"=="15" SET REFERERVAULEVIEW09=%REFERERVAULEHENTAI%
 :REFERERVAULEVIEW010
 SET /A REFERERRANDOM=%RANDOM% %%15 +1
 IF "%REFERERRANDOM%"=="1" SET REFERERVAULEVIEW010="http://gallery-dump.com"
-IF "%REFERERRANDOM%"=="2" SET REFERERVAULEVIEW010="http://gallery-dump.com/forum/viewtopic.php?t=362691"
-IF "%REFERERRANDOM%"=="3" SET REFERERVAULEVIEW010="http://www.gallery-dump.com/forum/viewtopic.php?t=362691"
+IF "%REFERERRANDOM%"=="2" SET REFERERVAULEVIEW010="http://gallery-dump.com/forum/viewtopic.php?t=364448"
+IF "%REFERERRANDOM%"=="3" SET REFERERVAULEVIEW010="http://www.gallery-dump.com/forum/viewtopic.php?t=364448"
 IF "%REFERERRANDOM%"=="4" SET REFERERVAULEVIEW010=%REFERERVAULEDEFAULT%
 IF "%REFERERRANDOM%"=="5" SET REFERERVAULEVIEW010="http://gallery-dump.net"
-IF "%REFERERRANDOM%"=="6" SET REFERERVAULEVIEW010="http://gallery-dump.net/hentai/57185/gallery.html"
-IF "%REFERERRANDOM%"=="7" SET REFERERVAULEVIEW010="http://www.gallery-dump.net/hentai/57185/gallery.html"
+IF "%REFERERRANDOM%"=="6" SET REFERERVAULEVIEW010="http://gallery-dump.net/hentai/64190/gallery.html"
+IF "%REFERERRANDOM%"=="7" SET REFERERVAULEVIEW010="http://www.gallery-dump.net/hentai/64190/gallery.html"
 IF "%REFERERRANDOM%"=="8" SET REFERERVAULEVIEW010=%REFERERVAULEDEFAULT%
 IF "%REFERERRANDOM%"=="9" SET REFERERVAULEVIEW010="http://gallery-dump.info"
-IF "%REFERERRANDOM%"=="10" SET REFERERVAULEVIEW10="http://gallery-dump.info/hentai/367316/images.html"
-IF "%REFERERRANDOM%"=="11" SET REFERERVAULEVIEW10="http://www.gallery-dump.info/hentai/367316/images.html"
+IF "%REFERERRANDOM%"=="10" SET REFERERVAULEVIEW10="http://gallery-dump.info/hentai/375360/images.html"
+IF "%REFERERRANDOM%"=="11" SET REFERERVAULEVIEW10="http://www.gallery-dump.info/hentai/375360/images.html"
 IF "%REFERERRANDOM%" GEQ "12" SET REFERERVAULEVIEW10=%REFERERVAULEHENTAI%
 :REFERERVAULEVIEW011
 SET /A REFERERRANDOM=%RANDOM% %%15 +1
 IF "%REFERERRANDOM%"=="1" SET REFERERVAULEVIEW011="http://gallery-dump.com"
-IF "%REFERERRANDOM%"=="2" SET REFERERVAULEVIEW011="http://gallery-dump.com/forum/viewtopic.php?t=362692"
-IF "%REFERERRANDOM%"=="3" SET REFERERVAULEVIEW011="http://www.gallery-dump.com/forum/viewtopic.php?t=362692"
+IF "%REFERERRANDOM%"=="2" SET REFERERVAULEVIEW011="http://gallery-dump.com/forum/viewtopic.php?t=364132"
+IF "%REFERERRANDOM%"=="3" SET REFERERVAULEVIEW011="http://www.gallery-dump.com/forum/viewtopic.php?t=364132"
 IF "%REFERERRANDOM%"=="4" SET REFERERVAULEVIEW011=%REFERERVAULEDEFAULT%
 IF "%REFERERRANDOM%"=="5" SET REFERERVAULEVIEW011="http://gallery-dump.net"
-IF "%REFERERRANDOM%"=="6" SET REFERERVAULEVIEW011="http://gallery-dump.net/hentai/57186/gallery.html"
-IF "%REFERERRANDOM%"=="7" SET REFERERVAULEVIEW011="http://www.gallery-dump.net/hentai/57186/gallery.html"
+IF "%REFERERRANDOM%"=="6" SET REFERERVAULEVIEW011="http://gallery-dump.net/hentai/62847/gallery.html"
+IF "%REFERERRANDOM%"=="7" SET REFERERVAULEVIEW011="http://www.gallery-dump.net/hentai/62847/gallery.html"
 IF "%REFERERRANDOM%"=="8" SET REFERERVAULEVIEW011=%REFERERVAULEDEFAULT%
 IF "%REFERERRANDOM%"=="9" SET REFERERVAULEVIEW011="http://gallery-dump.info"
-IF "%REFERERRANDOM%"=="10" SET REFERERVAULEVIEW11="http://gallery-dump.info/hentai/367317/images.html"
-IF "%REFERERRANDOM%"=="11" SET REFERERVAULEVIEW11="http://www.gallery-dump.info/hentai/367317/images.html"
+IF "%REFERERRANDOM%"=="10" SET REFERERVAULEVIEW11="http://gallery-dump.info/hentai/373805/images.html"
+IF "%REFERERRANDOM%"=="11" SET REFERERVAULEVIEW11="http://www.gallery-dump.info/hentai/373805/images.html"
 IF "%REFERERRANDOM%" GEQ "12" SET REFERERVAULEVIEW11=%REFERERVAULEHENTAI%
 :REFERERVAULEVIEW012
 SET /A REFERERRANDOM=%RANDOM% %%15 +1
@@ -565,16 +566,16 @@ IF "%REFERERRANDOM%" GEQ "12" SET REFERERVAULEVIEW13=%REFERERVAULEHENTAI%
 :REFERERVAULEVIEW014
 SET /A REFERERRANDOM=%RANDOM% %%15 +1
 IF "%REFERERRANDOM%"=="1" SET REFERERVAULEVIEW014="http://gallery-dump.com"
-IF "%REFERERRANDOM%"=="2" SET REFERERVAULEVIEW014="http://gallery-dump.com/forum/viewtopic.php?t=362695"
-IF "%REFERERRANDOM%"=="3" SET REFERERVAULEVIEW014="http://www.gallery-dump.com/forum/viewtopic.php?t=362695"
+IF "%REFERERRANDOM%"=="2" SET REFERERVAULEVIEW014="http://gallery-dump.com/forum/viewtopic.php?t=364133"
+IF "%REFERERRANDOM%"=="3" SET REFERERVAULEVIEW014="http://www.gallery-dump.com/forum/viewtopic.php?t=364133"
 IF "%REFERERRANDOM%"=="4" SET REFERERVAULEVIEW014=%REFERERVAULEDEFAULT%
 IF "%REFERERRANDOM%"=="5" SET REFERERVAULEVIEW014="http://gallery-dump.net"
-IF "%REFERERRANDOM%"=="6" SET REFERERVAULEVIEW014="http://gallery-dump.net/hentai/57188/gallery.html"
-IF "%REFERERRANDOM%"=="7" SET REFERERVAULEVIEW014="http://www.gallery-dump.net/hentai/57188/gallery.html"
+IF "%REFERERRANDOM%"=="6" SET REFERERVAULEVIEW014="http://gallery-dump.net/hentai/62848/gallery.html"
+IF "%REFERERRANDOM%"=="7" SET REFERERVAULEVIEW014="http://www.gallery-dump.net/hentai/62848/gallery.html"
 IF "%REFERERRANDOM%"=="8" SET REFERERVAULEVIEW014=%REFERERVAULEDEFAULT%
 IF "%REFERERRANDOM%"=="9" SET REFERERVAULEVIEW014="http://www.gallery-dump.info"
-IF "%REFERERRANDOM%"=="10" SET REFERERVAULEVIEW14="http://gallery-dump.info/hentai/367319/images.html"
-IF "%REFERERRANDOM%"=="11" SET REFERERVAULEVIEW14="http://www.gallery-dump.info/hentai/367319/images.html"
+IF "%REFERERRANDOM%"=="10" SET REFERERVAULEVIEW14="http://gallery-dump.info/hentai/373806/images.html"
+IF "%REFERERRANDOM%"=="11" SET REFERERVAULEVIEW14="http://www.gallery-dump.info/hentai/373806/images.html"
 IF "%REFERERRANDOM%" GEQ "12" SET REFERERVAULEVIEW14=%REFERERVAULEHENTAI%
 :REFERERVAULEVIEW015
 SET /A REFERERRANDOM=%RANDOM% %%15 +1
@@ -877,14 +878,14 @@ REM	)
 :GETREFERERSLOAD
 SET "REFHOST=%~1"
 FOR /F "delims= skip=%CSVHOSTLOAD%" %%F in ('type "%USERPROFILE%\Documents\iMacros\Datasources\List - %GETREFHOSTS% - Load.csv"') DO (
-	SET "%~2=%~1"
+	SET /A %~2=%~1+1
 	SET "%~3=%%F"
 	GOTO:EOF
 )
 :GETREFERERSMAIN
 SET "REFHOST=%~1"
 FOR /F "tokens=2 skip=%REFHOST% delims=," %%F in ('type "%USERPROFILE%\Documents\iMacros\Datasources\List - %GETREFHOSTS% - Main.csv"') DO (
-	SET "%~2=%~1"
+	SET /A %~2=%~1+1
 	SET "%~3=%%F"
 	GOTO:EOF
 )

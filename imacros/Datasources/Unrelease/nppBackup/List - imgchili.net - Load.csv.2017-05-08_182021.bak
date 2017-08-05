@@ -1,0 +1,6 @@
+#pagecontent>TABLE:nth-of-type(3)>TBODY>TR:nth-of-type(2)>TD:nth-of-type(2)>DIV:nth-of-type(3)>A>IMG
+#pagecontent>TABLE:nth-of-type(3)>TBODY>TR:nth-of-type(2)>TD:nth-of-type(2)>DIV:nth-of-type(3)>A:nth-of-type(4)>IMG
+#pagecontent>TABLE:nth-of-type(3)>TBODY>TR:nth-of-type(2)>TD:nth-of-type(2)>DIV:nth-of-type(3)>A:nth-of-type(6)>IMG
+#pagecontent>TABLE:nth-of-type(3)>TBODY>TR:nth-of-type(2)>TD:nth-of-type(2)>DIV:nth-of-type(3)>A:nth-of-type(9)>IMG
+#pagecontent>TABLE:nth-of-type(3)>TBODY>TR:nth-of-type(2)>TD:nth-of-type(2)>DIV:nth-of-type(3)>A:nth-of-type(12)>IMG
+#pagecontent>TABLE:nth-of-type(3)>TBODY>TR:nth-of-type(2)>TD:nth-of-type(2)>DIV:nth-of-type(3)>A>IMG
